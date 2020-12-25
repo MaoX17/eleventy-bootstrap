@@ -5,19 +5,23 @@ htmlClass: html
 bodyClass: body
 strailsImg: https://res.cloudinary.com/maox17/image/upload/v1608901432/strails/logo468_t_puc73x.png
 o2uImg: https://res.cloudinary.com/maox17/image/upload/v1608902985/O2U/o2u_vsyxmb.png
+rubricaImg: https://res.cloudinary.com/maox17/image/upload/v1608903650/address-card_c1jk0v.png
+ovpnImg: https://res.cloudinary.com/maox17/image/upload/v1608903941/openvpn_k0irrf.jpg
+11tyImg: https://res.cloudinary.com/maox17/image/upload/v1608904947/11ty_sdijhu.png
 
 ---
 
 <div class="container">
 
   <h1> {{ site.name }} </h1>
+
   <div class="row">
 
     <div class="col">
       <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="{{strailsImg}}" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Strails – Lo stato dei sentieri </h5>
+            <h5 class="card-title"><a href="https://www.strails.it/" >Strails – Lo stato dei sentieri</a></h5>
             <p class="card-text">Social Trail State - Lo stato social dei sentieri
               Permette di condividere lo stato di un sentiero OSM o o di un segmento Strava.
               Può quindi essere un “aiuto” social agli utilizzatori dei sentieri ed ai trail builder o al
@@ -34,7 +38,7 @@ o2uImg: https://res.cloudinary.com/maox17/image/upload/v1608902985/O2U/o2u_vsyxm
       <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="{{o2uImg}}" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">O2U: from Ordering to yoU! </h5>
+            <h5 class="card-title"><a href="https://www.o2u.it/">O2U: from Ordering to yoU!</a></h5>
             <p class="card-text">O2U: from Ordering to yoU! è un innovativo servizio di self-ordering che
               permette ai clienti di ordinare con il proprio smartphone direttamente dal tavolo o dall'ombrellone</p>
           <a href="https://www.o2u.it/" class="btn btn-primary">O2U</a>
@@ -44,70 +48,153 @@ o2uImg: https://res.cloudinary.com/maox17/image/upload/v1608902985/O2U/o2u_vsyxm
 
     <div class="col">
       <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="{{strailsImg}}" alt="Card image cap">
+        <img class="card-img-top" src="{{rubricaImg}}" alt="Card image cap" >
+        {% icon "address-card" %}
           <div class="card-body">
-            <h5 class="card-title">Strails – Lo stato dei sentieri </h5>
-            <p class="card-text">Social Trail State - Lo stato social dei sentieri
-              Permette di condividere lo stato di un sentiero OSM o o di un segmento Strava.
-              Può quindi essere un “aiuto” social agli utilizzatori dei sentieri ed ai trail builder o al
-              CAI per sapere in che condizioni è un sentiero.
-              In questo modo chi vuole fare un giro può pianificarlo in base allo stato dei sentieri che
-              vuole attraversare e in caso di “problemi” i trailer  builder o il CAI saprebbero con più certezza dove e come intervenire.</p>
-            <a href="https://www.strails.it/" class="btn btn-primary">Strails</a>
+            <h5 class="card-title"><a href="https://github.com/MaoX17/RubricaActiveDirectory">Rubrica ActiveDirectory </a></h5>
+            <p class="card-text">RubricaActiveDirectory - Project based on Laravel Boilerplate. </br>
+            Address book from data in Active Directory with qr-code dinamically generated.</p>
+
+            <a class="text-dark" href="https://github.com/MaoX17/RubricaActiveDirectory">{% icon "github" %} on GitHub </a>
           </div>
       </div>
     </div>
 
-</div>
 
-<div class="row">
+
+
 
   <div class="col">
     <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="{{strailsImg}}" alt="Card image cap">
+        <img class="card-img-top" src="{{ovpnImg}}" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Strails – Lo stato dei sentieri </h5>
-            <p class="card-text">Social Trail State - Lo stato social dei sentieri
-              Permette di condividere lo stato di un sentiero OSM o o di un segmento Strava.
-              Può quindi essere un “aiuto” social agli utilizzatori dei sentieri ed ai trail builder o al
-              CAI per sapere in che condizioni è un sentiero.
-              In questo modo chi vuole fare un giro può pianificarlo in base allo stato dei sentieri che
-              vuole attraversare e in caso di “problemi” i trailer  builder o il CAI saprebbero con più certezza dove e come intervenire.</p>
-            <a href="https://www.strails.it/" class="btn btn-primary">Strails</a>
-          </div>
-      </div>
-    </div>
+            <h5 class="card-title"><a href="https://github.com/MaoX17/openvpn-web-gui">OpenVpn Web Gui </a></h5>
+            <p class="card-text">OpenVPN user certificate web manager.
+              Goal: create quick and easy to use solution to manage users and certificate and their password
+               for openvpn already working system.</p>
 
-  <div class="col">
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="{{strailsImg}}" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Strails – Lo stato dei sentieri </h5>
-            <p class="card-text">Social Trail State - Lo stato social dei sentieri
-              Permette di condividere lo stato di un sentiero OSM o o di un segmento Strava.
-              Può quindi essere un “aiuto” social agli utilizzatori dei sentieri ed ai trail builder o al
-              CAI per sapere in che condizioni è un sentiero.
-              In questo modo chi vuole fare un giro può pianificarlo in base allo stato dei sentieri che
-              vuole attraversare e in caso di “problemi” i trailer  builder o il CAI saprebbero con più certezza dove e come intervenire.</p>
-          <a href="https://www.strails.it/" class="btn btn-primary">Strails</a>
-        </div>
+            <a class="text-dark" href="https://github.com/MaoX17/openvpn-web-gui">{% icon "github" %} on GitHub </a>
+          </div>
     </div>
   </div>
 
+
+
+
+
   <div class="col">
     <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="{{strailsImg}}" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Strails – Lo stato dei sentieri </h5>
-            <p class="card-text">Social Trail State - Lo stato social dei sentieri
+        <img class="card-img-top" src="{{11tyImg}}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://github.com/MaoX17/eleventy-bootstrap">This site - eleventy-bootstrap</a></h5>
+            <p class="card-text">eleventy-bootstrap static site</p>
+
+            <a class="text-dark" href="https://github.com/MaoX17/eleventy-bootstrap">{% icon "github" %} on GitHub </a>
+          </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="{{strailsImg}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><a href="https://www.strails.it/" >Strails – Lo stato dei sentieri</a></h5>
+      <p class="card-text">Social Trail State - Lo stato social dei sentieri
               Permette di condividere lo stato di un sentiero OSM o o di un segmento Strava.
               Può quindi essere un “aiuto” social agli utilizzatori dei sentieri ed ai trail builder o al
               CAI per sapere in che condizioni è un sentiero.
               In questo modo chi vuole fare un giro può pianificarlo in base allo stato dei sentieri che
               vuole attraversare e in caso di “problemi” i trailer  builder o il CAI saprebbero con più certezza dove e come intervenire.</p>
-            <a href="https://www.strails.it/" class="btn btn-primary">Strails</a>
-        </div>
-      </div>
     </div>
+    <div class="card-footer">
+      <small class="text-muted">
+        <a class="text-dark" href="https://github.com/MaoX17/strails">{% icon "github" %}  on GitHub </a>
+      </small>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <img class="card-img-top" src="{{o2uImg}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><a href="https://www.o2u.it/">O2U: from Ordering to yoU!</a></h5>
+      <p class="card-text">O2U: from Ordering to yoU! è un innovativo servizio di self-ordering che
+              permette ai clienti di ordinare con il proprio smartphone direttamente dal tavolo o dall'ombrellone</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">
+       <a class="text-dark" href="https://github.com/MaoX17/o2u">{% icon "github" %} on GitHub </a>
+      </small>
+
+    </div>
+  </div>
+
+
+  <div class="card">
+    <img class="card-img-top" src="{{rubricaImg}}" alt="Card image cap">
+    <div class="card-body">
+       <h5 class="card-title"><a href="https://github.com/MaoX17/RubricaActiveDirectory">Rubrica ActiveDirectory </a></h5>
+            <p class="card-text">RubricaActiveDirectory - Project based on Laravel Boilerplate. </br>
+            Address book from data in Active Directory with qr-code dinamically generated.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">
+        <a class="text-dark" href="https://github.com/MaoX17/RubricaActiveDirectory">{% icon "github" %} on GitHub </a>
+      </small>
+    </div>
+  </div>
+</div>
+
+
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="{{ovpnImg}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><a href="https://github.com/MaoX17/openvpn-web-gui">OpenVpn Web Gui </a></h5>
+            <p class="card-text">OpenVPN user certificate web manager.
+              Goal: create quick and easy to use solution to manage users and certificate and their password
+               for openvpn already working system.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">
+        <a class="text-dark" href="https://github.com/MaoX17/openvpn-web-gui">{% icon "github" %} on GitHub </a>
+      </small>
+    </div>
+  </div>
+
+
+
+  <div class="card">
+    <img class="card-img-top" src="{{11tyImg}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><a href="https://github.com/MaoX17/eleventy-bootstrap">This site - eleventy-bootstrap</a></h5>
+            <p class="card-text">eleventy-bootstrap static site</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">
+        <a class="text-dark" href="https://github.com/MaoX17/eleventy-bootstrap">{% icon "github" %} on GitHub </a>
+      </small>
+    </div>
+  </div>
+  <div class="card">
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
 
 </div>
