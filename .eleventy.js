@@ -9,6 +9,8 @@ const markdown = require('./utils/markdown');
 const shortcodes = require('./utils/shortcodes');
 const transforms = require('./utils/transforms');
 
+const pluginPWA = require("eleventy-plugin-pwa");
+
 module.exports = (config) => {
   const manifestPath = path.resolve(__dirname, '_site/assets/manifest.json');
 
@@ -20,6 +22,7 @@ module.exports = (config) => {
 
   // Plugins
   config.addPlugin(NavigationPlugin);
+  config.addPlugin(pluginPWA);
   // Shows error name, message, and fancy stacktrace
   config.addPlugin(ErrorOverlayPlugin);
 
