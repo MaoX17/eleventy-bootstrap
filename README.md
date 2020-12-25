@@ -29,6 +29,11 @@ First install the dependencies:
 
 ```sh
 npm install
+
+npn i bootstrap jquery popper.js
+
+
+
 ```
 
 Then you can:
