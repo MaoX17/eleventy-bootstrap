@@ -1,7 +1,7 @@
 ---
 tags: post
-title: Hot Take—Social Media is Considered Harmful
-layout: default
+title: Post 1 di prova
+layout: template_posts_md
 htmlClass: html
 bodyClass: body
 ---
