@@ -6,7 +6,6 @@ htmlClass: html
 bodyClass: body
 ---
 
-
 # Prova md
 
 Ciaoooooo

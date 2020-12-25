@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="{{ htmlClass }}" lang="{{ site.lang }}">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if title %}{{ title }} · {{ site.title }}{% else %}{{ site.title or site.name}}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{{ description or site.description }}">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="author" content=" Maurizio Proietti ">
+
+    {# Open graph related #}
+    <meta property="og:title" content="{{ title or site.title or site.name }}" />
+    <meta property="og:type" content="{{ type or site.type }}" />
+    <meta property="og:url" content="{{ url or site.url }}" />
+    <meta property="og:image" content="{{ image or site.image }}" />
+    <meta property="og:site_name" content="{{ name or site.name }}" />
+    <meta property="og:description" content="{{ description or site.description }}" />
+
+
+    <meta name="theme-color" content="#fff" />
+
+    <link rel="manifest" href="https://www.strails.it/img/logo/manifest.json">
+    <meta name="msapplicati on-TileColor" content="#ffffff">
+
+    <link rel="canonical" href={{ url or site.url }}/>
+
+    <link rel="stylesheet" href="{% webpack 'main.css' %}">
+  </head>
+  <body id="app-layout">
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="{{site.url}}">
+    <img src={{site.image}} width="70" height="70" alt="GreMaPro">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{site.url}}">GreM@Pro - IT & Passion <span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+    <ul class="navbar-nav mr-sm-2">
+
+      <li class="nav-item">
+        <a class="nav-link" href="/portfolio">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/portfolio">Portfolio</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
