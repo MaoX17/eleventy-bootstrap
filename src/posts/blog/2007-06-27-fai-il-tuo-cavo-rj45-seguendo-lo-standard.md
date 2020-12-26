@@ -4,7 +4,7 @@ tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2007-06-27"
-permalink: "fai-il-tuo-cavo-rj45-seguendo-lo-standard/"
+permalink: "fai-il-tuo-cavo-rj45-seguendo-lo-standard"
 layout: "template_posts_md"
 ---
 <table id="toc" class="toc" summary="Indice">

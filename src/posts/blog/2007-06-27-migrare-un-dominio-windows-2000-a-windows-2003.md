@@ -4,7 +4,7 @@ tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2007-06-27"
-permalink: "migrare-un-dominio-windows-2000-a-windows-2003/"
+permalink: "migrare-un-dominio-windows-2000-a-windows-2003"
 layout: "template_posts_md"
 ---
 <h1></h1>
