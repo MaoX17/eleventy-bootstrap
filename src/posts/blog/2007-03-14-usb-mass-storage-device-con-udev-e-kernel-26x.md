@@ -1,0 +1,104 @@
+---
+title: "USB Mass Storage device con udev e Kernel 2.6.x"
+tags: "post"
+htmlClass: "html"
+bodyClass: "body"
+date: "2007-03-14"
+permalink: "usb-mass-storage-device-con-udev-e-kernel-26x/"
+layout: "template_posts_md"
+---
+<p>udev How to<br /> [origine: <a class="moz-txt-link-freetext" href="http://www.slacky.it/tutorial/udev/HOWTO-udev.html">http://www.slacky.it/tutorial/udev/HOWTO-udev.html</a>]</p>
+<hr />
+<p style="margin-bottom: 0in;" align="justify">Con questo Howto ho la presunzione di voler essere d&#8217;aiuto a chi desidera automatizzare il sistema di riconoscimento e di mounting di device USB quali pen drive, Hard Disk, Card Reader etc. </p>
+<hr />
+<h3 align="justify">Premessa </h3>
+<p align="justify">Ultimamente mi sono ritrovato a possedere sempre piu&#8217; dispositivi USB e ad avere la necessita&#8217; di automatizzare la gestione degli stessi. <br /> Piu&#8217; esattamente possego un Pen Drive, un HD esterno, una fotocamera digitale, un card reader e un lettore MP3. Tutti questi dispositivi funzionano benissimo sotto Linux essendo gestiti perfettamente come USB Mass Storage devices. <br /> La cosa piu&#8217; snervante e&#8217; che bisogna sempre andare a vedere dove il sistema crea i block device per poter montare correttamente il dispositivo. <br /> Ad esempio la prima partizione del mio HD viene riconosciuta come /dev/sda1, se pero&#8217; lo monto insieme al Pen Drive allora sara&#8217; riconosciuto come /dev/sdb1 e cosi&#8217; via. <br /> Questo mi impedisce di poter creare delle entry fisse nel mio fstab. <br /> Dopo un po&#8217; di ricerche ecco che finalmente trovo la soluzione con udev. </p>
+<p align="justify">
+<h3 align="justify">Requisiti </h3>
+<ol>
+<li>
+<p style="margin-bottom: 0in;" align="justify">Un PC (eh eh) con Linux (preferibilmente Slckware).</p>
+</li>
+<li>
+<p style="margin-bottom: 0in;" align="justify">Kernel della serie 2.6.x (io uso la 2.6.6) scaricabile da <a name="http://www.kernel.org"  href="http://www.kernel.org/">www.kernel.org</a> con supporto sysfs </p>
+</li>
+<li>
+<p style="margin-bottom: 0in;" align="justify">Hotplug scaricabile dalla current di Slackware </p>
+</li>
+<li>
+<p align="justify">udev scaricabile da <a  name="www.kernel.org/pub/linux/utils/kernel/hotplug/"  href="http://www.kernel.org/pub/linux/utils/kernel/hotplug/">www.kernel.org/pub/linux/utils/kernel/hotplug/</a>     </p>
+</li>
+</ol>
+<h3>Preparazione</h3>
+<p align="justify"><font color="#000000">Compiliamo la ns. Kernel come al solito ricordandoci di settare in <em><font color="#008000">General setup</font></em><font color="#008000"> </font>:</font></p>
+<p style="margin-left: 0.79in;" align="justify"><em><font  color="#008000">Support for hot-pluggable devices</font></em></p>
+<p align="justify"><font color="#000000">Assicuriamoci che sysfs sia montato. Per fare cio&#8217; aggiungiamo una linea al nostro <font  color="#008000">fstab</font> del tipo :<br /> <font color="#008000">none /sys sysfs defaults</font><br /> diamo un bel:<br /> <font color="#ff0000">mount -a</font> <br /> et voila&#8217;.</font></p>
+<p align="justify">
+<h3>Installazione</h3>
+<p>Una volta scaricati i sorgenti di udev scompattiamo il pacchetto con :<br /> <font color="#ff0000">tar -xzf udev-XXX.tar.gz </font><font  color="#000000">(dove XXX e&#8217; la versione di udev che avete scaricato).<br /> Andiamo nella directory appena creata con:<br /> <font color="#ff0000">cd udev-XXX</font> <br /> e diamo un bel:<br /> <font color="#ff0000">make</font> </font><br /> se non avvengono catastrofi nella compilazione possiamo tranquillamente installare il tutto con:<br /> <font color="#ff0000">make install</font><br /> A questo punto dobbiamo copiare lo script di avvio di udev nella nostra /etc/rc.d. Lo script opportuno si trova nella directory <font  color="#008000">extra</font> dei sorgenti e si chiama <font  color="#008000">start_udev </font>lo copiamo con :<br /> <font color="#ff0000">cp extra/start_udev /etc/rc.d</font><br /> Bisogna ora fare in modo che lo script sia eseguito all&#8217;avvio, modifichiamo il file <font color="#008000">rc.local</font> aggiungendo la linea <font color="#ff0000">/etc/rc.d/start_udev</font><font  color="#000000">.</font></p>
+</p>
+<h3>Configurazione</h3>
+<p>Passiamo dunque alla configurazione di udev. Nella directory /etc/udev troviamo il file udev.conf apriamolo con il ns. editor favorito e cerchiamo la linea:</p>
+<blockquote style="margin-bottom: 0in;"><p><code># udev_rules - The name and location of the udev rules file</code></p></blockquote>
+<blockquote style="margin-bottom: 0in;"><p><code>udev_rules="/etc/udev/rules.d/"</code></p></blockquote>
+<p>Modifichiamola con :</p>
+<blockquote style="margin-bottom: 0in;"><p><code>udev_rules="/etc/udev/udev.rules</code></p></blockquote>
+<p>Questo dira&#8217; ad udev dove trovare il file di definizione delle regole (ARRGH non sono riuscito a tradurlo meglio !)</p>
+<p>Ora dobbiamo scrivere le regole per l&#8217;identificazione delle ns. devices USB. Per fare questo dobbiamo conoscere qualcosa dei nostri dispositivi, piu&#8217; precisamente il &#8220;vendor&#8221; e il &#8220;model&#8221; che altro non sono che il &#8220;venditore&#8221; e il &#8220;modello&#8221;. Per avere queste informazioni possiamo avvalerci dell&#8217; utility <font color="#ff0000">udevinfo</font> procedendo come segue:<br /> attacchiamo il dispositivo che vogliamo identificare e digitiamo :<br /> dmesg<br /> qu dovremmo vedere alla fine un messaggio del tipo :</p>
+<blockquote><p><code> scsi1 : SCSI emulation for USB Mass Storage devices</code></p></blockquote>
+<blockquote><p><code> Vendor: WDC WD60 Model: 0AB-60CBA0 Rev: 03.0</code></p></blockquote>
+<blockquote><p><code> Type: Direct-Access ANSI SCSI revision: 02</code></p></blockquote>
+<blockquote><p><code>SCSI device sda: 117231409 512-byte hdwr sectors (60022 MB)</code></p></blockquote>
+<blockquote><p><code>sda: assuming drive cache: write through</code></p></blockquote>
+<blockquote><p><code> sda: sda1 sda2</code></p></blockquote>
+<blockquote><p><code>Attached scsi disk sda at scsi1, channel 0, id 0, lun 0</code></p></blockquote>
+<blockquote><p><code>Attached scsi generic sg0 at scsi1, channel 0, id 0, lun 0, type 0</code></p></blockquote>
+<blockquote><p><code>USB Mass Storage device found at 2</code></p></blockquote>
+<p>(questo e&#8217; l&#8217;output di dmesg dopo che ho attaccato il mio HD esterno).<br /> Sappiamo quindi che il dispositivo e&#8217; attacato su &#8220;/dev/sda epossiamo con udevinfo interrogare il path adeguato:<br /> udevinfo -a -p /sys/block/sda<br /> l&#8217;output sara&#8217; pressapoco questo:</p>
+<blockquote><p><code>udevinfo starts with the device the node belongs to and then walks up the</code></p></blockquote>
+<blockquote><p><code>device chain, to print for every device found, all possibly useful attributes</code></p></blockquote>
+<blockquote><p><code>in the udev key format.</code></p></blockquote>
+<blockquote><p><code>Only attributes within one device section may be used together in one rule,</code></p></blockquote>
+<blockquote><p><code>to match the device for which the node will be created.</code></p></blockquote>
+<blockquote>
+</blockquote>
+<blockquote><p><code> looking at class device '/sys/block/sda':</code></p></blockquote>
+<blockquote><p><code> SYSFS{dev}="8:0"</code></p></blockquote>
+<blockquote><p><code> SYSFS{range}="16"</code></p></blockquote>
+<blockquote><p><code> SYSFS{size}="117231409"</code></p></blockquote>
+<blockquote><p><code> SYSFS{stat}=" 68 7 75 273 0 0 0 0 0 273 273"</code></p></blockquote>
+<blockquote>
+</blockquote>
+<blockquote><p><code>follow the class device's "device"</code></p></blockquote>
+<blockquote><p><code> looking at the device chain at '/sys/devices/pci0000:00/0000:00:0b.0/usb2/2-1/2-1:1.0/host1/1:0:0:0':</code></p></blockquote>
+<blockquote><p><code> <b>BUS="scsi"</b></code></p></blockquote>
+<blockquote><p><code> ID="1:0:0:0"</code></p></blockquote>
+<blockquote><p><code> SYSFS{detach_state}="0"</code></p></blockquote>
+<blockquote><p><code> SYSFS{device_blocked}="0"</code></p></blockquote>
+<blockquote><p><code> SYSFS{max_sectors}="240"</code></p></blockquote>
+<blockquote><p><code> <b>SYSFS{model}="0AB-60CBA0 "</b></code></p></blockquote>
+<blockquote><p><code> SYSFS{queue_depth}="1"</code></p></blockquote>
+<blockquote><p><code> SYSFS{rev}="03.0"</code></p></blockquote>
+<blockquote><p><code> SYSFS{scsi_level}="3"</code></p></blockquote>
+<blockquote><p><code> SYSFS{state}="running"</code></p></blockquote>
+<blockquote><p><code> SYSFS{type}="0"</code></p></blockquote>
+<blockquote><p><code> <b>SYSFS{vendor}="WDC WD60"</b></code></p></blockquote>
+<p>Guardiamo nella sezione che contiene il BUS scsi .<br /> Qui abbiamo le informazioni che ci interessano per scrivere il nostro udev.rules, riapriamo il ns editor e aggiungiamo questa linea a <font  color="#008000">udev.rules</font>:<br /> <font color="#008000">BUS=&#8221;scsi&#8221;, SYSFS{vendor}=&#8221;WDC WD60&#8243;,SYSFS{model}=&#8221;0AB-60CBA0&#8243;, NAME=&#8221;exthd%n&#8221;<br /> </font><font color="#000000">Facciamo attenzione ad eventuali spazi nei nomi !! <br /> Abbiamo cosi&#8217; detto ad udev che quando questa device viene attaccata deve creare un node che si chiama &#8220;exthd%n&#8221; dove %n e&#8217; il numero di partizione che verra&#8217; rilevata.<br /> La prossima volta che attaccheremo il dispositivo compariranno (per miracolo ?) nella directory /udev due block devices che si chiamano exthd1 e exthd2.<br /> Possiamo ora usare queste block devices per montare il nostro disco al posto di /dev/sda1 e /dev/sda2<br /> A tal proposito scriviamo nel nostro fstab le seguenti linee :<br /> </font><font color="#008000">/udev/exthd1 /mnt/extern/FAT32 vfat noauto,users,gid=100,umask=3 0 0<br /> /udev/exthd2 /mnt/extern/Linux auto noauto,users</font><br /> (Nel mio caso la prima partizione dell&#8217;HD e&#8217; Fat32 e la seonda e&#8217; ext3)<br /> Arrivati fin qui non ci resta che montare il nostro dispositivo con:<br /> <font color="#ff0000">mount /udev/exthd1</font><br /> OHHHH funziona ! Ma se siamo veramente pigri e non vogliamo neanche dare il mount ?<br /> Ecco che udev puo&#8217; aiutarci anche nell&#8217;automount.</p>
+</p>
+<h3>AUTOMOUNT</h3>
+<p>Durante l&#8217;installazione di udev e&#8217; stata creata una directory /etc/dev.d/. E&#8217; li&#8217; che andremo a &#8220;smanettare&#8221; per poter far funzionare il nostro automount.<br /> Udev per ogni device &#8220;creata&#8221; si va a cercare in /etc/dev.d/ una directory che abbia lo stesso nome della device. Nel nostro esempio dopo aver attaccato l&#8217;HD esterno si a a cercare una directory /etc/dev.d/exthd1 e una volta trovata esegue tutto cio&#8217; che termina con estensione &#8220;.dev&#8221;<br /> Non ci resta quindi che crearci una directory con :<br /> mkdir /etc/dev.d/exthd1<br /> e all&#8217;interno di questa creare uno script pressappoco cosi&#8217; :</p>
+<blockquote><p><code>#!/bin/bash</code></p></blockquote>
+<blockquote><p><code>if [ "$ACTION" == "add" ] ; then</code></p></blockquote>
+<blockquote><p><code> logger -t dev.d "Mounting external HD"</code></p></blockquote>
+<blockquote><p><code> /bin/mount /mnt/extern/FAT32</code></p></blockquote>
+<blockquote><p><code>fi</code></p></blockquote>
+<blockquote><p><code>if [ "$ACTION" == "remove" ] ; then</code></p></blockquote>
+<blockquote><p><code> logger -t dev.d "Unmounting external HD"</code></p></blockquote>
+<blockquote><p><code> /bin/umount /mnt/extern/FAT32</code></p></blockquote>
+<blockquote><p><code>fi</code></p></blockquote>
+<p>Udev usa le stesse regole di Hotplug per quel che riguarda ACTION ( fate riferimento al man di Hotplug) <br /> Questo script verra&#8217; eseguito, ogni volta che la device verra&#8217; attaccata o staccata dal sistema. L&#8217;esecuzione avviene come utente root per cui facciamo in modo che nel fstab i permessi di accesso siano settati secondo le nostre esigenze.</p>
+<p>Buon divertimento !!!</p>
+<h3>Credits</h3>
+<p>Questo Howto e&#8217; stato scritto scopiazzando varie cose che ho trovato sulla rete e che mi sono state utili a capire il funzionamento di udev.<br /> Udev e&#8217; fornito di una piccola documentazione che si trova nella directory dei sorgenti, non molto in verita&#8217;, ma si puo&#8217; benissimo integrare con quel meraviglioso strumento che e&#8217; Internet.<br /> Attenzione udev non e&#8217; solo questo, in futuro rimpiazzera&#8217; del tutto (forse) il devfs tradizionale.<br /> Ringrazio tutti gli iscritti a Slacky.it che mi hanno aiutato dopo anni di Distro porfessionali a ributtarmi nell&#8217;avventura Slackware.</p>
+<p>A mio figlio Jan</p>
+<p>Sal Paradiso Giugno 2004</p>

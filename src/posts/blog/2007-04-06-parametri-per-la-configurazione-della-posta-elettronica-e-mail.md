@@ -1,0 +1,3461 @@
+---
+title: "Parametri per la configurazione della posta elettronica (e-mail)"
+tags: "post"
+htmlClass: "html"
+bodyClass: "body"
+date: "2007-04-06"
+permalink: "parametri-per-la-configurazione-della-posta-elettronica-e-mail/"
+layout: "template_posts_md"
+---
+<p align="left"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:85%;"  ><i>Parametri per poter mandare e ricevere le e-Mail<br />Fonte: <a class="moz-txt-link-freetext" href="http://www.mooseek.com/tecnologia/schede/00000032.htm">http://www.mooseek.com/tecnologia/schede/00000032.htm</a><br /></i></span></p>
+<p align="left"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:85%;"  >Fonte: <strong>Definitivo.it</strong></span></p>
+<table style="color: rgb(204, 204, 204);" border="1" cellpadding="0" cellspacing="1">
+<tbody>
+<tr bg="" style="color: rgb(204, 204, 204);">
+<td width="157"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><b><u>SERVER</u></b></span></td>
+<td width="136"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><b><u>INDIRIZZO</u></b></span></td>
+<td width="140"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><b><u>POP3</u></b></span></td>
+<td width="150"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><b><u>SMTP</u></b></span></td>
+<td width="89"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><b><u>IMAP4</u></b></span></td>
+<td width="171"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><b><u>DNS</u></b></span></td>
+<td width="93"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><b><u>ADSL</u></b></span></td>
+<td width="73"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><b><u>TELEFONO</u></b></span></td>
+<td width="229"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><b><u>NOTE</u></b></span></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >GMAIL</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://gmail.google.com/gmail">gmail.google.com/gmail</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.gmail.com</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.gmail.com (connessione ssl)</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >BLU</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.libero.it/">www.libero.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >popmail.blu.it &#8211; pop.blu.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.blu.it &#8211; smtp.blu.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >imapmail.blu.it</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >7027020000</span></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >INWIND.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.inwind.it/">www.inwind.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >popmail.inwind.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.inwind.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >imapmail.inwind.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >dns2.wind.it: 212.141.53.123 &#8211; dns2.wind.it: 212.245.158.66 &#8211; dns.wind.it: 212.245.255.2</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >7027020000</span></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >LIBERO ADSL</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.libero.it/">www.libero.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >popmail.libero.it &#8211; imapmail.iol.it &#8211;</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.libero.it</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ip : Dinamico &#8211; DNS1: 193.70.192.25 &#8211; DNS2: 193.70.152.25</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >protocollo USB:PPPoATM &#8211; VPI=8 &#8211; VCI=35 &#8211; Incapsulamento VC-Mux &#8211; Indirizzo ip : Dinamico &#8211; DNS Primario: 193.70.192.25 &#8211; DNS Secondario: 193.70.152.25 protocollo Ethernet: PPPoverEthernet &#8211; VPI=8 &#8211; VCI=35 &#8211; Incapsulamento LLC &#8211;</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >LIBERO.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.libero.it/">www.libero.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >popmail.libero.it (POP solo se connessi a wind) &#8211; imapmail.iol.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.libero.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >imapmail.libero.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DNS: dinamici &#8211; proxy.libero.it Porta: 8080 &#8211; 193.205.245.8 : DNS2 &#8211; 195.210.91.100 : ns1.libero.it &#8211; 212.245.255.2 : DNS Infostrada</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >7027020000</span></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >WIND.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.wind.it/">www.wind.it</a></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);" height="135"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MSN HOTMAIL</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.hotmail.com/">www.hotmail.com</a></span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >sea1fd.sea1.hotmail.msn.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+<p><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >Per chi ha office: &#8211; Faq</span></p>
+<p><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a class="moz-txt-link-freetext" href="http://officeupdate.microsoft.com/italy/2000/">http://officeupdate.microsoft.com/italy/2000/</a><br />downloaddetails/msoauth.htm <a class="moz-txt-link-freetext" href="http://xoomer.virgilio.it/_XOOM/dfs_oe/">http://xoomer.virgilio.it/_XOOM/dfs_oe/</a><br />PaginaOE5_H.htm</span></p>
+</td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MSN HOTMAIL IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.hotmail.it/">www.hotmail.it</a></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TELECOM ADSL SMART</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.cs.interbusiness.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.tuttopmi.it</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >151.99.0.100 e 151.99.125.1 DNS &#8211; ADSL smart di Telecom Italia</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >VPI = 8 &#8211; VCI = 35 &#8211; Protocollo = PPPoA o PPPoE(se modem adsl ethernet) o IPoA (router adsl lan) &#8211; Incapsulamento = Vc-MUX (RFC2364) o LLC (SNAP, per adsl lan ip stat) &#8211;</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TELECOM BUSINESS</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.191.it/">www.191.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.191.it &#8211;</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.191.it o mail.191.it</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >IP e DNS: dinamici &#8211; 212.131.30.42 : 1-DNS1.fullcompany.telecomitalia.it</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >701 0191 191</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >Titolari di una linea affari Telecom Italia tradizionale (RTG) o ISDN &#8211; modem (analogico o isdn).Inserire Telecom come username e password &#8211; .</span></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TELECOM CASA</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.187.it/">www.187.it</a></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >IP e DNS: dinamici &#8211; 212.131.30.42 : 1-DNS1.fullcompany.telecomitalia.it</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >701 0187 187</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >Linea residenziale Telecom Italia tradizionale (RTG) o ISDN &#8211; modem (analogico o isdn)</span></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TIM.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.tim.it/">www.tim.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.posta.tim.it &#8211; box.posta.tim.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >box.posta.tim.it &#8211; webmail1.posta.tim.it nel caso del servizio di posta UniTIM/iBox</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ALICE ADSL</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.alice.it/">www.alice.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >in.alice.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >out.alice.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >&#8220;username accesso = nomesceltodalcliente (senza la parte &#8220;&#8221;@alice.it&#8221;&#8221;) &#8211; User Connessione: aliceadsl &#8211; Pass Connessione: aliceadsl&#8221;</span></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ROSSOALICE</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.rossoalice.it/">www.rossoalice.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >in.aliceposta.it &#8211; box.tin.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >out.aliceposta.it &#8211; mail.tin.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TIN.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.tin.it/">www.tin.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.tin.it &#8211; box.tin.it (aliceadsl) &#8211; box.clubnet.tin.it &#8211; box2.tin.it (Da pop si scarica gratis solo se ti connetti con tin.it)</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.tin.it (?) &#8211; mail.tin.it (aliceadsl) &#8211; mail.clubnet.tin.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >Domain: clubnet.tin.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >131.154.1.3 &#8211; 194.243.154.62 : DNS.tin.it &#8211; 195.31.190.31 : DNSCA.tin.it &#8211; 212.216.112.112 : 1-DNSCA.tin.it &#8211; 212.216.172.162 : 2-DNSCACHE2.tin.it &#8211; 212.216.172.222 : 2-DNSCA2.tin.it &#8211; 212.216.172.62 : 2-DNSCACHE1.tin.it &#8211; 212.48.4.15</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >7020001033 FREE &#8211; 7020001099 A PAGAMENTO</span></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >VIRGILIO</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.virgilio.it/">www.virgilio.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >in.virgilio.it &#8211; popmail.virgilio.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >out.virgilio.it &#8211; smtp.virgilio.it</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >Domain: clubnet.tin.it</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >VEDI TIN.IT</span></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TISCALI ADSL &#8211; FREE/FLAT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.tiscali.it/">www.tiscali.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.tiscali.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.tiscali.it</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DNS1: 195.130.224.18 &#8211; DNS2: 195.130.225.129 &#8211; DNS1: 213.205.32.70 &#8211; DNS2: 213.205.36.70</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >VPI: 8 &#8211; VCI: 35 &#8211; Protocollo: PPP over ATM (RCF 2364) &#8211; Incapsulamento: Incapsulamento RFC 2364 PPPoATM NULL &#8211; Encapsulaton: VC-Multiplexing (VC-MUX) &#8211; Modulazione: Multimode &#8211; Automodulazione: attivata</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TISCALI.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.tiscali.it/">www.tiscali.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.tiscali.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.tiscali.it</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DNS1:195.130.224.18 &#8211; DNS2:195.130.225.129</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >7023456789</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >Tiscali smtp.tiscali.it &#8211; Tiscali.de smtp.tiscali.de &#8211; tiscali.es smtp.tiscali.es</span></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TELE2 ADSL</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.tele2.it/">www.tele2.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.tele2.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.tele2.it</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DNS primario = 130.244.127.161 &#8211; DNS secondario = 130.244.127.169</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >VPI = 8 &#8211; VCI = 35 &#8211; Incapsulamento = VCMUX / NULL &#8211; Protocollo = PPPoA (RFC 2364) &#8211; Modulazione = Multimode &#8211; Protocollo di autenticazione = CHAP</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ALICE.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.alice.it/">www.alice.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >in.alice.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ALICEPOSTA.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.aliceposta.it/">www.aliceposta.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >in.alice.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >JUMPY.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.jumpy.it/">www.jumpy.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.jumpy.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.jumpy.it</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DNS1: 212.17.192.216á &#8211; DNS2: 212.17.192.56</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >NUMERO VERDE 800-542121 &#8211; 7027010702</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >User: jumpy@jumpy: Pass:gratis</span></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >KATAWEB.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.kataweb.it/">www.kataweb.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.katamail.com &#8211; pop.katamail.com</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.katamail.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >LYCOS</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.lycos.it/">www.lycos.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.lycos.it &#8211; pop3.lycos.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.lycos.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MICROSOFT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.microsoft.com/">www.microsoft.com</a></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MSN.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.msn.com/">www.msn.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.email.msn.com</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.email.msn.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SUPEREVA.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.supereva.it/">www.supereva.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.supereva.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.supereva.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >702 111 0 111</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >(Super Eva ha disabilitato l&#8217;uso dei server per l&#8217;invio e ricezione di posta elettronica tramite programmi terzi)</span></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TELE2 EVERYDAY</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.everyday.com/">www.everyday.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.tele2.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.tele2.it</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DNS1: 130.244.127.161 &#8211; DNS2: 130.244.127.169</span></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >VODAFONE MAIL</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.omnitel.it/">www.omnitel.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >popmail.vodafone.it &#8211; (pop3.vizzavi.it old)</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.net.vodafone.it &#8211; (smtpmail.vodafone.it smtp.vizzavi.it old)</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >connect card di Vodafone l&#8217;SMTP da usare Þ: smtp.net.vodafone.it</span></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >VODAFONE.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.vodafone.it/">www.vodafone.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >popmail.vodafone.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtpmail.vodafone.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >YAHOO.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.yahoo.com/">www.yahoo.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.mail.yahoo.com</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.mail.yahoo.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >yahoo <a class="moz-txt-link-abbreviated" href="mailto:jonaslogan@yahoo.com.br">jonaslogan@yahoo.com.br</a> yahoo smtp.mail.yahoo.com.cn smtp.mail.yahoo.com.ar yahoo.co.uk smtp.mail.yahoo.co.uk Yahoo.de smtp.mail.yahoo.de yahoo.es smtp.correo.yahoo.es</span></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >YAHOO.COM.CN</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.yahoo.com.cn/">www.yahoo.com.cn</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.mail.yahoo.com.cn</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >YAHOO.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.yahoo.it/">www.yahoo.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.mail.yahoo.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.mail.yahoo.it Se ISP ha bloccato la porta 25 modificare porta SMTP del client ed utilizzare la 587</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >1UND1.DE</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.1und1.de/">www.1und1.de</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.1und1.de</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ABES.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.abes.it/">www.abes.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.abes.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ACCESS4LESS</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.access4less.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ACTIVE NETWORK</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.activenetwork.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ADELPHIA</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.adelphia.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >AERASRL.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.aerasrl.it/">www.aerasrl.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.aerasrl.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >AGENZIAZURICH.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.agenziazurich.it/">www.agenziazurich.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.agenziazurich.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >A-ICE.AERO</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.a-ice.aero/">www.a-ice.aero</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.panservice.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ALBACOM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.albacom.it/">www.albacom.it</a></span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >relay.albacom.net &#8211; smtp.albacom.net</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >212.17.192.209 : ns2.albacom.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ALCOTEK.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.alcotek.it/">www.alcotek.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.alcotek.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ALLMEDIASOLUTION.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.allmediasolution.com/">www.allmediasolution.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.allmediasolution.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ALTEVIE.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.altevie.com/">www.altevie.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.altevie.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >AMNESTY.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.amnesty.it/">www.amnesty.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >library.amnesty.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ANONIMAGDR.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.anonimagdr.com/">www.anonimagdr.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.anonimagdr.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ARPA.SICILIA.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.arpa.sicilia.it/">www.arpa.sicilia.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >arpa.sicilia.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ART-BIT.NET</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.art-bit.net/">www.art-bit.net</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.art-bit.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ARUBA.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.aruba.it/">www.aruba.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.aruba.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.aruba.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ASP.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.asp.it/">www.asp.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.asp.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ASSOGROUP.SM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.assogroup.sm/">www.assogroup.sm</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.assogroup.sm</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ASTRANET.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.astranet.it/">www.astranet.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.astranet.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ATLAVIA</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.atlavia.it/">www.atlavia.it</a></span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.atlavia.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >AUBAY.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.aubay.it/">www.aubay.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.aubay.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >AUNA</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.auna.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >AUTOMATASPA.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.automataspa.it/">www.automataspa.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.automataspa.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >BANGLADESH.NET</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.bangladesh.net/">www.bangladesh.net</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.bangladesh.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >BCCSANTERAMO.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.bccsanteramo.it/">www.bccsanteramo.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.bccsanteramo.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >BELLSOUTH</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.bellsouth.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >BERNARDISRL.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.bernardisrl.it/">www.bernardisrl.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mbox.edbusiness.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >BERTAIOLA.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.bertaiola.com/">www.bertaiola.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.bertaiola.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >BFSINFORMATICA.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.bfsinformatica.com/">www.bfsinformatica.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.bfsinformatica.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >BLIXER.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.blixer.it/">www.blixer.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.blixer.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >BLUEBOTTLE</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.bluebottle.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >BLUELIGHT.COM</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.mybluelight.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >BMSITALIA.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.bmsitalia.com/">www.bmsitalia.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a class="moz-txt-link-abbreviated" href="http://www.bmsitalia.com/">www.bmsitalia.com</a></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >BOL.COM.BR</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.bol.com.br</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >BONBON.NET</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.bonbon.net/">www.bonbon.net</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.bonbon.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >BSC.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.bsc.it/">www.bsc.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.bsc.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >BTTB</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.bttb.net.bd</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >CAIWAY</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.caiway.nl</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >CALTANET.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.caltanet.it/">www.caltanet.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mbox.caltanet.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >relay.caltanet.it</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DNS1: 192.106.1.1á &#8211; DNS2: 195.210.91.100</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >800.99.00.44</span></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >CANTV.NET</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.cantv.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >CHARTER</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.charter.net</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.charter.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >CHEAPNET.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.cheapnet.it/">www.cheapnet.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.cheapnet.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.cheapnet.it</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >dinamici oppure DNS1: 62.94.0.1 &#8211; DNS2: 62.94.0.2</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >702 000 5006</span></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >CHIPSOLUTION.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.chipsolution.it/">www.chipsolution.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >chipsolution.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >CIAOWEB</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.ciaoweb.it/">www.ciaoweb.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ciaopop3.ciaoweb.it &#8211; pop3.ciaoweb.net</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ciaosmtp.ciaoweb.it &#8211; smtp.ciaoweb.net &#8211; mail.ciaoweb.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >CITIESONLINE.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.citiesonline.it/">www.citiesonline.it</a></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >CIUDAD</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.ciudad.com.ar</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >CLEFFE.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.cleffe.it/">www.cleffe.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.cleffe.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >CLUB-INTERNET</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.club-internet.fr</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >COAS.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.coas.it/">www.coas.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.coas.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >COCCO.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.cocco.it/">www.cocco.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >cocco.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >COLDIRETTI.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.coldiretti.it/">www.coldiretti.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.coldiretti.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >COLUMBIA POWER AND WATER</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.cpws.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >COMCAST</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.comcast.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >COMELLIASSICURAZIONI.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.comelliassicurazioni.it/">www.comelliassicurazioni.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.comelliassicurazioni.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >COMM2000.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.comm2000.it/">www.comm2000.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.comm2000.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >CORREO.YAHOO.ES</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.correo.yahoo.es/">www.correo.yahoo.es</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.correo.yahoo.es</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >CSINFORMAZIONI.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.csinformazioni.it/">www.csinformazioni.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >popmail.csinformazioni.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >CUORINAVIGANTI.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.cuorinaviganti.it/">www.cuorinaviganti.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.cuorinaviganti.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DDS.NL</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.dds.nl/">www.dds.nl</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.dds.nl</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DEEJAYMAIL.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.deejaymail.it/">www.deejaymail.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.deejaymail.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DEEPTUNING.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.deeptuning.it/">www.deeptuning.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.deeptuning.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DIEBSPIEL24.DE</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.diebspiel24.de/">www.diebspiel24.de</a></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DIMI.UNIUD.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.dimi.uniud.it/">www.dimi.uniud.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ten.dimi.uniud.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DISP.UNIROMA2.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.disp.uniroma2.it/">www.disp.uniroma2.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.disp.uniroma2.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DRINKPINKONLINE.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.drinkpinkonline.com/">www.drinkpinkonline.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.drinkpinkonline.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >EARTSTUDIO.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.eartstudio.it/">www.eartstudio.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.eartstudio.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >EASYNET.RO</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.easynet.ro/">www.easynet.ro</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.easynet.ro</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ECOM.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.ecom.it/">www.ecom.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.ecom.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ECORETE.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.ecorete.it/">www.ecorete.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.ecorete.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >EDIMEDIA.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.edimedia.com/">www.edimedia.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.edimedia.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >EKAR.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.ekar.it/">www.ekar.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.ekar.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ELITEL</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.elitel.biz/">www.elitel.biz</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.elitel.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.elitel.it &#8211; smtp.elitel.biz</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >212.34.224.132 : ns.elitel.it DNS1 &#8211; 217.146.65.7 ns2.elitel.it DNS2 &#8211; 212.34.224.193 : elitel.it &#8211; 217.146.65.80 : ns3.elitel.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >EMAIL.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.email.it/">www.email.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >popmail.email.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.email.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >imapmail.email.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >Account <a class="moz-txt-link-abbreviated" href="mailto:username@email.it">username@email.it</a>á</span></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ETNOTEAM.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.etnoteam.it/">www.etnoteam.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.inet.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >EUSTEMA.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.eustema.it/">www.eustema.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.eustema.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >EXCITE</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.excite.it/">www.excite.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.tiscali.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.tiscali.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >FASTMAIL</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.messagingengine.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >FASTWEB</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.fastweb.it/">www.fastweb.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.fastwebnet.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.fastwebnet.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >FIBERTEL.COM.AR</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.fibertel.com.ar</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >FIN-INNOVATIONS.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.fin-innovations.com/">www.fin-innovations.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.fin-innovations.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >FINSA.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.finsa.it/">www.finsa.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.finsa.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >FIRENZE.NET</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.firenze.net/">www.firenze.net</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.izymail.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >FLAXMODEL.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.flaxmodel.com/">www.flaxmodel.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.flaxmodel.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >FREE</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.free.fr</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >FREEMAIL.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.freemail.it/">www.freemail.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >freemail.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >notifica via SMS &#8211; pop account <a class="moz-txt-link-abbreviated" href="mailto:myuser@freemail.it">myuser@freemail.it</a></span></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >FREENET.DE</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mx.freenet.de</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >FREEPASS.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.freepass.it/">www.freepass.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.freepass.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >FUORISSIMO.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.fuorissimo.com/">www.fuorissimo.com</a></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >GABAMA.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.gabama.com/">www.gabama.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ilmarsupio.gabama.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >GALACTICA.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.galactica.it/">www.galactica.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.galactica.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.galactica.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >GAZETA.PL</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.gazeta.pl/">www.gazeta.pl</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.poczta.gazeta.pl</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >GIGA</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.giga.net.tw</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >GMX.DE</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.gmx.de/">www.gmx.de</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.gmx.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >GMX.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.gmx.it/">www.gmx.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.gmx.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.gmx.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >GMX.NET</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.gmx.net/">www.gmx.net</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.gmx.net</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.gmx.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >GO.COM</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.go.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >GRUPPOACSI.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.gruppoacsi.com/">www.gruppoacsi.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a class="moz-txt-link-abbreviated" href="http://www.gruppoacsi.com/">www.gruppoacsi.com</a></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >GRUPPOSISTEMATICA.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.grupposistematica.it/">www.grupposistematica.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.grupposistematica.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >GUIDODELLAVOLPE.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.guidodellavolpe.com/">www.guidodellavolpe.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.guidodellavolpe.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >HAIER ELECTRONICS</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.haier-electronics.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >HINET</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ms1.hinet.net &#8211; msa.hinet.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >HOME.RO</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.home.ro/">www.home.ro</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.home.ro</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >HOTPOP.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.hotpop.com/">www.hotpop.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.hotpop.com</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.hotpop.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >IAMONLINE.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.iamonline.it/">www.iamonline.it</a></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ICQMAIL.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.icqmail.com/icqmail/">www.icqmail.com/icqmail/</a></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >IG</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.ig.com.br</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >IINI.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.iini.com/">www.iini.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.iini.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ILGIORNALEDICINISI.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.ilgiornaledicinisi.it/">www.ilgiornaledicinisi.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.ilgiornaledicinisi.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >INFINITO.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.infinito.it/">www.infinito.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.infinito</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.infinito</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >INFOMEDIA.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.infomedia.it/">www.infomedia.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >handsoff.infomedia.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >INTERBUSINESS &#8211; TI EASYNET (TIN)</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.191.it/">www.191.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail1.cs.interbusiness.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >INTERFREE.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.interfree.it/">www.interfree.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.interfree.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.interfree.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >INTERNETLIBERO</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.internetlibero.it/">www.internetlibero.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.internetlibero.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.internetlibero.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >INTRAGE.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.intrage.com/">www.intrage.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.intrage.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >IOL</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.inwind.it/">www.inwind.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >popmail.iol.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.iol.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >imapmail.iol.it</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >7027020000</span></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ISAFSRL.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.isafsrl.com/">www.isafsrl.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.isafsrl.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ISTCONSULTING.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.istconsulting.it/">www.istconsulting.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.istconsulting.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ISTRUZIONE.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.istruzione.it/">www.istruzione.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.istruzione.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ITALYMAIL</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.italymail.biz</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ITSTAFF.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.itstaff.it/">www.itstaff.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.itstaff.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >IXPRES.COM</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.ixpres.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >JUNO.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://webmail.juno.com/">webmail.juno.com</a></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >KAINESHADOW.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.kaineshadow.it/">www.kaineshadow.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.kaineshadow.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >KATAMAIL.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.katamail.com/">www.katamail.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.katamail.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >KLIK</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://vene.klik.it/">vene.klik.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.klik.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.klik.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >news.klik.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >62.94.0.1 &#8211; 62.94.0.2</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >800908962</span></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >LIBERTYSURF.FR</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.libertysurf.fr/">www.libertysurf.fr</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.libertysurf.fr</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >LIFEGATE.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.lifegate.it/">www.lifegate.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.lifegate.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >LILLINET</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.lillinet.org/">www.lillinet.org</a></span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.weblinea.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >LOKISRL.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.lokisrl.com/">www.lokisrl.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.lokisrl.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >LOMBARDIACOM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.lombardiacom.it/">www.lombardiacom.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.lombardiacom.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.lombardiacom.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >PROXY Server: proxy.lombardiacom.it porta 8080</span></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >LUCULLO.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.lucullo.it/">www.lucullo.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.lucullo.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MACISTE</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.maciste.it/">www.maciste.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.maciste.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MACROMEDIA</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.macromedia.com/">www.macromedia.com</a></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MAIL.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.mail.com/">www.mail.com</a></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MAIL.RU</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.mail.ru/">www.mail.ru</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.mail.ru</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MAILSNARE</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.mailsnare.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MAN-CON.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.man-con.com/">www.man-con.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.man-con.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MC3INFO.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.mc3info.com/">www.mc3info.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.mc3info.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MCLINK</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.mclink.it/">www.mclink.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.mclink.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.mclink.it</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >195.110.128.1 : dns.mclink.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >METACRAWLER</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.metacrawler.com/">www.metacrawler.com</a></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >METEONETWORK.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.meteonetwork.it/">www.meteonetwork.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.meteonetwork.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >METSYSTEM.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.metsystem.it/">www.metsystem.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.metsystem.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MOMAX</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.momax.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MONRIF.NET</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.monrif.net/">www.monrif.net</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.monrif.net</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.monrif.net</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DNS1:195.110.96.66 &#8211; DNS2:195.110.96.67</span></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MONTELIBRETTI.ORG</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.montelibretti.org/">www.montelibretti.org</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.montelibretti.org</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MONZA.NET</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.monza.net/">www.monza.net</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.metropolink.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MSOFT.IT</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.weblinea.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MULTITECH.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.multitech.it/">www.multitech.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.multitech.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MULTITECH-AD.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.multitech-ad.com/">www.multitech-ad.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.multitech-ad.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >MUNDOFREE.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.mundofree.com/">www.mundofree.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.mundofree.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >NAFURA.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.nafura.it/">www.nafura.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.nafura.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >NEOMEDIA ADSL</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.neomedia.it/">www.neomedia.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >neomedia.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >neomedia.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >neomedia.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DNS1: 213.234.128.211 &#8211; DNS2: 195.120.250.10</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >VPI: 8 &#8211; VCI: 35 &#8211; MODEM:PPPoA (PPP over ATM) &#8211; Mult.: VC-based &#8211; Mod: Multimode (o G.Lite o G.DMT) &#8211; IP e DNS: dinamico &#8211; ROUTER : Prot: RFC1483 Routed &#8211; LLC-based &#8211; Multimode (o G.Lite o G.DMT) &#8211; IP: Forn. Neomedia</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >NET2B.PT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.net2b.pt/">www.net2b.pt</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >net2b.pt</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >NET4FREE</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.net4free.it/">www.net4free.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.net4free.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.net4free.it</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DNS1: 212.24.2.129 &#8211; DNS2: 212.24.3.129</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >Proxy server: proxy.net4free.it Porta: 80 Protocolli: HTTP/FTP</span></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >NETCOMSOLUTION.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.netcomsolution.it/">www.netcomsolution.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.netcomsolution.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >NETEK.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.netek.it/">www.netek.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.netek.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >NETEXPLORA CHILE</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.netexplora.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >NETVIGATOR</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.netvigator.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >NETVIS+O (PORTUGAL)</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.netvisao.pt</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >NETZERO.COM</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.netzero.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >NEWS.INDIVIDUAL.NET</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://news.individual.net/">news.individual.net</a></span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >news.uni-stuttgart.de &#8211; ex:NEWS.FU-BERLIN.DE</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >NEXT.DOM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.next.dom/">www.next.dom</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.next.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >NEXT.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.next.it/">www.next.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.next.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >NGI.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.ngi.it/">www.ngi.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >popnew.ngi.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.ngi.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >NOPAY</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.nopay.it/">www.nopay.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.nopay.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.nopay.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >NTL (UK)</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.ntlworld.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >OKSATCOM.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.oksatcom.it/">www.oksatcom.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.oksatcom.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ONE-ANS.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.one-ans.it/">www.one-ans.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mailserver.one-ans.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ONO</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.ono.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >OPERA21.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.opera21.it/">www.opera21.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.opera21.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >OPERAMAIL</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.operamail.com/">www.operamail.com</a></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ORANGE-TECH.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.orange-tech.com/">www.orange-tech.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.orange-tech.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >OUTGOING.VERIZON.NET</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >tchrshelli</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >PELLIGRAROBERTO.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.pelligraroberto.it/">www.pelligraroberto.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >webmail.pmiweb.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >PEOPLE-VENE</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.people.it/">www.people.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.people.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TuoProvider</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >POCHTAMT.RU</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.pochtamt.ru/">www.pochtamt.ru</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.pochta.ru</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >POCZTA.ONET.PL</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.poczta.onet.pl/">www.poczta.onet.pl</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.poczta.onet.pl</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >POST MAN</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.postman.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >POSTE.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.poste.it/">www.poste.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >relay.poste.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >relay.poste.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >POSTINO.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.postino.it/">www.postino.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.postino.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.postino.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >PREITO.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.preito.com/">www.preito.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail2.preito.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >PROGETTOCASA-SNC.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.progettocasa-snc.com/">www.progettocasa-snc.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.progettocasa-snc.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >PROTOCOL.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.protocol.it/">www.protocol.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.protocol.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.protocol.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >QUIPO.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.quipo.it/">www.quipo.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >quipo.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >quipo.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >User:quipo &#8211; Pass:quipo &#8211; proxy.quipo.it &#8211; á porta 80</span></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >R (CABLE GALICIA)</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.mundo-r.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >RADIO DEEJAY MAIL</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.deejaymail.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >RAGIONIERI.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.ragionieri.com/">www.ragionieri.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >posta.ragionieri.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >RCP (PERU)</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >amauta.rcp.net.pe</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >REPLY.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.reply.it/">www.reply.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >owas.reply.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >RETEITALY</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.reteitaly.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >REZIA.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.rezia.it/">www.rezia.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.rezia.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >RIBESINFORMATICA.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.ribesinformatica.it/">www.ribesinformatica.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.ribesinformatica.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >RIMINI.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.rimini.com/">www.rimini.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.rimini.com</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.rimini.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ROCKETMAIL.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.rocketmail.com/">www.rocketmail.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >POP E l&#8217;SMTP non esistono</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >RUNBOX</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.runbox.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SAILOR</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.sailor.it/">www.sailor.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.freepass.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.freepass.it</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DNS 1: 151.17.83.2 &#8211; DNS 2: 151.17.83.4</span></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SALESIANI.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.salesiani.it/">www.salesiani.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.salesiani.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SBC YAHOO DSL</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.sbcglobal.yahoo.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SEDIIN.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.sediin.it/">www.sediin.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.sediin.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SERCO.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.serco.it/">www.serco.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail1.serco.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SHYLEX TELECOMUNICACIONES</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.shylex.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SICILYONLINE.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.sicilyonline.it/">www.sicilyonline.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.sicilyonline.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SIFREE.IT</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.simail.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SIFY.COM</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.satyam.net.in</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SIMAIL.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.simail.it/">www.simail.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.simail.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SIMAXSRL.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.simaxsrl.com/">www.simaxsrl.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >simaxsrl.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SIMOPALA.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.simopala.it/">www.simopala.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.simopala.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SIOR.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.sior.it/">www.sior.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.sior.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SKYNET.BE</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >relay.skynet.be</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SOFTHOME.NET</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.softhome.net/">www.softhome.net</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.SoftHome.net</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.SoftHome.net &#8211; mail.softhome.net</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DNS : 62.94.0.1 / 62.94.0.2 EmailRunFast &#8211; DNS : 213.234.128.211 / 213.234.132.130</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >7020005027 &#8211; 7022852801</span></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SOUTHWESTERN BELL</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.swbell.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SPACEINFORMATICA.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.spaceinformatica.com/">www.spaceinformatica.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.spaceinformatica.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SPYMAC.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.spymac.com/">www.spymac.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.spymac.com</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.spymac.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SQUALEX.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.squalex.com/">www.squalex.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.squalex.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >STINGERGROUP.NET</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.stingergroup.net/">www.stingergroup.net</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.stingergroup.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >STINGER-IT.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.stinger-it.com/">www.stinger-it.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.stinger-it.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >STUDIOLURAGHI.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.studioluraghi.it/">www.studioluraghi.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.studioluraghi.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SUNRISE (CH)</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.sunrise.ch</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SYMPATICO</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp1.sympatico.ca</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TARIFFENET.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.tariffenet.it/">www.tariffenet.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.tariffenet.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TDC</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >backup-mx.post.tele.dk</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TECHEDGE.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.techedge.it/">www.techedge.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.techedge.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TECREDO.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.tecredo.com/">www.tecredo.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.tecredo.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TELEFONICA</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.telefonica.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TELENET(BELGIUM)</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >uit.telenet.be</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TELEWEST</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.blueyonder.co.uk</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TELKOM</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smpt.telkom.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TELUS</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.telus.net &#8211; mail.telus.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TELVIA.IT</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.telvia.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TEMPLARIOS.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.templarios.com/">www.templarios.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.templarios.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TERRA &#8211; BR &#8211; RECIFE</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.rec.terra.com.br &#8211; smtp.sao.terra.com.br</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TERRA &#8211; ESPAÐA</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.mailhost.terra.es</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TERRA.COM</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >imap &#8211; smtp</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TERRA.ES</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.terra.es/">www.terra.es</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.terra.es</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TIMENET ADSL</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp2.xdslnet.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >T-ONLINE</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mailto.t-online.de</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TOPCONSULTING.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.topconsulting.it/">www.topconsulting.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.topconsulting.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TOUGHGUY.NET</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.toughguy.net/">www.toughguy.net</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.toughguy.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TRIM.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.trim.it/">www.trim.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mailbus.fastweb.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >TXT.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.txt.it/">www.txt.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.txt.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >UNIROMA2.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.uniroma2.it/">www.uniroma2.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.uniroma2.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >USA.NET</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.usa.net/">www.usa.net</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.amexmail.com (a pagamento) SOLO WEBMAIL</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >n/a</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >UTU.FI</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.utu.fi</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >VEBE</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://vene.dave.it/">vene.dave.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.people.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >VERIZON DSL</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >outgoing.verizon.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >VI.NET</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.vi.net/">www.vi.net</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.vi.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >VIC-NORA.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.vic-nora.it/">www.vic-nora.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.vic-nora.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >VIDEOBANK</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >videobank.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >VIOL.UZ</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.viol.uz/">www.viol.uz</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.viol.uz</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >VIVACITY</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.Vivacity.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >WANADOO (FRANCE)</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.wanadoo.fr</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >WAPPI.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.wappi.com/">www.wappi.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.wappi.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >WDBSYSTEM.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.wdbsystem.it/">www.wdbsystem.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.wdbsystem.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >WEB.DE</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.web.de</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >WEB-GRATIS.NET</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.web-gratis.net/">www.web-gratis.net</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.web-gratis.net</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >WEBMAIL.INET.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://webmail.inet.it/">webmail.inet.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.inet.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.inet.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >194.20.8.1 : urano.inet.it &#8211; 194.20.8.4 : venere.inet.it</span></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >WEBMAIL.TRE.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://webmail.tre.it/">webmail.tre.it</a></span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.tre.it</span></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >DNS1: 130.244.127.161??? &#8211; DNS2: 130.244.127.169???</span></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >WEBZONE</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.webzone.it/">www.webzone.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >michetti.webzone.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >151.99.135.2</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >WISYPROD.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.wisyprod.com/">www.wisyprod.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.wisyprod.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >WOOOW.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.wooow.it/">www.wooow.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.wooow.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.wooow.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >WORLDONLINE.IT</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.worldonline.it/">www.worldonline.it</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop.worldonline.it</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.worldonline.it</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >WP.PL</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.wp.pl/">www.wp.pl</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >pop3.wp.pl</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >XMSG</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.xmsg.com/">www.xmsg.com</a></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >X-PRIVAT</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >mail.x-privat.org</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >XS4ALL</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.xs4all.nl &#8211; mail.xs4all.nl</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >YA.COM</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.ya.com</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ZERO.AD.JP</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >zero.ad.jp</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ZONNET</span></td>
+<td></td>
+<td></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >smtp.zonnet.nl</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bg="" style="color: rgb(191, 255, 128);"><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >ZZN.COM</span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.zzn.com/">www.zzn.com</a></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bgcolor="#bfff80"></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://mail.excite.com/">mail.excite.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SOLO WEBMAIL</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bgcolor="#bfff80"></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.dontgotmail.com/">www.dontgotmail.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SOLO WEBMAIL</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bgcolor="#bfff80"></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.ezy-mail.com/">www.ezy-mail.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SOLO WEBMAIL</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bgcolor="#bfff80"></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.graffiti.net/">www.graffiti.net</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SOLO WEBMAIL</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bgcolor="#bfff80"></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.icqmail.com/">www.icqmail.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SOLO WEBMAIL</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bgcolor="#bfff80"></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  ><a href="http://www.onebox.com/">www.onebox.com</a></span></td>
+<td><span style=";font-family:Verdana,Arial,Helvetica,sans-serif;font-size:78%;"  >SOLO WEBMAIL</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bgcolor="#bfff80"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bgcolor="#bfff80"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td bgcolor="#bfff80" height="21"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
