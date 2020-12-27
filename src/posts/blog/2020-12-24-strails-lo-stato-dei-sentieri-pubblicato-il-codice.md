@@ -1,5 +1,5 @@
 ---
-title: "Strails &#8211; Lo stato dei sentieri &#8211; Pubblicato il codice sorgente su GitHub"
+title: "Strails - Lo stato dei sentieri - Pubblicato il codice sorgente su GitHub"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
