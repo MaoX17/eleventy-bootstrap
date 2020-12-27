@@ -7,6 +7,9 @@ eleventyExcludeFromCollections: true
 {% for page in collections.all %}
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>
+    <lastmod>2020-12-27</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.0</priority>
   </url>
 {% endfor %}
 </urlset>
