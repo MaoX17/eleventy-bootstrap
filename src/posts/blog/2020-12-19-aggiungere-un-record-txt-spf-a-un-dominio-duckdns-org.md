@@ -5,6 +5,8 @@ htmlClass: "html"
 bodyClass: "body"
 date: "2020-12-19"
 permalink: "aggiungere-un-record-txt-spf-a-un-dominio-duckdns-org/"
+unsplash: duck
+faicon: "fas fa-network-wired"
 layout: "template_posts_md"
 ---
 

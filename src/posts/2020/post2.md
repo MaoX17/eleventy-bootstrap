@@ -3,6 +3,8 @@ tags: post
 title: Post 2 di prova
 layout: template_posts_md
 htmlClass: html
+unsplash: 11ty
+faicon: "fab fa-docker"
 bodyClass: body
 img: https://res.cloudinary.com/maox17/image/upload/v1608901432/strails/logo468_t_puc73x.png
 ---

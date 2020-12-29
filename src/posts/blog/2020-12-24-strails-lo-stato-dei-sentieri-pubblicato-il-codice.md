@@ -5,6 +5,8 @@ htmlClass: "html"
 bodyClass: "body"
 date: "2020-12-24"
 permalink: "strails-lo-stato-dei-sentieri-pubblicato-il-codice/"
+unsplash: github
+faicon: "fab fa-github"
 layout: "template_posts_md"
 ---
 <div class="markdown-body"><h1>
