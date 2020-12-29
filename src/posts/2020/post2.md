@@ -1,12 +1,13 @@
 ---
 tags: post
-title: Post 2 di prova
+title: Test più complesso... Copiato
 layout: template_posts_md
 htmlClass: html
 unsplash: 11ty
-faicon: "fab fa-docker"
+faicon: fab fa-docker
 bodyClass: body
 img: https://res.cloudinary.com/maox17/image/upload/v1608901432/strails/logo468_t_puc73x.png
+modified: 2020-12-29T17:54:48+01:00
 ---
 
 # eleventy-base-blog
@@ -137,7 +138,7 @@ $ contentful space create --name "11ty-gallery"
 ? Do you want to confirm the space creation? Yes
 Your user account is a member of multiple organizations. Please select the organization you would like to add your Space to.
 ? Please select an organization: Shy's DevRel Playground (orgid)
-✨  Successfully created space 11ty-gallery (rea8ci0yln66)
+:sparkles:  Successfully created space 11ty-gallery (rea8ci0yln66)
 ```
 * Set the newly created space as default space for all further CLI operations. You'll be presented with a list of all available spaces – choose the one you just created.
 ```console
@@ -166,23 +167,23 @@ $ contentful space import --content-file import/export-content-models-only.json
 ├─────────────────────────────────┼────────────────┤
 │ Assets                          │ 0              │
 └─────────────────────────────────┴────────────────┘
- ✔ Validating content-file
- ✔ Initialize client (1s)
- ✔ Checking if destination space already has any content and retrieving it (1s)
- ✔ Apply transformations to source data (1s)
- ✔ Push content to destination space
-   ✔ Connecting to space (1s)
-   ✔ Importing Locales (1s)
-   ✔ Importing Content Types (4s)
-   ✔ Publishing Content Types (2s)
-   ✔ Importing Editor Interfaces (1s)
-   ✔ Importing Assets (4s)
-   ✔ Publishing Assets (0s)
-   ✔ Archiving Assets (1s)
-   ✔ Importing Content Entries (4s)
-   ✔ Publishing Content Entries (1s)
-   ✔ Archiving Entries (0s)
-   ✔ Creating Web Hooks (0s)
+ :heavy_check_mark: Validating content-file
+ :heavy_check_mark: Initialize client (1s)
+ :heavy_check_mark: Checking if destination space already has any content and retrieving it (1s)
+ :heavy_check_mark: Apply transformations to source data (1s)
+ :heavy_check_mark: Push content to destination space
+   :heavy_check_mark: Connecting to space (1s)
+   :heavy_check_mark: Importing Locales (1s)
+   :heavy_check_mark: Importing Content Types (4s)
+   :heavy_check_mark: Publishing Content Types (2s)
+   :heavy_check_mark: Importing Editor Interfaces (1s)
+   :heavy_check_mark: Importing Assets (4s)
+   :heavy_check_mark: Publishing Assets (0s)
+   :heavy_check_mark: Archiving Assets (1s)
+   :heavy_check_mark: Importing Content Entries (4s)
+   :heavy_check_mark: Publishing Content Entries (1s)
+   :heavy_check_mark: Archiving Entries (0s)
+   :heavy_check_mark: Creating Web Hooks (0s)
 Finished importing all data
 ┌───────────────────────┐
 │ Imported entities     │
