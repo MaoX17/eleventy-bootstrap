@@ -1,13 +1,14 @@
 ---
 tags: post
-title: Post 1 di prova
+title: Primo post su 11ty
 layout: template_posts_md
 unsplash: 11ty
-faicon: "fab fa-docker"
+faicon: fab fa-docker
 htmlClass: html
 bodyClass: body
+modified: 2020-12-29T17:54:23+01:00
 ---
 
-# Prova md
+# Primo post di prova
 
-Ciaoooooo
+Prova 123
