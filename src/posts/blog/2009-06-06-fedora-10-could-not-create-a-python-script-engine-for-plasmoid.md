@@ -1,11 +1,14 @@
 ---
-title: "Fedora 10 &#8211; Could not create a python script engine for plasmoid"
+title: "Fedora 10 - Could not create a python script engine for plasmoid"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2009-06-06"
 permalink: "fedora-10-could-not-create-a-python-script-engine-for-plasmoid/"
 layout: "template_posts_md"
+icon:
+  - linux
+  
 ---
 <p>This is my solution:</p>
 <p>Remove any plasmoid and its directory in $HOME/.kde/share/apps/</p>

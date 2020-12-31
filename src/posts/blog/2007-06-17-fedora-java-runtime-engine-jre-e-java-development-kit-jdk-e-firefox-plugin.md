@@ -1,11 +1,13 @@
 ---
-title: "Fedora java runtime engine jre e java development kit jdk e firefox plugin"
+title: "Fedora JRE JDK e firefox plugin"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2007-06-17"
 permalink: "fedora-java-runtime-engine-jre-e-java-development-kit-jdk-e-firefox-plugin/"
 layout: "template_posts_md"
+icon:
+  - linux
 ---
 <p>Installo i pacchetti necessari:<br />yum install compat-libstdc++-296.i386 compat-libstdc++-33.i386<br />Installiamo la jre e la jdk<br />Andiamo su<br /><a href="http://java.sun.com/javase/downloads/index.jsp">http://java.sun.com/javase/downloads/index.jsp</a><br />e scarichiamo la jdk (ultima versione formato rpm)</p>
 <p>chmod ugo+x jdk-6u1-linux-i586-rpm.bin<br />./jdk-6u1-linux-i586-rpm.bin<br />rispondere yes per accettare la licenza</p>

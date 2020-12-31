@@ -1,11 +1,14 @@
 ---
-title: "Problemi con grub &#8211; Risolverli con slax"
+title: "Problemi con grub - Risolverli con slax"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2009-09-14"
 permalink: "problemi-con-grub-risolverli-con-slax/"
 layout: "template_posts_md"
+icon:
+  - linux
+  - slackware
 ---
 <p>loadkeys it<br />
 mount -o bind /dev /mnt/sda1/dev<br />
@@ -16,4 +19,4 @@ grub-install /dev/sda<br />
 <p>SE GRUB DA ERRORE<br />
 /dev/sda1 does not have any corresponding BIOS drive.</p>
 <p>allora usa il seguente comando:<br />
-grub-install &#8211;recheck /dev/sda</p>
+grub-install -recheck /dev/sda</p>

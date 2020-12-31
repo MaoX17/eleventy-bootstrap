@@ -6,6 +6,10 @@ bodyClass: "body"
 date: "2017-03-23"
 permalink: "amministrazione-trasparente-adeguamenti-delibera-anac-1310/"
 layout: "template_posts_md"
+icon:
+  - wordpress
+  - mysql
+
 ---
 <p>Per adeguare il plugin di wordpress &#8220;Amministrazione Trasparente&#8221; realizzato da Marco Milesi (wpgov.it) (rif. <a href="https://it.wordpress.org/plugins/amministrazione-trasparente/" target="_blank">Plugin Amministrazione Trasparente di Marco Milesi</a> ) alla Delibera n. 1310 – “Prime linee guida recanti indicazioni sull’attuazione degli obblighi di pubblicità, trasparenza e diffusione di informazioni contenute nel d.lgs. 33/2013 come modificato dal d.lgs. 97/2016”<br />
 ( <a href="http://www.anticorruzione.it/portal/public/classic/AttivitaAutorita/AttiDellAutorita/_Atto?ca=6667" target="_blank">http://www.anticorruzione.it/portal/public/classic/AttivitaAutorita/AttiDellAutorita/_Atto?ca=6667</a> ) che deve essere rispettata entro il 31/03/2017,ho realizzato alcune modifiche al plugin originale.</p>

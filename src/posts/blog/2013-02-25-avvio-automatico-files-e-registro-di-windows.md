@@ -1,11 +1,13 @@
 ---
-title: "Avvio automatico &#8211; files e registro di windows"
+title: "Avvio automatico - files e registro di windows"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2013-02-25"
 permalink: "avvio-automatico-files-e-registro-di-windows/"
 layout: "template_posts_md"
+icon:
+  - win
 ---
 <p>Automatic Startup<br />
 <code><br />
@@ -40,13 +42,13 @@ Windows XP 	C:\Documents and Settings\LoginName\Start Menu\Programs\Startup</p>
 <p>The following are files that programs can autostart from on bootup:</p>
 <p>1. c:\autoexec.bat<br />
 2. c:\config.sys<br />
-3 . windir\wininit.ini &#8211; Usually used by setup programs to have a file run once and then get deleted.<br />
+3 . windir\wininit.ini - Usually used by setup programs to have a file run once and then get deleted.<br />
 4. windir\winstart.bat<br />
-5. windir\win.ini &#8211; [windows] &#8220;load&#8221;<br />
-6. windir\win.ini &#8211; [windows] &#8220;run&#8221;<br />
-7. windir\system.ini &#8211; [boot] &#8220;shell&#8221;<br />
-8 . windir\system.ini &#8211; [boot] &#8220;scrnsave.exe&#8221;<br />
-9. windir\dosstart.bat &#8211; Used in Win95 or 98 when you select the &#8220;Restart in MS-DOS mode&#8221; in the shutdown menu.<br />
+5. windir\win.ini - [windows] &#8220;load&#8221;<br />
+6. windir\win.ini - [windows] &#8220;run&#8221;<br />
+7. windir\system.ini - [boot] &#8220;shell&#8221;<br />
+8 . windir\system.ini - [boot] &#8220;scrnsave.exe&#8221;<br />
+9. windir\dosstart.bat - Used in Win95 or 98 when you select the &#8220;Restart in MS-DOS mode&#8221; in the shutdown menu.<br />
 10. windir\system\autoexec.nt<br />
 11. windir\system\config.nt</p>
 <p>Utility per controllare startup</p>

@@ -1,11 +1,14 @@
 ---
-title: "Error 1325. &#8216;Documenti&#8217; is not a valid short file name. &#8211; SOLUTION"
+title: "Error 1325 - Document is not a valid short file name - SOLUTION"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2008-06-05"
 permalink: "error-1325-documenti-is-not-a-valid-short-file-name-solution/"
 layout: "template_posts_md"
+icon:
+  - win
+  - sistemi
 ---
 <p>Ho ottenuto il seguente errore da qualche giorno.<br />Non riuscivo + a installare niente, l&#39;errore era sempre lo stesso:</p>
 <p>Tipo evento:    Errore<br />Origine evento:    MsiInstaller<br />Categoria evento:    Nessuno<br />ID evento:    11325<br />Data:        05/06/2008<br />Ora:        23.33.30<br />Utente:        NEO\Administrator<br />Computer:    NEO<br />Descrizione:<br />Product: Windows Installer Clean Up &#8212; Error 1325. &#39;Documenti&#39; is not a <br />valid short file name.</p>

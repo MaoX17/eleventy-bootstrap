@@ -1,11 +1,13 @@
 ---
-title: "Q10064 &#8211; HOWTO: Reset Cache Mode in Outlook"
+title: "Q10064 - HOWTO: Reset Cache Mode in Outlook"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2007-03-31"
 permalink: "q10064-howto-reset-cache-mode-in-outlook/"
 layout: "template_posts_md"
+icon:
+  - win
 ---
 <p>thanks<br /><a href="http://www.lanlogic.net/support/docs/article.aspx?id=10064">http://www.lanlogic.net/support/docs/article.aspx?id=10064</a></p>
 <p>You may need to turn off cache mode and turn it back on if your Outlook<br />client is running slow, or if you are suddenly unable to send or receive<br />emails.  Going through the steps will essentially remove the Outlook<br />cache from your computer, and then rebuild it.  The cache is the local<br />copies of your emails.</p>

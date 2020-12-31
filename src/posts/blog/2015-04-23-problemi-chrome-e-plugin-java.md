@@ -6,6 +6,10 @@ bodyClass: "body"
 date: "2015-04-23"
 permalink: "problemi-chrome-e-plugin-java/"
 layout: "template_posts_md"
+icon:
+  - chrome
+  - java
+
 ---
 <p>Abilitazione di NPAPI in Chrome versione 42 e successive<br />
 A partire dalla versione 42 di Chrome, è richiesto un passo di configurazione supplementare per continuare a usare i plugin NPAPI.</p>

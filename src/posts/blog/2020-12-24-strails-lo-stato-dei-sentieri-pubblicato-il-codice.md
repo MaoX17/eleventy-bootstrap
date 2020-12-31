@@ -7,6 +7,11 @@ date: "2020-12-24"
 permalink: "strails-lo-stato-dei-sentieri-pubblicato-il-codice/"
 unsplash: github
 faicon: "fab fa-github"
+icon:
+  - code
+  - strails
+  - github
+
 layout: "template_posts_md"
 ---
 <div class="markdown-body"><h1>

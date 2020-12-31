@@ -6,6 +6,11 @@ bodyClass: "body"
 date: "2015-12-04"
 permalink: "nginx-wordpress-alti-volumi-traffico-centos-6x/"
 layout: "template_posts_md"
+icon:
+  - linux
+  - nginx
+  - wordpress
+
 ---
 <h3>Risorse da consultare</h3>
 <p>http://codex.wordpress.org/Nginx#URL_Rewrites_.2F_Permalinks<br />

@@ -1,5 +1,5 @@
 ---
-title: "Sendmail &#8211; Forzare l&#8217;invio della posta"
+title: "Sendmail - Forzare invio della posta"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"

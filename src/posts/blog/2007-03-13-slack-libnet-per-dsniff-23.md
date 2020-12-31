@@ -1,5 +1,5 @@
 ---
-title: "[Slack] &#8211; Libnet per dsniff-2.3"
+title: "[Slack] - Libnet per dsniff-2.3"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"

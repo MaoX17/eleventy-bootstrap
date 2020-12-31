@@ -1,11 +1,14 @@
 ---
-title: "Installare software da CVS &#8211; Errore &#8211; Checking for forbidden M4 macros&#8230;"
+title: "Errore - Checking for forbidden M4 macros"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2007-03-14"
 permalink: "installare-software-da-cvs-errore-checking-for-forbidden-m4-macros/"
 layout: "template_posts_md"
+icon:
+  - linux
+  - sistemi
 ---
 <p>dopo aver scaricato il sw occorre lanciare ./autogen.sh</p>
 <p>pu&#242; capitare che il comando restituisca il seguente errore:</p>

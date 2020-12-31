@@ -1,11 +1,13 @@
 ---
-title: "Quicker Database Oracle Installs on Unbrekable Linux with the oracle-validated RPM"
+title: "Oracle Installs on Linux with RPM"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2007-06-06"
 permalink: "quicker-database-oracle-installs-on-unbrekable-linux-with-the-oracle-validated-rpm/"
 layout: "template_posts_md"
+icon:
+  - linux
 ---
 <p>Fonte:<br /> <a class="moz-txt-link-freetext" href="http://www.orablogs.com/sergio/archives/linux/index.html">http://www.orablogs.com/sergio/archives/linux/index.html</a></p>
 <p>In an earlier post I <a  href="http://www.orablogs.com/sergio/archives/001882.html">wrote about the Oracle channel on the Unbreakable Linux Network (ULN) and how to subscribe to it</a>. This channel just got a great new addition in the form of the oracle-validated RPM. When you install this RPM using up2date and ULN, it will automatically install all packages required by the Oracle database installer. </p>

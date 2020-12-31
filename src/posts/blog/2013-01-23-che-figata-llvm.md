@@ -1,11 +1,14 @@
 ---
-title: "Che figata l&#8217;LVM!!"
+title: "Che figata LVM"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2013-01-23"
 permalink: "che-figata-llvm/"
 layout: "template_posts_md"
+icon:
+  - linux
+  - vmware
 ---
 <p>Comandi base per estendere e ridurre il filesystem su LVM2</p>
 <p>Aumento dello spazio disco:</p>

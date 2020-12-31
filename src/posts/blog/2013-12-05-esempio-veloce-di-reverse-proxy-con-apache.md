@@ -6,6 +6,10 @@ bodyClass: "body"
 date: "2013-12-05"
 permalink: "esempio-veloce-di-reverse-proxy-con-apache"
 layout: "template_posts_md"
+icon:
+  - linux
+  - apaxhe
+  
 ---
 <p><code><br />
 ###########<br />

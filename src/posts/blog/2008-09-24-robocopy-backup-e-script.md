@@ -1,11 +1,13 @@
 ---
-title: "Robocopy &#8211; backup e script"
+title: "Robocopy - backup e script"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2008-09-24"
 permalink: "robocopy-backup-e-script/"
 layout: "template_posts_md"
+icon:
+  - win
 ---
 <p>Scaricare robocopy da:</p>
 <p><a title="robocopy" href="http://www.microsoft.com/downloads/details.aspx?familyid=9d467a69-57ff-4ae7-96ee-b18c4790cffd&amp;displaylang=en" target="_blank">http://www.microsoft.com/downloads/details.aspx?familyid=9d467a69-57ff-4ae7-96ee-b18c4790cffd&amp;displaylang=en</a></p>

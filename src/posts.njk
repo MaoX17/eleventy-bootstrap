@@ -14,22 +14,35 @@ bodyClass: body
 
   </br>
 
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Argument</th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+
+        {%- for post in collections.post | reverse -%}
+        <tr>
+        <th scope="row">
+          <a href={{ post.url }}><i class="{{ post.data.faicon }}"></i> {{ post.data.title }} </a>
+        </th>
+        <td>
+          {%- for iconImg in post.data.icon -%}
+            {% icon iconImg %}
+          {%- endfor -%}
+        </td>
+        <td>
+          <span class="badge badge-primary badge-pill">{{ post.data.date }}</span>
+        </td>
+        </tr>
+        {%- endfor -%}
 
 
- <ul class="list-group">
-    {%- for post in collections.post | reverse -%}
-      <li class="list-group-item d-flex justify-content-between align-items-center">
-       {% if loop.index0 < 10 %}
-          <a href={{ post.url }}><i class="{{ post.data.faicon }}"></i> {{ post.data.title }} {% icon post.data.icon %}</a>
-      {% else%}
-        <a href={{ post.url }}>{{ post.data.title }} </a>
-      {% endif%}
-
-        <span class="badge badge-primary badge-pill">{{ post.data.date }}</span>
-      </li>
-    {%- endfor -%}
-  </ul>
-
+  </tbody>
+</table>
 
 
 

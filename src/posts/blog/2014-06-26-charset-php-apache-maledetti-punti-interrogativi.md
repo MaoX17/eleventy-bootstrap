@@ -1,11 +1,15 @@
 ---
-title: "Charset php apache &#8211; maledetti punti interrogativi"
+title: "Charset php apache - maledetti punti interrogativi"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2014-06-26"
 permalink: "charset-php-apache-maledetti-punti-interrogativi/"
 layout: "template_posts_md"
+icon:
+  - linux
+  - php
+  - apache
 ---
 <p>Alcune soluzioni per i charset corretti (per non visualizzare le lettere accentate come dei punti interrogativi)<br />
 Prima Soluzione:<br />

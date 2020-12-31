@@ -1,11 +1,13 @@
 ---
-title: "[sendmail] &#8211; modificare mailertable per impostare il mailgateway di un dominio"
+title: "[sendmail] - mailertable -  mailgateway di un dominio"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2007-07-02"
 permalink: "sendmail-modificare-mailertable-per-impostare-il-mailgateway-di-un-dominio/"
 layout: "template_posts_md"
+icon:
+  - linux
 ---
 <p>root@proxy2:~# cat /etc/mail/mailertable<br />dns.pippo.it  procmail:<br />pippo.it      esmtp:[172.21.1.15]<br />pippo2.it esmtp:[172.21.1.15]<br />katamail.com    esmtp:[relay.katamail.com]</p>
 <p>makemap hash /etc/mail/mailertable.db &lt; /etc/mail/mailertable</p>

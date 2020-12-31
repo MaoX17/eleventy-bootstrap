@@ -1,11 +1,15 @@
 ---
-title: "Outlook Web Access (OWA): Dividere Front-end (su internet) da Back-end (in LAN): Aumentare la sicurezza di OWA"
+title: "Outlook Web Access: Dividere Front-end da Back-end"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2007-03-14"
 permalink: "outlook-web-access-owa-dividere-front-end-su-internet-da-back-end-in-lan-aumentare-la-sicurezza-di-owa/"
 layout: "template_posts_md"
+icon:
+  - linux
+  - apache
+  - win
 ---
 <p><font size="4"><span style="font-weight: bold;"></span><span  style="font-weight: bold;"></span></font><font size="3">Hardware &amp; Software utilizzati:</font></p>
 <p> Server con installato Windows 2000 server e Microsoft Exchange 5.5 e <br /> Outlook Web Access che gestisce le caselle di posta di tutti gli utenti<br /> della rete.<br /> Server Pentium II 300 MHz con installato Slackware.</p>

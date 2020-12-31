@@ -1,17 +1,20 @@
 ---
-title: "Win XP &#8211; SOLUZIONE svchosts.exe 100% CPU"
+title: "Win XP - SOLUZIONE svchosts.exe 100% CPU"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2013-12-16"
 permalink: "win-xp-soluzione-svchosts-exe-100-cpu/"
 layout: "template_posts_md"
+icon:
+  - win
+  - sistemi
 ---
 <p>Se hai già l&#8217;ultimo SP:</p>
 <ul>
 <li>Stoppa il servizio &#8220;Aggiornamenti Automaciti&#8221;</li>
-<li>Scarica Internet Explorer 8 per Windows XP o per Windows Server 2003: &#8211; <a href="http://tinyurl.com/IE8WINXPITA" target="_blank"><em>Internet Explorer 8 in italiano per Windows XP</em></a><br />
-&#8211; <a href="http://tinyurl.com/IE8WIN2003ITA" target="_blank"><em>Internet Explorer 8 in italiano per Windows Server 2003</em></a></li>
+<li>Scarica Internet Explorer 8 per Windows XP o per Windows Server 2003: - <a href="http://tinyurl.com/IE8WINXPITA" target="_blank"><em>Internet Explorer 8 in italiano per Windows XP</em></a><br />
+- <a href="http://tinyurl.com/IE8WIN2003ITA" target="_blank"><em>Internet Explorer 8 in italiano per Windows Server 2003</em></a></li>
 <li><em>Non sono interessato a partecipare</em></li>
 <li><strong>lasciare spuntata la casella &#8220;Installa aggiornamenti&#8221;</strong></li>
 <li>riavvia il sistema</li>

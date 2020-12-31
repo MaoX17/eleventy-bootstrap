@@ -1,11 +1,13 @@
 ---
-title: "Error &#8211; mount nfs from linux client to windows server"
+title: "Error - mount nfs from linux client to windows server"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2009-02-24"
 permalink: "error-mount-nfs-from-linux-client-to-windows-server/"
 layout: "template_posts_md"
+icon:
+  - linux
 ---
 <p>Ho avuto un problema con il mount di una share nfs windows server 2003 r2 da parte di un client linux.<br />
 Ottenevo sempre un problema di timeout o un errore di i/o.<br />

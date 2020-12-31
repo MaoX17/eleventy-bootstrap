@@ -6,6 +6,10 @@ bodyClass: "body"
 date: "2015-12-04"
 permalink: "install-and-configure-backup-bacula-7-webacula-bacula-web/"
 layout: "template_posts_md"
+icon:
+  - linux
+  - bacula
+
 ---
 <p># Bacula Step by Step</p>
 <p>Per maggiori informazioni, aggiornamenti ed esempi di configurazione clicca qui<br />

@@ -1,11 +1,13 @@
 ---
-title: "[TROJAN] &#8211; avv.Ubaldo Santarelli &#8211; rimozione manuale 2"
+title: "[TROJAN] - avv.Ubaldo Santarelli - rimozione manuale 2"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2007-06-14"
 permalink: "trojan-avvubaldo-santarelli-rimozione-manuale-2/"
 layout: "template_posts_md"
+icon:
+  - win
 ---
 <p>[Fonte:</p>
 <p><a href="http://www.pcalsicuro.com/main/2007/05/avv-ubaldo-santarelli-un-altro-avvocato-torna-a-colpire/">http://www.pcalsicuro.com/main/2007/05/avv-ubaldo-santarelli-un-altro-avvocato-torna-a-colpire/</a>]<br />Dopo alcuni mesi tornano le e-mail di diffida, delle cui precedenti <br />varianti avevamo gi&#224; parlato QUI e QUI.</p>
@@ -30,12 +32,12 @@ layout: "template_posts_md"
 <p>     8993993** Wind Telecomunicazioni S.p.A<br />     8990325** CSINFO S.p.A<br />     8994511** Wind Telecomunicazioni S.p.A</p>
 <p>Prevx1 rimuove il trojan.</p>
 <p>*** RIMOZIONE MANUALE ***</p>
-<p>&#8211; Attraverso regedit (START &#8211; Esegui &#8211; &quot;regedit&quot;) eliminiamo &#8211; se <br />presenti &#8211; le seguenti chiavi di registro:</p>
+<p>- Attraverso regedit (START - Esegui - &quot;regedit&quot;) eliminiamo - se <br />presenti - le seguenti chiavi di registro:</p>
 <p>     HKEY_CLASSES_ROOT\CLSID\{16C7013F-912E-42ac-AA8E-A10A180DFF51}</p>
-<p>&#8211; Riavviamo il computer. Al riavvio cancelliamo il file</p>
+<p>- Riavviamo il computer. Al riavvio cancelliamo il file</p>
 <p>     C:\WINDOWS\system32\winsvc\svc\google.exe</p>
-<p>&#8211; Cancelliamo la falsa icona di Internet Explorer sul desktop. La <br />riconosciamo cliccando con il tasto destro sull&#39;icona e cliccando su <br />propriet&#224;. Se vedremo nel campo destinazione la voce analcord.com quella <br />&#232; l&#39;icona da eliminare. Lo stesso facciamo nel menu start &#8211; programmi, <br />cerchiamo il collegamento che richiama analcord.com.</p>
-<p>&#8211; Apriamo risorse del computer, dove prima c&#39;era la connessione veloce <br />ora ci dovrebbe essere un riquadro bianco. Facciamo click con il tasto <br />destro e poi elimina.</p>
-<p>&#8211; Dobbiamo modificare la home page di Internet Explorer, la quale punta <br />ancora a gooogle.bz. Per fare ci&#242;, senza scomodare il registro di <br />sistema, possiamo aprire Internet Explorer cliccando con il tasto destro <br />sull&#39;icona del programma e cliccando su propriet&#224; internet. Rimuoviamo <br />gooogle.bz quindi dalla home page e modifichiamo anche l&#39;elenco dei siti <br />attendibili, andando su Protezione &#8211; Siti attendibili &#8211; Siti.</p>
+<p>- Cancelliamo la falsa icona di Internet Explorer sul desktop. La <br />riconosciamo cliccando con il tasto destro sull&#39;icona e cliccando su <br />propriet&#224;. Se vedremo nel campo destinazione la voce analcord.com quella <br />&#232; l&#39;icona da eliminare. Lo stesso facciamo nel menu start - programmi, <br />cerchiamo il collegamento che richiama analcord.com.</p>
+<p>- Apriamo risorse del computer, dove prima c&#39;era la connessione veloce <br />ora ci dovrebbe essere un riquadro bianco. Facciamo click con il tasto <br />destro e poi elimina.</p>
+<p>- Dobbiamo modificare la home page di Internet Explorer, la quale punta <br />ancora a gooogle.bz. Per fare ci&#242;, senza scomodare il registro di <br />sistema, possiamo aprire Internet Explorer cliccando con il tasto destro <br />sull&#39;icona del programma e cliccando su propriet&#224; internet. Rimuoviamo <br />gooogle.bz quindi dalla home page e modifichiamo anche l&#39;elenco dei siti <br />attendibili, andando su Protezione - Siti attendibili - Siti.</p>
 <p>Dovremmo aver rimosso manualmente l&#39;infezione.</p>
 <p>&#8212;<br />principio di Napoleone:<br />non attribuire a malintenzione cio&#39; che puo&#39;<br />essere semplicemente spiegato come imbecillita&#39;<br />&#8212;<br />MaoX Blog:<br /><a href="http://maox.blogspot.com">http://maox.blogspot.com</a></p>

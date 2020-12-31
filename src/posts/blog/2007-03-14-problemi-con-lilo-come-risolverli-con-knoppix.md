@@ -1,11 +1,13 @@
 ---
-title: "Problemi con lilo&#8230; Come risolverli con Knoppix"
+title: "Problemi con lilo - Risolverli con Knoppix"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2007-03-14"
 permalink: "problemi-con-lilo-come-risolverli-con-knoppix/"
 layout: "template_posts_md"
+icon:
+  - linux
 ---
 <p>Avviare knoppix (meglio con knoppix lang=it)</p>
 <p>editare /etc/fstab<br />

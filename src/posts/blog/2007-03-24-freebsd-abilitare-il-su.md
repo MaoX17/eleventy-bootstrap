@@ -1,13 +1,18 @@
 ---
-title: "[Freebsd] &#8211; abilitare il su"
+title: "[Freebsd] - abilitare il su"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2007-03-24"
 permalink: "freebsd-abilitare-il-su/"
 layout: "template_posts_md"
+icon:
+  - linux
+  - freebsd
+  
+
 ---
-<p>su &#8211; how to become a super user. avoid using root</p>
+<p>su - how to become a super user. avoid using root</p>
 <p>If you&#39;re like most people new to Unix, you do everything as root.  You<br />shouldn&#39;t.   I know I don&#39;t follow my own advice, but I&#39;m trying to<br />improve.</p>
 <p>Create yourself another account.  Use that instead of root.  Unless you<br />really need root.  You can always invoke su to become a super user.  <br />That way, you don&#39;t have to log out and back in every time you need the<br />power.</p>
 <p>wheel</p>

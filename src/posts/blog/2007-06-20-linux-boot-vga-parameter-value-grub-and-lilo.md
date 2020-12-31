@@ -1,11 +1,13 @@
 ---
-title: "linux boot vga parameter value &#8211; grub and lilo"
+title: "linux boot vga parameter value - grub and lilo"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2007-06-20"
 permalink: "linux-boot-vga-parameter-value-grub-and-lilo/"
 layout: "template_posts_md"
+icon:
+  - linux
 ---
 <p>Valori del parametro vga= da passare a lilo o grub</p>
 <p>This is the table of value for the vga parameter<br />in your lilo.conf or grub.conf (or menu.lst)<br />put:<br />vga=xxx</p>

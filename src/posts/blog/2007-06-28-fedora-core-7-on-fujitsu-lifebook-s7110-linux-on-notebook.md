@@ -1,13 +1,15 @@
 ---
-title: "Fedora Core 7 on Fujitsu Lifebook S7110 &#8211; Linux on notebook"
+title: "Fedora Core 7 on Fujitsu Lifebook S7110 - Linux on notebook"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2007-06-28"
 permalink: "fedora-core-7-on-fujitsu-lifebook-s7110-linux-on-notebook/"
 layout: "template_posts_md"
+icon:
+  - linux
 ---
-<div><span style="font-weight: bold;font-size:100%;">Installing Fedora 7 on Fujitsu Siemens Lifebook S 7110</span>Last updated: 27/06/2007 &#8211; <span style="color: #ff0033;">Work In Progress</span></p>
+<div><span style="font-weight: bold;font-size:100%;">Installing Fedora 7 on Fujitsu Siemens Lifebook S 7110</span>Last updated: 27/06/2007 - <span style="color: #ff0033;">Work In Progress</span></p>
 <p>General Hardware Specifications of Lifebook S 7110:</p></div>
 <table border="1" width="90%">
 <tbody>
@@ -137,7 +139,7 @@ layout: "template_posts_md"
 <p><a href="http://blog.maurizio.proietti.name/?p=108"><strong>Aircrack-ng su Fedora Core 7 con driver atheros madwifi-ng(ath_pci)</strong></a></p>
 <p><a href="http://blog.maurizio.proietti.name/?p=109"><br />
 <strong>Kismet su Fedora 7 con driver atheros (ath_pci)</strong></a></p>
-<div class="headings"><strong><a href="http://blog.maurizio.proietti.name/?p=110">Suspend to ram &#8211; sospensione in ram su Fedora 7</a></strong></p>
+<div class="headings"><strong><a href="http://blog.maurizio.proietti.name/?p=110">Suspend to ram - sospensione in ram su Fedora 7</a></strong></p>
 <p><strong>Abilitare Frame Buffer a 1024&#215;768 su Fedora Core 7<br />
 </strong></p>
 <p>More Specific Information. Specific stuff such as:</p></div>

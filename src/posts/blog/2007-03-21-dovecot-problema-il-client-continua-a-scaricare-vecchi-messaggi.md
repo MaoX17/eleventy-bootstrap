@@ -1,11 +1,14 @@
 ---
-title: "Dovecot &#8211; problema &#8211; il client continua a scaricare vecchi messaggi"
+title: "Dovecot - problema - il client continua a scaricare vecchi messaggi"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2007-03-21"
 permalink: "dovecot-problema-il-client-continua-a-scaricare-vecchi-messaggi/"
 layout: "template_posts_md"
+icon:
+  - linux
+  
 ---
 <p>Allora, forse ho individuato il problema&#8230;</p>
 <p>[maillog]<br />Mar 19 08:50:59 zion dovecot: pop3-login: Login: user=&lt;xxx@xxx.com&gt;&#8230;<br />Mar 19 08:50:59 zion dovecot: pop3(xxx@xxx.com): mbox sync: Expunged <br />message reappeared in mailbox<br />/var/spool/mail/vhosts/xxx/xxx (U ID 7953 &lt; 7976, seq=1, idx_msgs=0)<br />Mar 19 08:51:11 zion dovecot: pop3(xxx@xxx.com): mbox sync: UID inserted <br />in the middle of mailbox /var/spool/mail/vhosts/xxx.com/xxx (7976 &gt; <br />7953, seq=1, idx_msgs=8)<br />[/maillog]</p>

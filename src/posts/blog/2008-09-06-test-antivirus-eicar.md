@@ -1,11 +1,14 @@
 ---
-title: "Test Antivirus &#8211; EICAR"
+title: "Test Antivirus - EICAR"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2008-09-06"
 permalink: "test-antivirus-eicar/"
 layout: "template_posts_md"
+icon:
+  - linux
+  
 ---
 <p>EICAR-STANDARD-ANTIVIRUS-TEST<br />
 Copy and paste in a text file<br />

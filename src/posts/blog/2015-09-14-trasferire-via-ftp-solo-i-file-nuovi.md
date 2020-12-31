@@ -6,6 +6,10 @@ bodyClass: "body"
 date: "2015-09-14"
 permalink: "trasferire-via-ftp-solo-i-file-nuovi/"
 layout: "template_posts_md"
+icon:
+  - linux
+  - ftp
+
 ---
 <p><code> wget -m --ftp-user=xxxx --ftp-password=yyy ftp://ftp.dominio.it/www.dominio.it/</code></p>
 <p><code></p>

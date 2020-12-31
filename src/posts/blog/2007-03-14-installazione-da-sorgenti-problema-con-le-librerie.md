@@ -1,5 +1,5 @@
 ---
-title: "Installazione da sorgenti &#8211; problema con le librerie"
+title: "Installazione da sorgenti - problema con le librerie"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"

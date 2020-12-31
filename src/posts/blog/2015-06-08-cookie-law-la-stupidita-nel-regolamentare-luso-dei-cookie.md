@@ -1,11 +1,17 @@
 ---
-title: "Cookie Law &#8211; La stupidità nel regolamentare l’uso dei cookie"
+title: "Cookie Law - La stupidità nel regolamentare l’uso dei cookie"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2015-06-08"
 permalink: "cookie-law-la-stupidita-nel-regolamentare-luso-dei-cookie/"
 layout: "template_posts_md"
+icon:
+  - cookie
+  - law
+  - css
+
+
 ---
 <p>Premetto che <strong>ritengo la “cookie law” una delle cose più stupide ed inutili mai viste.</strong><br />
 <strong> Paragonabile FORSE solo alla norma sugli amministratori di sistema in quando a idiozia.</strong><br />

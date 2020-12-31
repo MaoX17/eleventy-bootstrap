@@ -6,6 +6,11 @@ bodyClass: "body"
 date: "2020-12-17"
 permalink: "come-ti-dockerizzo-un-progetto-laravel-esistente/"
 layout: "template_posts_md"
+icon:
+  - docker
+  - laravel
+  - mysql
+
 ---
 
 <p>La mia base di partenza è stata il seguente git (che ringrazio per l&#8217;idea)</p>

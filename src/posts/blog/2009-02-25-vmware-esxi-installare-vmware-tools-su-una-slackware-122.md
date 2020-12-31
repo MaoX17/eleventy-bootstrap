@@ -1,11 +1,15 @@
 ---
-title: "VMWare esxi &#8211; installare vmware tools su una slackware 12.2"
+title: "Installare vmware tools su una slackware 12.2"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2009-02-25"
 permalink: "vmware-esxi-installare-vmware-tools-su-una-slackware-122/"
 layout: "template_posts_md"
+icon:
+  - linux
+  - slackware
+  - vmware
 ---
 <p>Questa è una guida per installare i VMWare Tools su Slackware 12.2</p>
 <p>Questi sono i passaggi da seguire:</p>

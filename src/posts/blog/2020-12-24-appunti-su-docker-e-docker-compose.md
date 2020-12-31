@@ -7,6 +7,11 @@ date: "2020-12-24"
 permalink: "appunti-su-docker-e-docker-compose/"
 unsplash: docker
 faicon: "fab fa-docker"
+icon:
+  - docker
+  - wordpress
+  - traefik
+  - laravel
 layout: "template_posts_md"
 ---
 <div class="markdown-body"><h1>

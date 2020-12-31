@@ -1,11 +1,15 @@
 ---
-title: "Installazione di Ocserv &#8211; openconnect server vpn"
+title: "Installazione di Ocserv openconnect server vpn"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2014-12-03"
 permalink: "installazione-di-ocserv-openconnect-server-vpn/"
 layout: "template_posts_md"
+icon:
+  - linux
+  - vpn
+  - net
 ---
 <h3>Installazione</h3>
 <pre>

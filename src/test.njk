@@ -1,14 +1,21 @@
 ---
-tags: post
-title: test x unsplash
+title: test x unsplash api e altri tentativi
 layout: template_posts_md
 htmlClass: html
 unsplash: 11ty
 faicon: "fas fa-code"
-icon: code
 bodyClass: body
+icon:
+  - code2
+  - code
+  - nodejs
 img: https://res.cloudinary.com/maox17/image/upload/v1608901432/strails/logo468_t_puc73x.png
 ---
+
+
+{%- for iconImg in post.data.icon -%}
+            {% icon iconImg %}
+          {%- endfor -%}
 
 
 

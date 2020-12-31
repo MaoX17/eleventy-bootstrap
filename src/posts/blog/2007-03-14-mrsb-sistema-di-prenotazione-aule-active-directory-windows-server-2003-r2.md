@@ -1,11 +1,15 @@
 ---
-title: "MRSB &#8211; Sistema di prenotazione aule active directory windows server 2003 R2"
+title: "MRSB - Sistema di prenotazione - active directory 2003 R2"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2007-03-14"
 permalink: "mrsb-sistema-di-prenotazione-aule-active-directory-windows-server-2003-r2/"
 layout: "template_posts_md"
+icon:
+  - win
+  - php
+  - apache
 ---
 <p>Hi,<br />first of all, i&#39;m sorry for my bad english!</p>
 <p>I solved some problem occurred in ldap authentication with ADS Windows <br />2003 R2.</p>

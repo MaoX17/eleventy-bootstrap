@@ -1,5 +1,5 @@
 ---
-title: "[Slack] &#8211; Installazione dsniff"
+title: "[Slack] - Installazione dsniff"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"

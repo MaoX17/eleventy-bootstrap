@@ -1,11 +1,13 @@
 ---
-title: "Win XP &#8211; Eliminare la guida in linea dal menu Start"
+title: "Win XP - Eliminare la guida in linea dal menu Start"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2009-02-17"
 permalink: "win-xp-eliminare-la-guida-in-linea-dal-menu-start/"
 layout: "template_posts_md"
+icon:
+  - win
 ---
 <p>La cosa che sopporto meno in assoluto è la MALEDETTA Guida in Linea.<br />
 Tutte le volte che voglio cliccare su Start -&gt; Esegui&#8230; sbaglio e clicco su guida in linea&#8230;<br />

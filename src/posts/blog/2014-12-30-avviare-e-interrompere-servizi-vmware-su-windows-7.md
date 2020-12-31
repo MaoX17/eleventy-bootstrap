@@ -6,6 +6,10 @@ bodyClass: "body"
 date: "2014-12-30"
 permalink: "avviare-e-interrompere-servizi-vmware-su-windows-7/"
 layout: "template_posts_md"
+icon:
+  - win
+  - vmware
+  - code
 ---
 <p>Script batch per avviare i servizi di VMWare</p>
 <pre>

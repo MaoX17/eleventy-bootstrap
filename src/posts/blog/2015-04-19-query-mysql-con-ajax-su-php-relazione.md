@@ -6,5 +6,10 @@ bodyClass: "body"
 date: "2015-04-19"
 permalink: "query-mysql-con-ajax-su-php-relazione/"
 layout: "template_posts_md"
+icon:
+  - mysql
+  - php
+  - jquery
+
 ---
-<p><a href="http://www.maurizio.proietti.name/wp-content/uploads/2017/04/RelazioneTelematicaProietti.pdf">RelazioneTelematicaProietti</a></p>
+<p><a href="https://www.maurizio.proietti.name/wp-content/uploads/2017/04/RelazioneTelematicaProietti.pdf">RelazioneTelematicaProietti</a></p>

@@ -6,6 +6,9 @@ bodyClass: "body"
 date: "2015-04-01"
 permalink: "apache-no-space-left-on-device-couldnt-create-accept-lock/"
 layout: "template_posts_md"
+icon:
+  - linux
+  - apache
 ---
 <p>from: <a href="https://major.io/2007/08/24/apache-no-space-left-on-device-couldnt-create-accept-lock/">major.io</a></p>
 <p>This error completely stumped me a couple of weeks ago. Apparently someone was adjusting the Apache configuration, then they checked their syntax and attempted to restart Apache. It went down without a problem, but it refused to start properly, and didn’t bind to any ports.</p>

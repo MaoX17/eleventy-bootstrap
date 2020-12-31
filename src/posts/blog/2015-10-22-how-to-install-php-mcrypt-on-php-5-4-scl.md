@@ -6,6 +6,10 @@ bodyClass: "body"
 date: "2015-10-22"
 permalink: "how-to-install-php-mcrypt-on-php-5-4-scl/"
 layout: "template_posts_md"
+icon:
+  - linux
+  - php
+
 ---
 <h2>How to install php-mcrypt for php-5.4 on CentOs 6.x SCL</h2>
 <p></p>

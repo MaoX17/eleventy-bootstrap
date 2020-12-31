@@ -1,11 +1,14 @@
 ---
-title: "slackware 12 &#8211; problema con hdparm"
+title: "slackware 12 - problema con hdparm"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2007-07-04"
 permalink: "slackware-12-problema-con-hdparm/"
 layout: "template_posts_md"
+icon:
+  - linux
+  - slackware
 ---
 <p>Quando ho lanciato gxine per la prima volta mi ha detto che avevo il DMA del dvd disabilitato.<br />Provo quindi a dare <br />hdparm -d1 /dev/dvd</p>
 <p>ma ottengo i seguenti errori:<br />HDIO_SET_DMA failed: Operation not permitted<br />HDIO_SET_DMA failed: Inappropriate ioctl for device</p>

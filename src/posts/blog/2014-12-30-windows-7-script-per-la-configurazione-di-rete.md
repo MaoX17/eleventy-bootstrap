@@ -1,11 +1,15 @@
 ---
-title: "windows 7 &#8211; script per la configurazione di rete"
+title: "windows 7 - script per la configurazione di rete"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2014-12-30"
 permalink: "windows-7-script-per-la-configurazione-di-rete/"
 layout: "template_posts_md"
+icon:
+  - win
+  - code
+  
 ---
 <p>Impostare l&#8217;ip statico da assegnare alla scheda di rete al posto di xx.xx.xx.xx<br />
 Impostare l&#8217;ip del gateway da assegnare alla scheda di rete al posto di gw.xx.xx.xx</p>

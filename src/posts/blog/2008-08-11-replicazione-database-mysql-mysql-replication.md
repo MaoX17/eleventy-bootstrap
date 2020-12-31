@@ -1,15 +1,18 @@
 ---
-title: "Replicazione Database MySQL  &#8211; Mysql replication"
+title: "Mysql replication"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2008-08-11"
 permalink: "replicazione-database-mysql-mysql-replication"
 layout: "template_posts_md"
+icon:
+  - linux
+  - mysql
 ---
 <p><tt>Sul MASTER:</tt></p>
 <p><tt>ipotizzo che il master sia il 192.168.0.20</tt></p>
-<p><tt></tt>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212; /etc/my.cnf del Master 192.168.0.20 &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;</p>
+<p><tt></tt>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212; /etc/my.cnf del Master 192.168.0.20 &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-</p>
 <p>[client]<br />
 port            = 3306<br />
 socket          = /tmp/mysql.sock</p>
@@ -60,7 +63,7 @@ interactive-timeout</p>
 <p><tt></tt>GRANT SUPER,REPLICATION CLIENT,REPLICATION SLAVE,RELOAD ON *.* to slaveuser@&#8217;192.168.0.25&#8242; identified by &#8216;slavepw&#8217;;<br />
 FLUSH PRIVILEGES;<br />
 <tt></tt></p>
-<p><tt></tt>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212; /etc/my.cnf dello Slave 192.168.0.25 &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;</p>
+<p><tt></tt>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212; /etc/my.cnf dello Slave 192.168.0.25 &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-</p>
 <p>[mysqld]<br />
 datadir=/var/lib/mysql<br />
 socket=/var/lib/mysql/mysql.sock<br />

@@ -6,6 +6,10 @@ bodyClass: "body"
 date: "2015-08-17"
 permalink: "installare-php-5-4-su-centos-6-x/"
 layout: "template_posts_md"
+icon:
+  - linux
+  - php
+
 ---
 <p>Thanks to<br />
 <a href="http://sharadchhetri.com/2015/04/04/install-php-5-4-on-centos-6-with-yum-command/">http://sharadchhetri.com/2015/04/04/install-php-5-4-on-centos-6-with-yum-command/</a></p>

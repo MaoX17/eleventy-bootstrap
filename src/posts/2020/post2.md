@@ -1,11 +1,16 @@
 ---
 tags: post
+date: "2020-12-29"
 title: Test più complesso... Copiato
 layout: template_posts_md
 htmlClass: html
 unsplash: 11ty
-faicon: fab fa-docker
-icon: docker
+faicon: fas fa-edit
+icon:
+  - docker
+  - code
+  - nodejs3
+  - 11ty
 bodyClass: body
 img: https://res.cloudinary.com/maox17/image/upload/v1608901432/strails/logo468_t_puc73x.png
 modified: 2020-12-29T17:54:48+01:00

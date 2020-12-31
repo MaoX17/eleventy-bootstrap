@@ -1,11 +1,14 @@
 ---
-title: "Rimborso per Windows preinstallato, il parere dell&#8217;Aduc"
+title: "Rimborso Windows preinstallato - Aduc"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2007-06-17"
 permalink: "rimborso-per-windows-preinstallato-il-parere-delladuc/"
 layout: "template_posts_md"
+icon:
+  - win
+  - law
 ---
 <p><span style="font-weight: bold;font-size:130%;" ></span>Fonte: <a class="moz-txt-link-freetext" href="http://attivissimo.blogspot.com/2006/08/rimborso-windows-garante-sancisce.html">http://attivissimo.blogspot.com/2006/08/rimborso-windows-garante-sancisce.html</a></p>
 <p><span style="font-size:85%;"><span style="font-style: italic;">Questo articolo vi arriva grazie alle gentili </span><a style="font-style: italic;" href="http://www.attivissimo.net/donazioni/donazioni.htm">donazioni</a><span style="font-style: italic;"> di &#8220;foucault66&#8221; e &#8220;f.graniglia&#8221;.</span><br /></span><br />L&#8217;Aduc ha pubblicato oggi un <a href="http://www.aduc.it/dyn/comunicati/comu_mostra.php?id=152591">comunicato</a> a proposito della controversia sul diritto negato al rimborso per Windows preinstallato e non utilizzato, come previsto da una poco nota clausola della licenza Microsoft. La questione (e il mio successo nell&#8217;ottenere il rimborso, seguito da quello di pochi altri testardi) è raccontata in dettaglio nella mia <a href="http://www.attivissimo.net/rimborso_windows/istruzioni.htm">pagina apposita</a>.</p>

@@ -1,11 +1,13 @@
 ---
-title: "Fedora java runtime engine jre e java development kit jdk e firefox plugin"
+title: "Fedora JRE JDK e firefox plugin"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2009-10-25"
 permalink: "fedora-java-runtime-engine-jre-e-java-development-kit-jdk-e-firefox-plugin-2/"
 layout: "template_posts_md"
+icon:
+  - linux
 ---
 <p>Installo i pacchetti necessari:<br />
 yum install compat-libstdc++-296.i386 compat-libstdc++-33.i386<br />

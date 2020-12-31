@@ -6,6 +6,10 @@ bodyClass: "body"
 date: "2015-08-17"
 permalink: "propel-e-portali-appunti-utili-a-me/"
 layout: "template_posts_md"
+icon:
+  - php
+  - propel
+
 ---
 <p>Installazione Propel</p>
 <p>just create a new composer.json file at the root of your project&#8217;s directory with the following content:</p>

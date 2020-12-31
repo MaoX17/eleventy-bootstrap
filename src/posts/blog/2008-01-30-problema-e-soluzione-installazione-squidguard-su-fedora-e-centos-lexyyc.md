@@ -1,11 +1,14 @@
 ---
-title: "Problema e soluzione installazione squidGuard su fedora e CentOS &#8211; lex.yy.c"
+title: "SquidGuard su fedora e CentOS - lex.yy.c"
 tags: "post"
 htmlClass: "html"
 bodyClass: "body"
 date: "2008-01-30"
 permalink: "problema-e-soluzione-installazione-squidguard-su-fedora-e-centos-lexyyc/"
 layout: "template_posts_md"
+icon:
+  - linux
+  - sistemi
 ---
 <p>Nel caso in cui, durante l&#8217;installazione di squidguard si riceve il<br />
 seguente errore:</p>

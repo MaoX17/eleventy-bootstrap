@@ -6,7 +6,10 @@ bodyClass: "body"
 date: "2020-12-24"
 permalink: "wordpress-con-docker-compose-e-traefik/"
 unsplash: docker
-icon: wordpress
+icon:
+  - docker
+  - wordpress
+  - traefik
 faicon: "fab fa-wordpress"
 layout: "template_posts_md"
 ---

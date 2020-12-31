@@ -6,6 +6,11 @@ bodyClass: "body"
 date: "2020-12-17"
 permalink: "come-ti-dockerizzo-un-wordpress-esistente/"
 layout: "template_posts_md"
+icon:
+  - docker
+  - wordpress
+  - mysql
+
 ---
 
 <p>Questa è una guida di massima&#8230; tutti gli aggiornamenti sono qui:</p>
