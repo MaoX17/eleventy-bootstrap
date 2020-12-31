@@ -9,6 +9,50 @@ const markdown = require('./utils/markdown');
 const shortcodes = require('./utils/shortcodes');
 const transforms = require('./utils/transforms');
 
+
+
+const fetch = require('node-fetch');
+const iconFinder = async (iconQuery, callback) => {
+
+    let url = 'https://iconfinder-api-auth.herokuapp.com/v4/icons/search?query=docker&count=1';
+    let options = {
+      headers: {
+        "Authorization": "Bearer 6fw748l5Oo5EAGIwT2mncKUWTXOHHqLMrH1EnVjgvtqEv1FzMWVaLDsHjEEP4LZn"
+      }
+    };
+
+
+  const response = fetch(url,options)
+    .then(response => {
+      if (response.status === 200) {
+       return response.json();
+      } else {
+       throw new Error('Something went wrong on api server!');
+     }
+    })
+    .then(response => {
+      console.log("response22222222222222222222222");
+      console.log(response);
+      myJson = response;
+      console.log(myJson.total_count);
+      callback(null, myJson.icons[0].vector_sizes[0].formats[0].download_url);
+      // ...
+    }).catch(error => {
+      console.error(error);
+    });
+
+};
+
+
+
+
+
+
+
+
+
+
+
 //const unspla = require('./src/data/unsplash');
 
 const axios = require('axios');
@@ -72,6 +116,7 @@ module.exports = (config) => {
 
   // Add Nunjucks asynchronous filter
   config.addNunjucksAsyncFilter("imgRandom", imgRandom);
+  config.addNunjucksAsyncFilter("iconFinder", iconFinder);
 
 
 
