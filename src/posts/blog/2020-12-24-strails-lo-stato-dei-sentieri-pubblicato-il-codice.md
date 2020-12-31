@@ -14,9 +14,10 @@ icon:
 
 layout: "template_posts_md"
 ---
-<div class="markdown-body"><h1>
-<a id="user-content-strails" class="anchor" href="#strails" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>strails</h1>
-<p>Social trail state</p>
+
+<div class="markdown-body">
+
+<p>Social trail state</p> 
 <p>Strails è un'applicazione web utile agli appassionati di Mountain bike e trekking.</p>
 <p>L'applicazione Strails ha un funzionamento molto semplice.</p>
 <p>Il suo scopo è quello di poter descrivere lo stato di un sentiero o di un segmento Strava.</p>
