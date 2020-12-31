@@ -25,7 +25,7 @@ bodyClass: body
         {%- for post in collections.post | reverse -%}
         <tr>
         <th scope="row">
-          <a href={{ post.url }}><i class="{{ post.data.faicon }}"></i> {{ post.data.title }} </a>
+          <a href={{ post.url }}> {{ post.data.title }} </a>
         </th>
         <td>
           {%- for iconImg in post.data.icon -%}
