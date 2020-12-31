@@ -5,6 +5,7 @@ layout: template_posts_md
 htmlClass: html
 unsplash: 11ty
 faicon: "fas fa-code"
+icon: code
 bodyClass: body
 img: https://res.cloudinary.com/maox17/image/upload/v1608901432/strails/logo468_t_puc73x.png
 ---
@@ -33,5 +34,9 @@ END ICON:
 
 
 <img src="{{"office" | imgRandom | safe}}">
+
+
+
+{% icon "docker" %} Github icon
 
 <!-- <img src="{{ post.data.unsplash | imgRandom | safe}}"> -->

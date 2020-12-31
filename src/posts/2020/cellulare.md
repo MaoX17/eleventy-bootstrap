@@ -6,6 +6,7 @@ title: La mia prima pubblicazione dal cellulare
 layout: template_posts_md
 htmlClass: html
 unsplash: 11ty
+icon: code
 faicon: fab fa-docker
 bodyClass: body
 img: https://res.cloudinary.com/maox17/image/upload/v1608901432/strails/logo468_t_puc73x.png
