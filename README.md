@@ -1,4 +1,4 @@
-# eleventy-webpack :balloon:
+# GreMaPro - GreM@Pro - eleventy-webpack :balloon:
 
 A barebone [eleventy](https://www.11ty.dev/) and [webpack](https://webpack.js.org/) template. Fork and go.
 
