@@ -9,7 +9,7 @@ unsplash: github
 faicon: 'fab fa-github'
 icon:
   - code
-  - twitter
+  - laravel
   - github
 
 layout: 'template_posts_md'
