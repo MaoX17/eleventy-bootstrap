@@ -21,4 +21,4 @@ layout: 'template_posts_md'
 
 https://github.com/MaoX17/RubricaActiveDirectory
 
-Aggiornata alla versione 8 di Laravel.
+Aggiornata alla versione 8 di Laravel
