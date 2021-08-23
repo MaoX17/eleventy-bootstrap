@@ -35,4 +35,12 @@ Invoke-GPUpdate -Computer p115.provincia.prato.local -RandomDelayInMinutes 0
 
 
 
+$computers = Get-Content -Path C:\Users\mpadmin\Desktop\lista_pc.txt
+foreach ($comp in $computers) {
+	C:\script_admin\PSTools\psexec \\$comp -s \\fs\sw_pkg\wsus\forza_aiornamenti.bat
+}
+
+
+
+
 ```
