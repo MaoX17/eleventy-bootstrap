@@ -5,6 +5,7 @@ tags: post
 title: La mia prima pubblicazione dal cellulare
 layout: template_posts_md
 htmlClass: html
+date: '2020-12-29'
 unsplash: 11ty
 faicon: fab fa-docker
 bodyClass: body
