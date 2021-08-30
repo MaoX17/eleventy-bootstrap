@@ -114,7 +114,7 @@ Per inizializzare il DB esegui:
 
 ```
 
-docker-compose -f docker-compose-con-init.yml init-guac-db
+docker-compose -f docker-compose-con-init.yml up init-guac-db
 
 ```
 
