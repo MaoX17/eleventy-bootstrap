@@ -10,6 +10,7 @@ icon:
   - network-wired
 
 layout: "template_posts_md"
+templateEngineOverride: md
 
 ---
 
