@@ -51,7 +51,7 @@ docker stack deploy -c traefik.yml traefik
 
 Verifica la configurazione:
 
-```yaml
+```
 
 version: '3.3'
 services:
