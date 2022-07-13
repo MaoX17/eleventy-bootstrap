@@ -51,7 +51,7 @@ docker stack deploy -c traefik.yml traefik
 
 Verifica la configurazione:
 
-```
+```yaml
 
 version: '3.3'
 services:
@@ -112,10 +112,10 @@ volumes:
 
 Installo swarmpit
 
-```
+```bash
 
 export DOMAIN=swarmpit.sys.example.com
-export NODE_ID=$(docker info -f '\{{\.Swarm.NodeID\}}')
+export NODE_ID=$(docker info -f '{{.Swarm.NodeID}}')
 docker node update --label-add swarmpit.db-data=true $NODE_ID
 docker node update --label-add swarmpit.influx-data=true $NODE_ID
 
@@ -130,10 +130,10 @@ docker stack deploy -c swarmpit.yml swarmpit
 
 Installo portainer
 
-```
+```bash
 
 export DOMAIN=portainer.sys.example.com
-export NODE_ID=$(docker info -f '\{{\.Swarm.NodeID\}}')
+export NODE_ID=$(docker info -f '{{.Swarm.NodeID}}')
 
 docker node update --label-add portainer.portainer-data=true $NODE_ID
 
