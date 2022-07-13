@@ -112,7 +112,7 @@ volumes:
 
 Installo swarmpit
 
-```bash
+```
 
 export DOMAIN=swarmpit.sys.example.com
 export NODE_ID=$(docker info -f '{{.Swarm.NodeID}}')
@@ -130,7 +130,7 @@ docker stack deploy -c swarmpit.yml swarmpit
 
 Installo portainer
 
-```bash
+```
 
 export DOMAIN=portainer.sys.example.com
 export NODE_ID=$(docker info -f '{{.Swarm.NodeID}}')
