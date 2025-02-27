@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="html" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Installare vmware tools su una slackware 12.2 · </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="author" content=" Maurizio Proietti ">
+
+    
+    <meta property="og:title" content="Installare vmware tools su una slackware 12.2" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="theme-color" content="#fff" />
+
+
+    <meta name="msapplicati on-TileColor" content="#ffffff">
+
+    <link rel="canonical" href=/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RE3324MGY"></script>
+    <script src="https://kit.fontawesome.com/2845a43a9e.js" crossorigin="anonymous"></script>
+    
+	<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4RE3324MGY');
+    </script>
+
+  </head>
+  
+<body id="app-layout">
+
+	
+	  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">
+	  <img src='/icons/gremapro.svg' alt="GreMaPro" width="70" height="70" alt="GreMaPro">
+      
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">GreM@Pro - IT & Passion <span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+    <ul class="navbar-nav mr-sm-2">
+<li class="nav-item">
+		<a class="nav-link" href="/posts">Appunti</a>
+	</li>
+      <li class="nav-item">
+        
+        <a class="nav-link" href="https://www.maurizio.proietti.name/">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/portfolio">Portfolio</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://link.proietti.net/@maox">About</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+  <H1> Installare vmware tools su una slackware 12.2 </H1>
+    <main>
+      <p>Questa è una guida per installare i VMWare Tools su Slackware 12.2</p>
+<p>Questi sono i passaggi da seguire:</p>
+<p><code><br />
+links "http://prdownloads.sourceforge.net/libdnet/libdnet-1.11.tar.gz?download"<br />
+tar -zxvf libdnet-1.11.tar.gz<br />
+cd libdnet-1.11<br />
+./configure<br />
+make && make install && ldconfig<br />
+wget http://download.icu-project.org/files/icu4c/4.0.1/icu4c-4_0_1-src.tgz<br />
+wget http://slackbuilds.org/slackbuilds/12.2/libraries/icu4c.tar.gz<br />
+tar -zxvf icu4c-4_0_1-src.tgz<br />
+tar -zxvf icu4c.tar.gz<br />
+cd icu4c<br />
+mv ../icu4c-4_0_1-src.tgz ./<br />
+./icu4c.SlackBuild<br />
+mv /tmp/icu4c-4.0.1-i486-1_SBo.tgz /root/<br />
+installpkg ./icu4c-4.0.1-i486-1_SBo.tgz<br />
+wget http://mesh.dl.sourceforge.net/sourceforge/open-vm-tools/open-vm-tools-2009.02.18-148847.tar.gz<br />
+tar -zxvf open-vm-tools-2009.02.18-148847.tar.gz<br />
+cd open-vm-tools-2009.02.18-148847<br />
+./configure --includedir=/usr/include/uriparser --without-x --without-icu<br />
+make<br />
+</code></p>
+<p>Dalla VIM cliccare su Inventory-> Virtual Machine -> Install VMware Tools<br />
+tornare sulla console</p>
+<p><code><br />
+mount /mnt/cdrom<br />
+cp /mnt/cdrom/VMwareTools-3.5.0-123629.tar.gz /root/<br />
+tar -zxvf VMwareTools-3.5.0-123629.tar.gz<br />
+cd open-vm-tools-2009.02.18-148847/modules/linux/<br />
+for i in *; do sudo mv ${i} ${i}-only; tar -cf ${i}.tar ${i}-only; done<br />
+cp *.tar /root/vmware-tools-distrib/lib/modules/source/<br />
+cd /root/vmware-tools-distrib/<br />
+mkdir /etc/pam.d<br />
+touch /etc/rc.d/init.d/network<br />
+ifconfig eth0 down<br />
+ifconfig eth1 down<br />
+ifconfig eth2 down<br />
+rmmod pcnet32<br />
+./vmware-install.pl<br />
+vmware-config-tools.pl<br />
+</code></p>
+<p>Ringrazio marcpem per <a href="http://ubuntuforums.org/showthread.php?t=987631">l&#8217;how to originale</a></p>
+<p>Spero sia di aiuto a tutti.<br />
+Saluti</p>
+
+    </main>
+
+</div>
+
+<div class="row">
+.
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://github.com/MaoX17/eleventy-bootstrap">  </a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

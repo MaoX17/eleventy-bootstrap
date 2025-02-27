@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="html" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Come installare VMWare server su Fedora Core 7 · </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="author" content=" Maurizio Proietti ">
+
+    
+    <meta property="og:title" content="Come installare VMWare server su Fedora Core 7" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="theme-color" content="#fff" />
+
+
+    <meta name="msapplicati on-TileColor" content="#ffffff">
+
+    <link rel="canonical" href=/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RE3324MGY"></script>
+    <script src="https://kit.fontawesome.com/2845a43a9e.js" crossorigin="anonymous"></script>
+    
+	<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4RE3324MGY');
+    </script>
+
+  </head>
+  
+<body id="app-layout">
+
+	
+	  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">
+	  <img src='/icons/gremapro.svg' alt="GreMaPro" width="70" height="70" alt="GreMaPro">
+      
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">GreM@Pro - IT & Passion <span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+    <ul class="navbar-nav mr-sm-2">
+<li class="nav-item">
+		<a class="nav-link" href="/posts">Appunti</a>
+	</li>
+      <li class="nav-item">
+        
+        <a class="nav-link" href="https://www.maurizio.proietti.name/">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/portfolio">Portfolio</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://link.proietti.net/@maox">About</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+  <H1> Come installare VMWare server su Fedora Core 7 </H1>
+    <main>
+      <p>Una meravigliosa guida che spiega come installare vmware server su fedora 7.</p>
+<p><a href="http://www.howtoforge.com/vmware_server_fedora7"><tt>http://www.howtoforge.com/vmware_server_fedora7</tt></a></p>
+<p>ecco il cuore della guida:</p>
+<p>make[2]: *** [/tmp/vmware-config2/vmmon-only/linux/driver.o] Error 1<br />make[1]: *** [_module_/tmp/vmware-config2/vmmon-only] Error 2<br />make[1]: Leaving directory `/usr/src/kernels/2.6.21-1.3194.fc7-i686&#8242;<br />make: *** [vmmon.ko] Error 2<br />make: Leaving directory `/tmp/vmware-config2/vmmon-only&#8217;<br />Unable to build the vmmon module.</p>
+<p>For more information on how to troubleshoot module-related problems, please<br />visit our Web site at &#8220;http://www.vmware.com/download/modules/modules.html&#8221; and<br />&#8220;http://www.vmware.com/support/reference/linux/prebuilt_modules_linux.html&#8221;.</p>
+<p>Execution aborted. </p>
+<p>This happens because VMware Server isn&#8217;t ready for a 2.6.21 kernel yet (the default kernel in Fedora 7 is 2.6.21.3). Therefore, we must patch VMware Server a little bit. This can be done as follows:</p>
+<p class="command">wget http://knihovny.cvut.cz/ftp/pub/vmware/vmware-any-any-update110.tar.gz<br />tar xvfz vmware-any-any-update110.tar.gz<br />cd vmware-any-any-update110<br />./runme.pl</p>
+<p>The <span class="system">./runme.pl</span> command will continue the VMware Server installation. This time it should succeed, and again you can accept all default values. When it asks you</p>
+<p class="system">In which directory do you want to keep your virtual machine files?<br />[/var/lib/vmware/Virtual Machines]</p>
+<p>you can either accept the default value or specify a location that has enough free space to store your virtual machines. </p>
+<p>At the end of the installation, you will be asked to enter a serial number:</p>
+<p class="system">Please enter your 20-character serial number.</p>
+<p class="system">Type XXXXX-XXXXX-XXXXX-XXXXX or &#8216;Enter&#8217; to cancel:</p>
+<p>Fill in your serial number for VMware Server. </p>
+<p>After the successful installation, you can delete the VMware Server download file and the installation directory:</p>
+<p class="command">cd /home/falko/Desktop<br />rm -fr vmware-server-distrib<br />rm -f VMware-server-*.tar.gz</p>
+<p> You will now find VMware Server under <span class="system">Applications > Other</span></p>
+<pre class="moz-signature" cols="72"><span style="font-size:130%;"><span style="font-style: italic; font-weight: bold;font-size:130%;" >ATTENZIONE:</span><span style="font-size:130%;"><br /></span><span style="font-style: italic; font-weight: bold;font-size:130%;" >Può essere causa di errore l'assenza di xinetd, quindi prima di iniziare l'installazione assicurarsi di avere xinetd:</span><span style="font-size:130%;"><br /></span><span style="font-style: italic;"><span style="font-size:130%;"><span style="font-weight: bold;">yum install xinetd</span><br /><br /><span style="font-weight: bold;">ATTENZIONE 2:</span><br /><span style="font-weight: bold;">Una altra possibile causa di problemi è la presenza del file</span><br /><span style="font-weight: bold;">/etc/vmware/not_configured</span><br /><span style="font-weight: bold;">occorre eliminarlo:</span><br /><span style="font-weight: bold;">rm /etc/vmware/not_configured</span><br /></span><br /></span></span></pre>
+
+    </main>
+
+</div>
+
+<div class="row">
+.
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://github.com/MaoX17/eleventy-bootstrap">  </a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

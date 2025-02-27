@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="html" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>SquidGuard su fedora e CentOS - lex.yy.c · </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="author" content=" Maurizio Proietti ">
+
+    
+    <meta property="og:title" content="SquidGuard su fedora e CentOS - lex.yy.c" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="theme-color" content="#fff" />
+
+
+    <meta name="msapplicati on-TileColor" content="#ffffff">
+
+    <link rel="canonical" href=/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RE3324MGY"></script>
+    <script src="https://kit.fontawesome.com/2845a43a9e.js" crossorigin="anonymous"></script>
+    
+	<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4RE3324MGY');
+    </script>
+
+  </head>
+  
+<body id="app-layout">
+
+	
+	  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">
+	  <img src='/icons/gremapro.svg' alt="GreMaPro" width="70" height="70" alt="GreMaPro">
+      
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">GreM@Pro - IT & Passion <span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+    <ul class="navbar-nav mr-sm-2">
+<li class="nav-item">
+		<a class="nav-link" href="/posts">Appunti</a>
+	</li>
+      <li class="nav-item">
+        
+        <a class="nav-link" href="https://www.maurizio.proietti.name/">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/portfolio">Portfolio</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://link.proietti.net/@maox">About</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+  <H1> SquidGuard su fedora e CentOS - lex.yy.c </H1>
+    <main>
+      <p>Nel caso in cui, durante l&#8217;installazione di squidguard si riceve il<br />
+seguente errore:</p>
+<p>[root@proxy squidGuard-1.3]# make<br />
+making all in squidGuard-1.3<br />
+make[1]: Entering directory `/root/sw/squidGuard-1.3/src&#8217;<br />
+making all in src<br />
+gcc -I.. -I. -I. -I/usr/local/BerkeleyDB/include -DHAVE_CONFIG_H -g -O2<br />
+-I/usr/local/BerkeleyDB/include -c main.c<br />
+gcc -I.. -I. -I. -I/usr/local/BerkeleyDB/include -DHAVE_CONFIG_H -g -O2<br />
+-I/usr/local/BerkeleyDB/include -c sgLog.c<br />
+gcc -I.. -I. -I. -I/usr/local/BerkeleyDB/include -DHAVE_CONFIG_H -g -O2<br />
+-I/usr/local/BerkeleyDB/include -c sgDb.c<br />
+gcc -I.. -I. -I. -I/usr/local/BerkeleyDB/include -DHAVE_CONFIG_H -g -O2<br />
+-I/usr/local/BerkeleyDB/include -c sgDiv.c<br />
+gcc -I.. -I. -I. -I/usr/local/BerkeleyDB/include -DHAVE_CONFIG_H -g -O2<br />
+-I/usr/local/BerkeleyDB/include -c sgFree.c<br />
+yacc -d sg.y || (cp y.tab.c.bison y.tab.c &amp;&amp; cp y.tab.h.bison y.tab.h)<br />
+/bin/sh: yacc: command not found<br />
+gcc -I.. -I. -I. -I/usr/local/BerkeleyDB/include -DHAVE_CONFIG_H -g -O2<br />
+-I/usr/local/BerkeleyDB/include -c y.tab.c<br />
+: sg.l || cp lex.yy.c.flex lex.yy.c<br />
+gcc -I.. -I. -I. -I/usr/local/BerkeleyDB/include -DHAVE_CONFIG_H -g -O2<br />
+-I/usr/local/BerkeleyDB/include -c lex.yy.c<br />
+gcc: lex.yy.c: No such file or directory<br />
+gcc: no input files<br />
+make[1]: *** [lex.yy.o] Error 1<br />
+make[1]: Leaving directory `/root/sw/squidGuard-1.3/src&#8217;<br />
+make: *** [all] Error 1</p>
+<p>La soluzione è semplice:<br />
+[root@proxy squidGuard-1.3]# <strong>yum install flex byacc</strong><br />
+[root@proxy squidGuard-1.3]# make clean<br />
+[root@proxy squidGuard-1.3]# ./configure<br />
+[root@proxy squidGuard-1.3]# make<br />
+[root@proxy squidGuard-1.3]# make install</p>
+<p>Problema risolto!!!</p>
+
+    </main>
+
+</div>
+
+<div class="row">
+.
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://github.com/MaoX17/eleventy-bootstrap">  </a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

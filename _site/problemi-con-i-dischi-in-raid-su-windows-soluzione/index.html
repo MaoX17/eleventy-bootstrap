@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html class="html" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Problemi con i dischi in raid su windows &amp;#8211; SOLUZIONE · </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="author" content=" Maurizio Proietti ">
+
+    
+    <meta property="og:title" content="Problemi con i dischi in raid su windows &amp;#8211; SOLUZIONE" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="theme-color" content="#fff" />
+
+
+    <meta name="msapplicati on-TileColor" content="#ffffff">
+
+    <link rel="canonical" href=/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RE3324MGY"></script>
+    <script src="https://kit.fontawesome.com/2845a43a9e.js" crossorigin="anonymous"></script>
+    
+	<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4RE3324MGY');
+    </script>
+
+  </head>
+  
+<body id="app-layout">
+
+	
+	  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">
+	  <img src='/icons/gremapro.svg' alt="GreMaPro" width="70" height="70" alt="GreMaPro">
+      
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">GreM@Pro - IT & Passion <span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+    <ul class="navbar-nav mr-sm-2">
+<li class="nav-item">
+		<a class="nav-link" href="/posts">Appunti</a>
+	</li>
+      <li class="nav-item">
+        
+        <a class="nav-link" href="https://www.maurizio.proietti.name/">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/portfolio">Portfolio</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://link.proietti.net/@maox">About</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+  <H1> Problemi con i dischi in raid su windows &amp;#8211; SOLUZIONE </H1>
+    <main>
+      <p>Oggi ho fatto qualche test si un paio di server.<br />Avevo un server da formattare e ho deciso di fare qualche controllo sul<br />funzionamento del<br />mirror hardware e software su windows.</p>
+<p>Parto dal raid hardware.<br />La macchina monta 2 dischi SATA con relativo controller (adaptec) che<br />supporta il mirror.<br />Imposto il mirror<br />Installo Windows<br />Levo uno dei 2 dischi, lo metto su un pc, converto il disco in<br />&quot;Dinamico&quot; come richiesto dal SO<br />Il pc con WIN non vede nemmeno la partizione.</p>
+<p>Lo rimonto sul server, il controller definisce il raid DEGRADED ma il<br />sistema parte e funziona regolarmente.<br />Entro nel bios del controller, ACCETTO la modifica alla configurazione<br />che ha rilevato (altrimenti non mi fa fare niente)<br />Mi accorgo che il controller rileva che il secondo disco appartiene ad<br />un altro array (LEGACY).<br />Cancello questo array.<br />Il controller a questo punto riconosce subito il disco come quello<br />mancante nell&#39;array valido,<br />lo inserisce in automatico nel giusto array e inizia il rebuild&#8230;.</p>
+<p>Ho poi formattato tutto, disattivato il raid hardware installato win su<br />uno dei 2 dischi e poi attivato il raid sofware (mirror).<br />&#8211; Aggiorno i dischi da base a dinamici (cliccare col dx sul riquadro sx)<br />&#8211; Cliccare con il dx sul disco di origine e scegli aggiungi mirror</p>
+<p>Levo uno dei 2 dischi, lo metto su un pc, converto il disco in<br />&quot;Dinamico&quot; come richiesto dal SO<br />Faccio &quot;importa dischi esterni&quot;<br />mi importa il raid (con 2 dischi e 1 mancante)<br />clicco su quello mancante e scelgo ELIMINA raid<br />Sul disco inserito -&gt; &quot;riattiva volume specifico&quot;<br />Sul disco inserito -&gt; &quot;cambia lettera&quot; -&gt; Assegna nuova lettera</p>
+<p>Il PC VEDE IL DISCO ED ACCEDE AI DATI!!!!</p>
+<p>Rimetto il disco sul server,<br />importo i dischi esterni,<br />elimino il volume del secondo disco (quello tolto e rimesso)<br />Ricreo il raid.</p>
+<p>Morale???<br />Forse &#232; meglio usare un raid software, almeno se mi si rompe la scheda<br />madre o il controller posso comunque recuperare i dati.</p>
+
+    </main>
+
+</div>
+
+<div class="row">
+.
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://github.com/MaoX17/eleventy-bootstrap">  </a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

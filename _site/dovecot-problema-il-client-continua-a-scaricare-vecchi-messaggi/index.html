@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="html" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Dovecot - problema - il client continua a scaricare vecchi messaggi · </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="author" content=" Maurizio Proietti ">
+
+    
+    <meta property="og:title" content="Dovecot - problema - il client continua a scaricare vecchi messaggi" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="theme-color" content="#fff" />
+
+
+    <meta name="msapplicati on-TileColor" content="#ffffff">
+
+    <link rel="canonical" href=/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RE3324MGY"></script>
+    <script src="https://kit.fontawesome.com/2845a43a9e.js" crossorigin="anonymous"></script>
+    
+	<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4RE3324MGY');
+    </script>
+
+  </head>
+  
+<body id="app-layout">
+
+	
+	  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">
+	  <img src='/icons/gremapro.svg' alt="GreMaPro" width="70" height="70" alt="GreMaPro">
+      
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">GreM@Pro - IT & Passion <span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+    <ul class="navbar-nav mr-sm-2">
+<li class="nav-item">
+		<a class="nav-link" href="/posts">Appunti</a>
+	</li>
+      <li class="nav-item">
+        
+        <a class="nav-link" href="https://www.maurizio.proietti.name/">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/portfolio">Portfolio</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://link.proietti.net/@maox">About</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+  <H1> Dovecot - problema - il client continua a scaricare vecchi messaggi </H1>
+    <main>
+      <p>Allora, forse ho individuato il problema&#8230;</p>
+<p>[maillog]<br />Mar 19 08:50:59 zion dovecot: pop3-login: Login: user=&lt;xxx@xxx.com&gt;&#8230;<br />Mar 19 08:50:59 zion dovecot: pop3(xxx@xxx.com): mbox sync: Expunged <br />message reappeared in mailbox<br />/var/spool/mail/vhosts/xxx/xxx (U ID 7953 &lt; 7976, seq=1, idx_msgs=0)<br />Mar 19 08:51:11 zion dovecot: pop3(xxx@xxx.com): mbox sync: UID inserted <br />in the middle of mailbox /var/spool/mail/vhosts/xxx.com/xxx (7976 &gt; <br />7953, seq=1, idx_msgs=8)<br />[/maillog]</p>
+<p>*************************************<br /><a href="http://wiki.dovecot.org/MboxProblems">http://wiki.dovecot.org/MboxProblems</a></p>
+<p>If you insert messages, or if you &quot;undelete&quot; messages (eg. replace mbox <br />from a backup), you may see errors in Dovecot&#39;s logs:</p>
+<p>mbox sync: UID inserted in the middle of mailbox /home/tss/mail/inbox <br />(817 &gt; 787, seq=18, idx_msgs=32)</p>
+<p>***************************************</p>
+<p>probabilmente &#232; stato modificato qlcs sui file mbox del dovecot che ora <br />impazzisce.</p>
+<p>Secondo me la soluzione migliore &#232;:</p>
+<p>Far scaricare le caselle di posta da tutti i pc in cui sn configurate; <br />Cancellare i file mbox del dovecot, riavviare dovecot</p>
+<p>Ciaoooooo</p>
+
+    </main>
+
+</div>
+
+<div class="row">
+.
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://github.com/MaoX17/eleventy-bootstrap">  </a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

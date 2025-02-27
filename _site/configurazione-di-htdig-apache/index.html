@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="html" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Configurazione di htdig + apache · </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="author" content=" Maurizio Proietti ">
+
+    
+    <meta property="og:title" content="Configurazione di htdig + apache" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="theme-color" content="#fff" />
+
+
+    <meta name="msapplicati on-TileColor" content="#ffffff">
+
+    <link rel="canonical" href=/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RE3324MGY"></script>
+    <script src="https://kit.fontawesome.com/2845a43a9e.js" crossorigin="anonymous"></script>
+    
+	<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4RE3324MGY');
+    </script>
+
+  </head>
+  
+<body id="app-layout">
+
+	
+	  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">
+	  <img src='/icons/gremapro.svg' alt="GreMaPro" width="70" height="70" alt="GreMaPro">
+      
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">GreM@Pro - IT & Passion <span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+    <ul class="navbar-nav mr-sm-2">
+<li class="nav-item">
+		<a class="nav-link" href="/posts">Appunti</a>
+	</li>
+      <li class="nav-item">
+        
+        <a class="nav-link" href="https://www.maurizio.proietti.name/">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/portfolio">Portfolio</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://link.proietti.net/@maox">About</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+  <H1> Configurazione di htdig + apache </H1>
+    <main>
+      <p><a href="http://setta.altervista.org/documentazione/Apache_Htdig.pdf">[PDF]</a><br />Tutto nacque diversi anni fa&#8230; un buon progetto.. la raccolta del<br />sapere&#8230;</p>
+<p>perchè, visto che siamo una classe affiatata e ci vogliamo un bene<br />dell&#8217;anima&#8230;<br />perchè non condividere il sapere fra noi e con il resto del mondo?</p>
+<p>A tutti può far comodo&#8230;</p>
+<p>Quindi, visto che nel frattempo nessuno si è mosso e te hai messo a<br />disposizione una<br />gran bella cosa (slack + adsl flat) (oltre al culo del quale però<br />disponiamo, chi +<br />chi – ormai da diversi anni) ho deciso di iniziare a pubblicare qualcosa.</p>
+<p>Ho creato un file:</p>
+<p>/etc/apache/documentazione.conf</p>
+<p>ScriptAlias //cgi-bin// &#8220;//opt/www/cgi-bin//&#8221; <br />&lt;Directory //opt/www/cgi-bin//&gt;<br />AllowOverride None<br />Options +ExecCGI<br />FollowSymLinks<br />&lt;/Directory&gt;   </p>
+<p>Alias //htdig// &#8220;//opt/www/htdocs/htdig//&#8221;<br />&lt;Directory &#8220;/opt/www/htdocs/htdig&#8221;&gt;    <br />order allow,deny    <br />Allow from all   <br />Options Indexes FollowSymLinks<br />&lt;/Directory&gt;       </p>
+<p>&lt;Directory &#8220;/web/http/documentazione&#8221;&gt;        <br />Options Indexes FollowSymlinks MultiViews        <br />AllowOverride None        <br />Order allow,deny        <br />Allow from all     <br />&lt;/Directory&gt; </p>
+<p>Ho creato la directory /web/http/documentazione [dove verrà messa la<br />documentazione che scriviamo/troviamo/ecc&#8230;]</p>
+<p>Ho modificato la configurazione di default di htdig come segue:</p>
+<p>/opt/www/htdig/conf/htdig.conf</p>
+<p># # Example config file for ht://Dig.<br /># # This configuration file is used by all the programs that make up ht://Dig.<br /># Please refer to the attribute reference manual for more details on what<br /># can be put into this file.  (<a href="http://www.htdig.org/confindex.html">http://www.htdig.org/confindex.html</a>)<br /># Note that most attributes have very reasonable default values so you<br /># really only have to add attributes here if you want to change the defaults.<br /># # What follows are some of the common attributes you might want to change. # <br /># # Specify where the database files need to go.  Make sure that there is<br /># plenty of free disk space available for the databases.  They can get<br /># pretty big. # </p>
+<p>database_dir:           /opt/www/htdig/db  </p>
+<p># # This specifies the URL where the robot (htdig) will start.  You can specify<br /># multiple URLs here.  Just separate them by some whitespace.<br /># The example here will cause the ht://Dig homepage and related pages to be<br /># indexed. # You could also index all the URLs in a file like so:<br /># start_url:           `${common_dir}/start.url`<br /># </p>
+<p>start_url:            </p>
+<p><a href="http://www.linux.widge.org/">http://www.linux.widge.org/</a></p>
+</p>
+<p>#<br /># This attribute limits the scope of the indexing process.  The default is to<br /># set it to the same as the start_url above.  This way only pages that are on<br /># the sites specified in the start_url attribute will be indexed and it will<br /># reject any URLs that go outside of those sites.<br /># # Keep in mind that the value for this attribute is just a list of string<br /># patterns. As long as URLs contain at least one of the patterns it will be<br /># seen as part of the scope of the index. # </p>
+<p>limit_urls_to:          ${start_url}documentazione  </p>
+<p># # If there are particular pages that you definitely do NOT want to index, you<br /># can use the exclude_urls attribute.  The value is a list of string patterns.<br /># If a URL matches any of the patterns, it will NOT be indexed.  This is<br /># useful to exclude things like virtual web trees or database accesses.  By<br /># default, all CGI URLs will be excluded.  (Note that the //cgi-bin// convention<br /># may not work on your web server.  Check the  path prefix used on your web<br /># server.) # </p>
+<p>exclude_urls:           //cgi-bin// .cgi  </p>
+<p># # Since ht://Dig does not (and cannot) parse every document type, this <br /># attribute is a list of strings (extensions) that will be ignored during <br /># indexing. These are **only** checked at the end of a URL, whereas <br /># exclude_url patterns are matched anywhere.<br /># </p>
+<p>bad_extensions:         .wav .gz .z .sit .au .zip .tar .hqx .exe .com .gif \<br />.jpg .jpeg .aiff .class .map .ram .tgz .bin .rpm .mpg .mov .avi .css  </p>
+<p># # The string htdig will send in every request to identify the robot.  Change<br /># this to your email address. # </p>
+<p>maintainer:             s.magnolfi@aaa.it &lt;mailto:s.magnolfi@comune.prato.it>  </p>
+<p># # The excerpts that are displayed in long results rely on stored information<br /># in the index databases.  The compiled default only stores 512 characters of<br /># text from each document (this excludes any HTML markup&#8230;)  If you plan on<br /># using the excerpts you probably want to make this larger.  The only concern<br /># here is that more disk space is going to be needed to store the additional<br /># information.  Since disk space is cheap (! :-)) you might want to set this<br /># to a value so that a large percentage of the documents that you are going<br /># to be indexing are stored completely in the database.  At SDSU we found<br /># that by setting this value to about 50k the index would get 97% of all<br /># documents completely and only 3% was cut off at 50k.  You probably want to<br /># experiment with this value.<br /># Note that if you want to set this value low, you probably want to set the<br /># excerpt_show_top attribute to false so that the top excerpt_length characters<br /># of the document are always shown. # </p>
+<p>max_head_length:        10000  </p>
+<p># # To limit network connections, ht://Dig will only pull up to a certain limit<br /># of bytes. This prevents the indexing from dying because the server keeps<br /># sending information. However, several FAQs happen because people have files<br /># bigger than the default limit of 100KB. This sets the default a bit higher.<br /># (see &lt;<a href="http://www.htdig.org/FAQ.html">http://www.htdig.org/FAQ.html</a>&gt; for more) # </p>
+<p>max_doc_size:           200000  </p>
+<p># # Most people expect some sort of excerpt in results. By default, if the <br /># search words aren&#8217;t found in context in the stored excerpt, htsearch shows <br /># the text defined in the no_excerpt_text attribute:<br /># (None of the search words were found in the top of this document.)<br /># This attribute instead will show the top of the excerpt.<br /># </p>
+<p>no_excerpt_show_top:    true  </p>
+<p># # Depending on your needs, you might want to enable some of the fuzzy search<br /># algorithms.  There are several to choose from and you can use them in any<br /># combination you feel comfortable with.  Each algorithm will get a weight<br /># assigned to it so that in combinations of algorithms, certain algorithms get<br /># preference over others.  Note that the weights only affect the ranking of<br /># the results, not the actual searching. # The available algorithms are:<br />#       accents<br />#       exact<br />#       endings<br />#       metaphone<br />#       prefix<br />#       soundex<br />#       substring<br />#       synonyms<br /># By default only the &#8220;exact&#8221; algorithm is used with weight 1.<br /># Note that if you are going to use the endings, metaphone, soundex, accents,<br /># or synonyms algorithms, you will need to run htfuzzy to generate<br /># the databases they use. # </p>
+<p>search_algorithm:       exact:1 synonyms:0.5 endings:0.1  </p>
+<p># # The following are the templates used in the builtin search results<br /># The default is to use compiled versions of these files, which produces<br /># slightly faster results. However, uncommenting these lines makes it<br /># very easy to change the format of search results.<br /># See &lt;<a href="http://www.htdig.org/hts_templates.html">http://www.htdig.org/hts_templates.html</a>&gt; for more details. #<br /># template_map: Long long ${common_dir}/long.html \<br />#               Short short ${common_dir}/short.html<br /># template_name: long <br /># # The following are used to change the text for the page index.<br /># The defaults are just boring text numbers.  These images spice<br /># up the result pages quite a bit.  (Feel free to do whatever, though)<br /># </p>
+<p>next_page_text:        <br />&lt;img src=&#8221;/htdig/buttonr.gif&#8221; border=&#8221;0&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;next&#8221;&gt;<br />no_next_page_text: prev_page_text:        <br />&lt;img src=&#8221;/htdig/buttonl.gif&#8221; border=&#8221;0&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;prev&#8221;&gt;<br />no_prev_page_text: page_number_text:      <br />&#8216;&lt;img src=&#8221;/htdig/button1.gif&#8221; border=&#8221;0&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;1&#8243;&gt;&#8217; \<br />&#8216;&lt;img src=&#8221;/htdig/button2.gif&#8221; border=&#8221;0&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;2&#8243;&gt;&#8217; \<br />&#8216;&lt;img src=&#8221;/htdig/button3.gif&#8221; border=&#8221;0&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;3&#8243;&gt;&#8217; \<br />&#8216;&lt;img src=&#8221;/htdig/button4.gif&#8221; border=&#8221;0&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;4&#8243;&gt;&#8217; \<br />&#8216;&lt;img src=&#8221;/htdig/button5.gif&#8221; border=&#8221;0&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;5&#8243;&gt;&#8217; \<br />&#8216;&lt;img src=&#8221;/htdig/button6.gif&#8221; border=&#8221;0&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;6&#8243;&gt;&#8217; \<br />&#8216;&lt;img src=&#8221;/htdig/button7.gif&#8221; border=&#8221;0&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;7&#8243;&gt;&#8217; \<br />&#8216;&lt;img src=&#8221;/htdig/button8.gif&#8221; border=&#8221;0&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;8&#8243;&gt;&#8217; \<br />&#8216;&lt;img src=&#8221;/htdig/button9.gif&#8221; border=&#8221;0&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;9&#8243;&gt;&#8217; \<br />&#8216;&lt;img src=&#8221;/htdig/button10.gif&#8221; border=&#8221;0&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;10&#8243;&gt;&#8217; </p>
+<p># # To make the current page stand out, we will put a border around the<br /># image for that page. # </p>
+<p>no_page_number_text:   <br />&#8216;&lt;img src=&#8221;/htdig/button1.gif&#8221; border=&#8221;2&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;1&#8243;&gt;&#8217; \<br />&#8216;&lt;img src=&#8221;/htdig/button2.gif&#8221; border=&#8221;2&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;2&#8243;&gt;&#8217; \<br />&#8216;&lt;img src=&#8221;/htdig/button3.gif&#8221; border=&#8221;2&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;3&#8243;&gt;&#8217; \<br />&#8216;&lt;img src=&#8221;/htdig/button4.gif&#8221; border=&#8221;2&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;4&#8243;&gt;&#8217; \<br />&#8216;&lt;img src=&#8221;/htdig/button5.gif&#8221; border=&#8221;2&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;5&#8243;&gt;&#8217; \<br />&#8216;&lt;img src=&#8221;/htdig/button6.gif&#8221; border=&#8221;2&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;6&#8243;&gt;&#8217; \<br />&#8216;&lt;img src=&#8221;/htdig/button7.gif&#8221; border=&#8221;2&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;7&#8243;&gt;&#8217; \<br />&#8216;&lt;img src=&#8221;/htdig/button8.gif&#8221; border=&#8221;2&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;8&#8243;&gt;&#8217; \<br />&#8216;&lt;img src=&#8221;/htdig/button9.gif&#8221; border=&#8221;2&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;9&#8243;&gt;&#8217; \<br />&#8216;&lt;img src=&#8221;/htdig/button10.gif&#8221; border=&#8221;2&#8243; align=&#8221;middle&#8221; width=&#8221;30&#8243; height=&#8221;30&#8243; alt=&#8221;10&#8243;&gt;&#8217;<br /># local variables:<br /># mode: text<br /># eval: (if (eq window-system &#8216;x) (progn (setq<br />font-lock-keywords (list &#8216;(&#8220;^#.*&#8221; . font-lock-keyword-face)<br />&#8216;(&#8220;^[a-zA-Z][^ :]+&#8221; . font-lock-function-name-face)<br />&#8216;(&#8220;[+$]*:&#8221; . font-lock-comment-face) )) (font-lock-mode))) </p>
+<p># end:</p>
+<p>Ed ho creato un file documentazione.html</p>
+<p>&lt;html lang=&#8221;it&#8221;&gt;<br />&lt;head&gt;<br />&lt;title&gt;<a href="http://www.linux.widge.org/">www.linux.widge.org</a> &lt;<a href="http://www.linux.widge.org/">http://www.linux.widge.org/</a>&gt; &#8211; Home Page&lt;/title&gt;<br />&lt;/head&gt; <br />&lt;BODY background=&#8221;./image/slack_bg.jpg&#8221; text=&#8221;black&#8221; link=&#8221;black&#8221; vlink=&#8221;Black&#8221;&gt; <br />&lt;font size=&#8221;+4&#8243;&gt;<br />&lt;strong&gt;&lt;em&gt;&lt;div align=&#8221;center&#8221;&gt;<a href="http://www.linux.widge.org/">www.linux.widge.org</a> &lt;<a href="http://www.linux.widge.org/">http://www.linux.widge.org/</a>&gt;&lt;/div&gt;&lt;/em&gt;&lt;/strong&gt;<br />&lt;/font&gt;<br />&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;<br />&lt;div align=&#8221;left&#8221;&gt;<br />&lt;strong&gt;&lt;em&gt;&lt;font size=&#8221;+2&#8243;&gt;<br />&lt;a href=&#8221;<a href="http://www.linux.widge.org/htdig/search.html">http://www.linux.widge.org/htdig/search.html</a>&#8221; &lt;<a href="http://www.linux.widge.org/htdig/search.html">http://www.linux.widge.org/htdig/search.html</a>&gt;&gt;Cerca nella Documentazione&lt;/a&gt;<br />&lt;/font&gt;&lt;/em&gt;&lt;/strong&gt;<br />&lt;/div&gt;<br />&lt;br&gt;&lt;br&gt;<br />&lt;div align=&#8221;left&#8221;&gt;<br />&lt;strong&gt;&lt;em&gt;&lt;font size=&#8221;+2&#8243;&gt;<br />&lt;a href=&#8221;<a href="http://www.linux.widge.org/documentazione/">http://www.linux.widge.org/documentazione/</a>&#8221; &lt;<a href="http://www.linux.widge.org/documentazione/">http://www.linux.widge.org/documentazione/</a>&gt;&gt;Sfoglia la Documentazione&lt;/a&gt;<br />&lt;/font&gt;&lt;/em&gt;&lt;/strong&gt;<br />&lt;/div&gt; <br />&lt;/body&gt;<br />&lt;/html&gt;</p>
+<p>In pratica il funzionamento è il seguente:</p>
+<p>Chi si collega a <a href="http://www.linux.widge.org/">www.linux.widge.org</a> &lt;<a href="http://www.linux.widge.org/">http://www.linux.widge.org/</a>&gt; vede<br />fra i link della home page un link a<br />documentazione.html che gli fa scegliere se sfogliare la documentazione<br />(cioè consultare la lista dei file contenuti nella directory) oppure<br />effettuare una ricerca con htdig.</p>
+<p>Htdig non fa altro che indicizzare i file presenti nella sola directory<br />documentazione e permette ricerche mirate.</p>
+<p>A questo punto mancherebbe soltanto la possibilità di uploadare<br />direttamente<br />la documentazione tramite un ftp con un utente e password conosciuta<br />solo da noi.</p>
+
+    </main>
+
+</div>
+
+<div class="row">
+.
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://github.com/MaoX17/eleventy-bootstrap">  </a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

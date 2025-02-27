@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="html" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Installare snort e php-acid su centos 5 · </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="author" content=" Maurizio Proietti ">
+
+    
+    <meta property="og:title" content="Installare snort e php-acid su centos 5" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="theme-color" content="#fff" />
+
+
+    <meta name="msapplicati on-TileColor" content="#ffffff">
+
+    <link rel="canonical" href=/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RE3324MGY"></script>
+    <script src="https://kit.fontawesome.com/2845a43a9e.js" crossorigin="anonymous"></script>
+    
+	<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4RE3324MGY');
+    </script>
+
+  </head>
+  
+<body id="app-layout">
+
+	
+	  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">
+	  <img src='/icons/gremapro.svg' alt="GreMaPro" width="70" height="70" alt="GreMaPro">
+      
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">GreM@Pro - IT & Passion <span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+    <ul class="navbar-nav mr-sm-2">
+<li class="nav-item">
+		<a class="nav-link" href="/posts">Appunti</a>
+	</li>
+      <li class="nav-item">
+        
+        <a class="nav-link" href="https://www.maurizio.proietti.name/">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/portfolio">Portfolio</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://link.proietti.net/@maox">About</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+  <H1> Installare snort e php-acid su centos 5 </H1>
+    <main>
+      <p class="line862">You should make sure that you have <a href="http://wiki.centos.org/PackageManagement/Yum/Priorities">Priorities</a> installed.</p>
+<p class="line867">
+<p class="line874">yum-priorities is available in the CentOS 5 repositories:</p>
+<p class="line867">
+<pre>yum install yum-priorities</pre>
+<p class="line874">Plugins are enabled in CentOS 5 by default.</p>
+<p class="line862">Make sure that yum-priorities is enabled by editing the <strong>/etc/yum/pluginconf.d/priorities.conf</strong> file, and ensuring that it contains the following lines:</p>
+<p class="line867">
+<pre>[main]enabled=1</pre>
+<p class="line862">Edit the <strong>.repo files in /etc/yum.repos.d/</strong> and set up priorities by adding the line:</p>
+<p class="line867">
+<pre>priority=N</pre>
+<p class="line874">to a repository entry, where N is an integer number from 1 to 99.</p>
+<p class="line874">The recommended settings are:</p>
+<pre>[base], [addons], [updates], [extras] ... priority=1[centosplus],[contrib] ... priority=2Third Party Repos such as rpmforge ... priority=N  (where N is &gt; 10 and based on your preference)</pre>
+<p class="line867">
+<h3 id="head-b2e1db5c8b5c90cbd2e854ee070ba1e0da8824dd">1.2. RPMforge</h3>
+<p class="line862">Download the rpmforge-release package. Choose one of the two links below, depending on your architecture. If you are unsure of which one to use you can check your architecture with the command <strong>uname -i</strong></p>
+<ul>
+<li>
+<p class="line862">i386 <a class="http" href="http://apt.sw.be/redhat/el5/en/i386/RPMS.dag/rpmforge-release-0.3.6-1.el5.rf.i386.rpm">http://apt.sw.be/redhat/el5/en/i386/RPMS.dag/rpmforge-release-0.3.6-1.el5.rf.i386.rpm</a></p>
+</li>
+<li>
+<p class="line862">x86_64 <a class="http" href="http://apt.sw.be/redhat/el5/en/x86_64/RPMS.dag/rpmforge-release-0.3.6-1.el5.rf.x86_64.rpm">http://apt.sw.be/redhat/el5/en/x86_64/RPMS.dag/rpmforge-release-0.3.6-1.el5.rf.x86_64.rpm</a></p>
+</li>
+</ul>
+<p class="line862">(You can find a complete list of rpmforge-release package packages at <a class="http" href="http://dag.wieers.com/packages/rpmforge-release/">http://dag.wieers.com/packages/rpmforge-release/</a> but it is recommended that you use one of the two listed above).</p>
+<p class="line874">Install DAG&#8217;s GPG key</p>
+<pre>rpm --import http://dag.wieers.com/rpm/packages/RPM-GPG-KEY.dag.txt</pre>
+<p class="line874">Verify the package you have downloaded</p>
+<pre>rpm -K rpmforge-release-0.3.6-1.el5.rf.*.rpm</pre>
+<p class="line867"><em>Security warning:</em> The rpmforge-release package imports GPG keys into your RPM database. As long as you have verified the package and trust Dag then it should be safe.</p>
+<p class="line874">Install the package</p>
+<pre>rpm -i rpmforge-release-0.3.6-1.el5.rf.*.rpm</pre>
+<p class="line874">This will add a yum repository config file and import the appropriate GPG keys. At this point, you can set the priority of the RPMForge repository, and also of the CentOS repositories if you have not done so yet.</p>
+<p class="line874">Fatto questo occorre aggiungere un altro repository:</p>
+<p class="line874">[root@vmonitor-pub ~]# cat /etc/yum.repos.d/alcancelibre.org.repo<br />
+[AL-Desktop]<br />
+name=Enterprise Linux $releasever &#8211; $basearch &#8211; AL Desktop<br />
+mirrorlist=http://www.alcancelibre.org/al/el5/al-desktop<br />
+gpgkey=http://www.alcancelibre.org/al/AL-RPM-KEY<br />
+priority=11</p>
+<p>wget http://www.alcancelibre.org/al/webapps/AL-RPM-KEY<br />
+rpm &#8211;import AL-RPM-KEY</p>
+<p class="line874">
+<p class="line874">
+<p class="line874">Test with this command:</p>
+<pre>yum check-update</pre>
+<p class="line874">It should output these two lines:</p>
+<pre>Loading "priorities" plugin...76 packages excluded due to repository priority protections</pre>
+<p class="line874">The number above may differ, but there should be several packages shown as being excluded.</p>
+<p class="line874">If so then it looks like things are working so try installing something like this</p>
+<p class="line874">yum install mysql.i386 mysql-devel.i386 mysql-server.i386 mysql-test.i386 php-mysql.i386 php-pear-MDB2-Driver-mysql.noarch</p>
+<p class="line874">
+<pre>yum install snort-mysql+flexresp.i386 snort-rep.i386 snort-snmp+flexresp.i386 php-acid.noarch mysql-server
+<p>wget http://www.andrew.cmu.edu/user/rdanyliw/snort/acid-0.9.6b23.tar.gz
+wget http://heanet.dl.sourceforge.net/sourceforge/adodb/adodb505.tgz</p>
+<p>tar -zxvf acid-0.9.6b23.tar.gz
+tar -zxvf adodb505.tgz</p>
+<p>alias cp=cp
+cp -r acid/ /var/www/
+cp -r adodb5/ /var/www/acid/
+alias cp=&quot;cp -i&quot;</p>
+<p>mysqladmin create snort
+mysql snort &lt; /usr/share/doc/snort-2.6.1.1/create_mysql
+mysql snort &lt; /var/www/acid/create_acid_tbls_mysql.sql</p>
+<p>edit /var/www/acid/acid_conf.php</p>
+<p>cp /etc/snort/snort.conf /etc/snort/snort.conf.ORIG
+edit /etc/snort/snort.conf</p>
+<p>download rules http://www.snort.org/vrt/</p>
+<p>....</pre></p>
+
+    </main>
+
+</div>
+
+<div class="row">
+.
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://github.com/MaoX17/eleventy-bootstrap">  </a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

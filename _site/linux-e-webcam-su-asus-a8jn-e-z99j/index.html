@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="html" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Linux e webcam su asus A8JN e Z99J · </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="author" content=" Maurizio Proietti ">
+
+    
+    <meta property="og:title" content="Linux e webcam su asus A8JN e Z99J" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="theme-color" content="#fff" />
+
+
+    <meta name="msapplicati on-TileColor" content="#ffffff">
+
+    <link rel="canonical" href=/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RE3324MGY"></script>
+    <script src="https://kit.fontawesome.com/2845a43a9e.js" crossorigin="anonymous"></script>
+    
+	<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4RE3324MGY');
+    </script>
+
+  </head>
+  
+<body id="app-layout">
+
+	
+	  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">
+	  <img src='/icons/gremapro.svg' alt="GreMaPro" width="70" height="70" alt="GreMaPro">
+      
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">GreM@Pro - IT & Passion <span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+    <ul class="navbar-nav mr-sm-2">
+<li class="nav-item">
+		<a class="nav-link" href="/posts">Appunti</a>
+	</li>
+      <li class="nav-item">
+        
+        <a class="nav-link" href="https://www.maurizio.proietti.name/">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/portfolio">Portfolio</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://link.proietti.net/@maox">About</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+  <H1> Linux e webcam su asus A8JN e Z99J </H1>
+    <main>
+      <p>Finalmente la Webcam FUNZIONA.<br />Sul mio Asus Z99Jseries (riconosciuto come un A8JN)<br />per installare la webcam è stato sufficiente scaricare il pacchetto<br /><a href="http://mxhaard.free.fr/spca50x/Download/gspcav1-20070508.tar.gz">http://mxhaard.free.fr/spca50x/Download/gspcav1-20070508.tar.gz</a></p>
+<p>dal seguente sito</p>
+<p><a href="http://mxhaard.free.fr/download.html">http://mxhaard.free.fr/download.html</a></p>
+<p>e dare</p>
+<p>make<br />make install<br />modprobe gspca</p>
+<p>e ora FUNZIONA!!!</p>
+<p>Potete provarla con l&#8217;ottimo VLC (File -> Apri periferica di acquisizione)<br />Se l&#8217;immagine dovesse avere strani colori aggiungete questa riga al file</p>
+<p><span style="color: rgb(51, 102, 255);">/etc/modprobe.conf :</span><br /><span style="color:#000080;"><span style="font-size: 11pt;font-size:85%;" ><span style="color: rgb(204, 0, 0);">options gspca force_rgb=1</span></span></span><span style="color: rgb(204, 0, 0);"></p>
+<p></span>se invece l&#8217;immagine è troppo scura provate ad aggiungere questo:</p>
+<p><span style="font-size:100%;"><code style="color: rgb(204, 0, 0);">options gspca force_rgb=0 gamma=4</p>
+<p><span style="color: rgb(0, 0, 0);">e poi ricaricare il modulo con</span></p>
+<p></code></span></p>
+<blockquote style="color: rgb(0, 0, 0);"><p><span style="font-size:100%;">modprobe -r gspca<br />modprobe gspca</span></p></blockquote>
+<p>Inoltre è possibile cambiare al volo i parametri di gspca</p>
+<p><span style="font-weight: bold;"></p>
+<blockquote><p>cd /sys/module/gspca/parameters</p></blockquote>
+<p></span><br />I parametri sono i seguenti:</p>
+<blockquote><p><span style="font-weight: bold;">autoexpo</span><br /><span style="font-weight: bold;">compress</span><br /><span style="font-weight: bold;">debug</span><br /><span style="font-weight: bold;">force_rgb</span><br /><span style="font-weight: bold;">gamma</span><br /><span style="font-weight: bold;">GBlue</span><br /><span style="font-weight: bold;">GGreen</span><br /><span style="font-weight: bold;">GRed</span><br /><span style="font-weight: bold;">lightfreq</span><br /><span style="font-weight: bold;">OffBlue</span><br /><span style="font-weight: bold;">OffGreen</span><br /><span style="font-weight: bold;">OffRed</span><br /><span style="font-weight: bold;">usbgrabber</span></p></blockquote>
+<p>per leggerli basta un cat</p>
+<p>e per modificarli :</p>
+<p><code><span style="font-weight: bold;"></p>
+<blockquote><p>echo "_valore_" > _parametro_ </p></blockquote>
+<p></span><br />Allego di seguito una breve descrizione dei parametri:</p>
+<p></code><span style="font-weight: bold;">autoexpo</span>:Enable/Disable auto exposure (default=1: enabled) (PC-CAM 600/Zc03xx/spca561a/Etoms Only !!!) (int)<br /><span style="font-weight: bold;">debug</span>:Debug level: 0=none, 1=init/detection, 2=warning, 3=config/control, 4=function call, 5=max (int)<br /><span style="font-weight: bold;">force_rgb</span>:Read RGB instead of BGR (int)<br /><span style="font-weight: bold;">gamma</span>:gamma setting range 0 to 7 3-> gamma=1 (int)<br /><span style="font-weight: bold;">OffRed</span>:OffRed setting range -128 to 128 (int)<br /><span style="font-weight: bold;">OffBlue</span>:OffBlue setting range -128 to 128 (int)<br /><span style="font-weight: bold;">OffGreen</span>:OffGreen setting range -128 to 128 (int)<br /><span style="font-weight: bold;">GRed</span>:Gain Red setting range 0 to 512 /256  (int)<br /><span style="font-weight: bold;">GBlue</span>:Gain Blue setting range 0 to 512 /256  (int)<br /><span style="font-weight: bold;">GGreen</span>:Gain Green setting range 0 to 512 /256  (int)<br /><span style="font-weight: bold;">compress</span>:Turn on/off compression (not functional yet) (int)<br /><span style="font-weight: bold;">usbgrabber</span>:Is a usb grabber 0x0733:0x0430 ? (default 1)  (int)<br /><span style="font-weight: bold;">lightfreq</span>:Light frequency banding filter. Set to 50 or 60 Hz, or zero to NoFliker (default=50) (int)</p>
+
+    </main>
+
+</div>
+
+<div class="row">
+.
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://github.com/MaoX17/eleventy-bootstrap">  </a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

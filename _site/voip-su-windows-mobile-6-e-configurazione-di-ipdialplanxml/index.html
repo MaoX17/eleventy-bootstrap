@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="html" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Voip su windows mobile 6 e configurazione di ipdialplan.xml · </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="author" content=" Maurizio Proietti ">
+
+    
+    <meta property="og:title" content="Voip su windows mobile 6 e configurazione di ipdialplan.xml" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="theme-color" content="#fff" />
+
+
+    <meta name="msapplicati on-TileColor" content="#ffffff">
+
+    <link rel="canonical" href=/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RE3324MGY"></script>
+    <script src="https://kit.fontawesome.com/2845a43a9e.js" crossorigin="anonymous"></script>
+    
+	<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4RE3324MGY');
+    </script>
+
+  </head>
+  
+<body id="app-layout">
+
+	
+	  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">
+	  <img src='/icons/gremapro.svg' alt="GreMaPro" width="70" height="70" alt="GreMaPro">
+      
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">GreM@Pro - IT & Passion <span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+    <ul class="navbar-nav mr-sm-2">
+<li class="nav-item">
+		<a class="nav-link" href="/posts">Appunti</a>
+	</li>
+      <li class="nav-item">
+        
+        <a class="nav-link" href="https://www.maurizio.proietti.name/">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/portfolio">Portfolio</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://link.proietti.net/@maox">About</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+  <H1> Voip su windows mobile 6 e configurazione di ipdialplan.xml </H1>
+    <main>
+      <p>Oggi ho configurato il mio PDA (Hermes con windows mobile 6) per connettersi a mytcom.it e sfruttare il loro servizio voip per telefonare a tariffe vantaggiose.<br />Dopo aver configurato il mio pda ed aver stabilito la connessione correttamente<br />come mostrato nei seguenti screenshot:<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://bp2.blogger.com/_tPaw4zBlAc8/R5kl6-1ArJI/AAAAAAAAACI/Le4qksDVqpM/s1600-h/voip01.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="http://bp2.blogger.com/_tPaw4zBlAc8/R5kl6-1ArJI/AAAAAAAAACI/Le4qksDVqpM/s320/voip01.jpg" alt="" id="BLOGGER_PHOTO_ID_5159196543357594770" border="0" /></a><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://bp0.blogger.com/_tPaw4zBlAc8/R5kmDe1ArKI/AAAAAAAAACQ/94tRgNZOOqI/s1600-h/voip02.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="http://bp0.blogger.com/_tPaw4zBlAc8/R5kmDe1ArKI/AAAAAAAAACQ/94tRgNZOOqI/s320/voip02.jpg" alt="" id="BLOGGER_PHOTO_ID_5159196689386482850" border="0" /></a><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://bp2.blogger.com/_tPaw4zBlAc8/R5kmP-1ArLI/AAAAAAAAACY/IyR9RJkj5-Y/s1600-h/voip03.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="http://bp2.blogger.com/_tPaw4zBlAc8/R5kmP-1ArLI/AAAAAAAAACY/IyR9RJkj5-Y/s320/voip03.jpg" alt="" id="BLOGGER_PHOTO_ID_5159196904134847666" border="0" /></a><br />Ho fatto le classiche chiamate di prova ai numeri 690 e 695 e tutto funzionava correttamente.<br />Ho quindi aggiunto del credito al mio account e ho provato a chiamare numeri fissi o cellulari.<br />Ottenevo sempre un errore come il seguente:<br />&#8220;cannot complete the call phone number may not be valid&#8221;</p>
+<p>Mi sono un po&#8217; scervellato per capire cosa potesse essere, ho chiesto aiuto al supporto di mytcom.it ma per loro tutto era ok (infatti funzionava tutto con i loro numeri di test)<br />fino a quando non ho capito&#8230;<br />il problema era la COMPOSIZIONE del numero, era impostato male il file<br /><strong>ipdialplan.xml</p>
+<p></strong>Presente nell directory \windows sul mio pda</p>
+<p>Dopo aver cercato un po&#8217; su internet ed aver trovato le seguenti informazioni:<br /><a href="http://forum.xda-developers.com/showthread.php?p=1846002">http://forum.xda-developers.com/showthread.php?p=1846002</a><br /><a href="http://msdn2.microsoft.com/en-us/library/bb202934.aspx">http://msdn2.microsoft.com/en-us/library/bb202934.aspx</a><br /><a href="http://msdn2.microsoft.com/en-us/library/aa921921.aspx">http://msdn2.microsoft.com/en-us/library/aa921921.aspx</a><br /><a href="http://msdn2.microsoft.com/en-us/library/aa921954.aspx">http://msdn2.microsoft.com/en-us/library/aa921954.aspx</a></p>
+<p>mi sono deciso a modificarmi il file<br />ipdialplan.xml</p>
+<p>che allego di seguito:<br />io l&#8217;ho provato con molti numeri che ho in rubrica, sia con il +39 che senza, sia fissi che cellulari e tutto sembra funzionare correttamente.</p>
+<p>&lt;dialplan xmlns=&#8217;http://schemas.microsoft.com/embedded/VoIP&#8217;&gt;<br />    &lt;dialplan-header&gt;<br />        &lt;host&gt;#use_sipsrv_host_name#&lt;/host&gt;<br />    &lt;/dialplan-header&gt;<br />    &lt;!&#8211; Dial Plan rules &#8211;&gt;<br />    &lt;!&#8211; IP address rules &#8211;&gt;<br />    &lt;rule pattern=&#8217;\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}&#8217;<br />        restrict=&#8217;Cell,SMS&#8217;<br />        /&gt;<br />    &lt;rule pattern='(\d{1,3})\*(\d{1,3})\*(\d{1,3})\*(\d{1,3})&#8217;<br />        dial=&#8217;\1.\2.\3.\4&#8242;<br />        display=&#8217;\1.\2.\3.\4&#8242;<br />        transfer=&#8217;\1.\2.\3.\4&#8242;<br />        restrict=&#8217;Cell,SMS&#8217;<br />        /&gt;<br />    &lt;!&#8211; 11-digits rules &#8211;&gt;<br />    &lt;rule pattern=&#8217;1\s*-?\s*(\d{3})\s*-?\s*(\d{3})\s*-?\s*(\d{4})(\s*[Xx]\s*\d+)?&#8217;<br />        dial=&#8217;sip:91\1\2\3@$host$&#8217;<br />        display=&#8217;1 (\1) \2-\3&#8242;<br />        transfer=&#8217;sip:1\1\2\3@$host$&#8217;<br />        /&gt;<br />    &lt;rule pattern=&#8217;1\s*-?\s*\((\d{3})\)\s*-?\s*(\d{3})\s*-?\s*(\d{4})(\s*[Xx]\s*\d+)?&#8217;<br />        dial=&#8217;sip:91\1\2\3@$host$&#8217;<br />        display=&#8217;1 (\1) \2-\3&#8242;<br />        transfer=&#8217;sip:1\1\2\3@$host$&#8217;<br />        /&gt;<br />    &lt;rule pattern=&#8217;\+\s*1\s*-?\s*(\d{3})\s*-?\s*(\d{3})\s*-?\s*(\d{4})(\s*[Xx]\s*\d+)?&#8217;<br />        dial=&#8217;sip:91\1\2\3@$host$&#8217;<br />        display=&#8217;+1 (\1) \2-\3&#8242;<br />        transfer=&#8217;sip:1\1\2\3@$host$&#8217;<br />        /&gt;<br />    &lt;rule pattern=&#8217;\+\s*1\s*-?\s*\((\d{3})\)\s*-?\s*(\d{3})\s*-?\s*(\d{4})(\s*[Xx]\s*\d+)?&#8217;<br />        dial=&#8217;sip:91\1\2\3@$host$&#8217;<br />        display=&#8217;+1 (\1) \2-\3&#8242;<br />        transfer=&#8217;sip:1\1\2\3@$host$&#8217;<br />        /&gt;<br /> &lt;!&#8211; 11-cifre-by-maox-x-italy +39 33344455566&#8211;&gt;<br /> &lt;rule pattern=&#8217;\+\s*(\d{2})\s*(\d{11})&#8217;<br />        dial=&#8217;sip:\2@$host$&#8217;<br />        display=&#8217;+\1\2&#8242;<br />        transfer=&#8217;sip:\2@$host$&#8217;<br />        /&gt;<br /> &lt;!&#8211; 10-cifre-by-maox-x-italy +39 3334445556&#8211;&gt;<br /> &lt;rule pattern=&#8217;\+\s*(\d{2})\s*(\d{10})&#8217;<br />        dial=&#8217;sip:\2@$host$&#8217;<br />        display=&#8217;+\1\2&#8242;<br />        transfer=&#8217;sip:\2@$host$&#8217;<br />        /&gt;<br /> &lt;!&#8211; 9-cifre-by-maox-x-italy +39 3334445556&#8211;&gt;<br /> &lt;rule pattern=&#8217;\+\s*(\d{2})\s*(\d{9})&#8217;<br />        dial=&#8217;sip:\2@$host$&#8217;<br />        display=&#8217;+\1\2&#8242;<br />        transfer=&#8217;sip:\2@$host$&#8217;<br />        /&gt;<br /> &lt;!&#8211; 8-cifre-by-maox-x-italy +39 333444555&#8211;&gt;<br /> &lt;rule pattern=&#8217;\+\s*(\d{2})\s*(\d{8})&#8217;<br />        dial=&#8217;sip:\2@$host$&#8217;<br />        display=&#8217;+\1\2&#8242;<br />        transfer=&#8217;sip:\2@$host$&#8217;<br />        /&gt;<br /> &lt;!&#8211; qualsiasi-cifre-by-maox-x-italy 4916 oppure 695 oppure qualsiasi numero senza +39&#8211;&gt;<br /> &lt;rule pattern='(\d+)&#8217;<br />        dial=&#8217;sip:\1@$host$&#8217;<br />        display=&#8217;\1&#8242;<br />        transfer=&#8217;sip:\1@$host$&#8217;<br />        /&gt;<br /> &lt;!&#8211; 10-digits rules &#8211;&gt;<br />    &lt;rule pattern='(\d{3})\s*(\d{3})\s*-?\s*(\d{4})(\s*[Xx]\s*\d+)?&#8217;<br />        dial=&#8217;sip:9\1\2\3@$host$&#8217;<br />        display='(\1) \2-\3&#8242;<br />        transfer=&#8217;sip:\1\2\3@$host$&#8217;<br />        /&gt;<br />    &lt;rule pattern=&#8217;\((\d{3})\)\s*(\d{3})\s*-?\s*(\d{4})(\s*[Xx]\s*\d+)?&#8217;<br />        dial=&#8217;sip:9\1\2\3@$host$&#8217;<br />        display='(\1) \2-\3&#8242;<br />        transfer=&#8217;sip:\1\2\3@$host$&#8217;<br />        /&gt;<br />    &lt;!&#8211; 7-digits rules &#8211;&gt;<br />    &lt;rule pattern='(\d{3})\s*-?\s*(\d{4})&#8217;<br />        dial=&#8217;sip:9425\1\2@$host$&#8217;<br />        display=&#8217;\1-\2&#8242;<br />        transfer=&#8217;sip:425\1\2@$host$&#8217;<br />        /&gt;<br />    &lt;!&#8211; SIP URI rules &#8211;&gt;<br />    &lt;rule pattern='[Ss][Ii][Pp][Ss]?:\s*(\d{3})(\d{3})(\d{4})@(.+)&#8217;<br />        display='(\1) \2-\3&#8242;<br />        restrict=&#8217;Cell,SMS&#8217;<br />        /&gt;<br />    &lt;rule pattern='([Ss][Ii][Pp][Ss]?:)?\s*([a-zA-Z0-9_-]+)@(.+)&#8217;<br />        display=&#8217;\2&#8242;<br />        restrict=&#8217;Cell,SMS&#8217;<br />        /&gt;<br />    &lt;rule pattern='[Ss][Ii][Pp][Ss]?:\s*([^@]+)&#8217;<br />        display=&#8217;\1&#8242;<br />        restrict=&#8217;Cell,SMS&#8217;<br />        /&gt;<br />    &lt;!&#8211; 5-digits rules &#8211;&gt;<br />    &lt;rule pattern='(\d{3})-?(\d{2})&#8217;<br />        dial=&#8217;sip:\1\2@$host$&#8217;<br />        display=&#8217;\1\2&#8242;<br />        transfer=&#8217;sip:\1\2@$host$&#8217;<br />        /&gt;<br />    &lt;rule pattern=&#8217;1\s*\((\d{3})\)\s*(\d)&#8217;<br />        dial=&#8217;sip:1\1\2@$host$&#8217;<br />        display=&#8217;1\1\2&#8242;<br />        transfer=&#8217;sip:1\1\2@$host$&#8217;<br />        /&gt;<br />    &lt;!&#8211; Only digits &#8211;&gt;<br />    &lt;rule pattern='(\d+)&#8217;<br />        dial=&#8217;sip:\1@$host$&#8217;<br />        display=&#8217;\1&#8242;<br />        transfer=&#8217;sip:\1@$host$&#8217;<br />        /&gt;<br />&lt;/dialplan&gt;</p>
+
+    </main>
+
+</div>
+
+<div class="row">
+.
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://github.com/MaoX17/eleventy-bootstrap">  </a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="html" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Installazione di Ocserv openconnect server vpn · </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="author" content=" Maurizio Proietti ">
+
+    
+    <meta property="og:title" content="Installazione di Ocserv openconnect server vpn" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="theme-color" content="#fff" />
+
+
+    <meta name="msapplicati on-TileColor" content="#ffffff">
+
+    <link rel="canonical" href=/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RE3324MGY"></script>
+    <script src="https://kit.fontawesome.com/2845a43a9e.js" crossorigin="anonymous"></script>
+    
+	<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4RE3324MGY');
+    </script>
+
+  </head>
+  
+<body id="app-layout">
+
+	
+	  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">
+	  <img src='/icons/gremapro.svg' alt="GreMaPro" width="70" height="70" alt="GreMaPro">
+      
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">GreM@Pro - IT & Passion <span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+    <ul class="navbar-nav mr-sm-2">
+<li class="nav-item">
+		<a class="nav-link" href="/posts">Appunti</a>
+	</li>
+      <li class="nav-item">
+        
+        <a class="nav-link" href="https://www.maurizio.proietti.name/">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/portfolio">Portfolio</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://link.proietti.net/@maox">About</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+  <H1> Installazione di Ocserv openconnect server vpn </H1>
+    <main>
+      <h3>Installazione</h3>
+<pre>
+yum install autoconf automake gcc libtasn1-devel zlib zlib-devel  trousers trousers-devel gmp-devel gmp xz texinfo libnl-devel libnl  tcp_wrappers-libs tcp_wrappers-devel tcp_wrappers dbus dbus-devel  ncurses-devel pam-devel readline-devel bison bison-devel flex gcc  automake autoconf wget
+</pre>
+<pre>
+wget <a title="http://www.infradead.org/~tgr/libnl/files/libnl-3.2.25.tar.gz" rel="nofollow" href="http://www.infradead.org/%7Etgr/libnl/files/libnl-3.2.25.tar.gz">http://www.infradead.org/~tgr/libnl/files/libnl-3.2.25.tar.gz</a>
+tar -zxvf nettle-2.7.1.tar.gz
+cd nettle-2.7.1
+./configure --prefix=/opt/
+make &amp;&amp; make install
+</pre>
+<pre>
+tar -xvf gnutls-3.3.10.tar.xz
+cd gnutls-3.3.10
+export LD_LIBRARY_PATH=/opt/lib/:/opt/lib64/
+NETTLE_CFLAGS="-I/opt/include/" NETTLE_LIBS="-L/opt/lib64/ -lnettle"  HOGWEED_CFLAGS="-I/opt/include" HOGWEED_LIBS="-L/opt/lib64/ -lhogweed"  ./configure --prefix=/opt/
+</pre>
+<pre>
+wget <a title="http://www.carisma.slowglass.com/~tgr/libnl/files/libnl-3.2.24.tar.gz" rel="nofollow" href="http://www.carisma.slowglass.com/%7Etgr/libnl/files/libnl-3.2.24.tar.gz">http://www.carisma.slowglass.com/~tgr/libnl/files/libnl-3.2.24.tar.gz</a>
+tar xvf libnl-3.2.24.tar.gz
+cd libnl-3.2.24
+./configure --prefix=/opt/
+make &amp;&amp; make install
+</pre>
+<pre>
+tar -xvf ocserv-0.8.8.tar.xz
+cd ocserv-0.8.8
+ls
+LIBGNUTLS_CFLAGS="-I/opt/include/" LIBGNUTLS_LIBS="-L/opt/lib/ -lgnutls"  LIBNL3_CFLAGS="-I/opt/include" LIBNL3_LIBS="-L/opt/lib/ -lnl-3  -lnl-route-3" ./configure --prefix=/opt/
+make &amp;&amp; make install
+</pre>
+<pre>
+export LD_LIBRARY_PATH=/opt/lib/:/opt/lib64/
+<p>export PATH=$PATH:/opt/bin:/opt/sbin
+</pre></p>
+<h3>Configurazione di Ocserv &#8211; openconnect server vpn</h3>
+<h4>Generazione dei certificati</h4>
+<pre>
+mkdir /etc/ocserv/
+<p>cd /etc/ocserv/</p>
+<p>export LD_LIBRARY_PATH=/opt/lib/:/opt/lib64/</p>
+<p>export PATH=$PATH:/opt/bin:/opt/sbin</p>
+<p>certtool --generate-privkey --outfile ca-key.pem</p>
+<p>cat &lt;&lt; <em>EOF</em> &gt; ca.tmpl
+cn = &quot;VPN CA&quot;
+organization = &quot;Provincia di Prato&quot;
+serial = 1
+expiration_days = 9999
+ca
+signing_key
+cert_signing_key
+crl_signing_key
+<em>EOF</em></p>
+<p>certtool --generate-self-signed --load-privkey ca-key.pem --template ca.tmpl --outfile ca-cert.pem
+certtool --generate-privkey --outfile server-key.pem</p>
+<p>cat &lt;&lt; <em>EOF</em> &gt; server.tmpl
+cn = &quot;openconnect.provincia.prato.it&quot;
+organization = &quot;ProvinciaDiPrato&quot;
+expiration_days = 9999
+signing_key
+encryption_key #only if the generated key is an RSA one
+tls_www_server
+<em>EOF</em></p>
+<p>certtool --generate-certificate --load-privkey server-key.pem  --load-ca-certificate ca-cert.pem --load-ca-privkey ca-key.pem  --template server.tmpl --outfile server-cert.pem</p>
+<p>certtool --generate-privkey --outfile mpadmin-key.pem</p>
+<p>cat &lt;&lt; <em>EOF</em> &gt; mpadmin.tmpl
+cn = &quot;mpadmin&quot;
+unit = &quot;admins&quot;
+expiration_days = 9999
+signing_key
+tls_www_client
+<em>EOF</em></p>
+<p>certtool --generate-certificate --load-privkey mpadmin-key.pem  --load-ca-certificate ca-cert.pem --load-ca-privkey ca-key.pem  --template mpadmin.tmpl --outfile mpadmin-cert.pem
+</pre></p>
+<h3>File di configurazione: ocserv.conf</h3>
+<pre>
+[root@localhost ocserv]# cat ocserv.conf
+# User authentication method. Could be set multiple times and in that case
+# all should succeed.
+# Options: certificate, pam.
+auth = "certificate"
+#auth = "plain[./test1.passwd]"
+#auth = "pam"
+<h1>A banner to be displayed on clients</h1>
+<p>banner = &quot;Welcome&quot;</p>
+<h1>Use listen-host to limit to specific IPs or to the IPs of a provided hostname.</h1>
+<p>#listen-host = [IP|HOSTNAME]</p>
+<p>use-dbus = no</p>
+<h1>Limit the number of clients. Unset or set to zero for unlimited.</h1>
+<p>#max-clients = 1024
+max-clients = 16</p>
+<h1>Limit the number of client connections to one every X milliseconds</h1>
+<h1>(X is the provided value). Set to zero for no limit.</h1>
+<p>#rate-limit-ms = 100</p>
+<h1>Limit the number of identical clients (i.e., users connecting multiple times)</h1>
+<h1>Unset or set to zero for unlimited.</h1>
+<p>max-same-clients = 2</p>
+<h1>TCP and UDP port number</h1>
+<p>tcp-port = 4444
+udp-port = 4444</p>
+<h1>Keepalive in seconds</h1>
+<p>keepalive = 32400</p>
+<h1>Dead peer detection in seconds</h1>
+<p>dpd = 440</p>
+<h1>MTU discovery (DPD must be enabled)</h1>
+<p>try-mtu-discovery = false</p>
+<h1>The key and the certificates of the server</h1>
+<h1>The key may be a file, or any URL supported by GnuTLS (e.g.,</h1>
+<h1>tpmkey:uuid=xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx;storage=user</h1>
+<h1>or pkcs11:object=my-vpn-key;object-type=private)</h1>
+<h1></h1>
+<h1>There may be multiple certificate and key pairs and each key</h1>
+<h1>should correspond to the preceding certificate.</h1>
+<p>server-cert = /etc/ocserv/server-cert.pem
+server-key = /etc/ocserv/server-key.pem</p>
+<h1>Diffie-Hellman parameters. Only needed if you require support</h1>
+<h1>for the DHE ciphersuites (by default this server supports ECDHE).</h1>
+<h1>Can be generated using:</h1>
+<h1>certtool --generate-dh-params --outfile /path/to/dh.pem</h1>
+<p>#dh-params = /path/to/dh.pem</p>
+<h1>If you have a certificate from a CA that provides an OCSP</h1>
+<h1>service you may provide a fresh OCSP status response within</h1>
+<h1>the TLS handshake. That will prevent the client from connecting</h1>
+<h1>independently on the OCSP server.</h1>
+<h1>You can update this response periodically using:</h1>
+<h1>ocsptool --ask --load-cert=your_cert --load-issuer=your_ca --outfile response</h1>
+<h1>Make sure that you replace the following file in an atomic way.</h1>
+<p>#ocsp-response = /path/to/ocsp.der</p>
+<h1>In case PKCS #11 or TPM keys are used the PINs should be available</h1>
+<h1>in files. The srk-pin-file is applicable to TPM keys only (It's the storage</h1>
+<h1>root key).</h1>
+<p>#pin-file = /path/to/pin.txt
+#srk-pin-file = /path/to/srkpin.txt</p>
+<h1>The Certificate Authority that will be used</h1>
+<h1>to verify clients if certificate authentication</h1>
+<h1>is set.</h1>
+<p>#ca-cert = /path/to/ca.pem
+ca-cert = /etc/ocserv/ca-cert.pem</p>
+<h1>The object identifier that will be used to read the user ID in the client certificate.</h1>
+<h1>The object identifier should be part of the certificate's DN</h1>
+<h1>Useful OIDs are:</h1>
+<p>#  CN = 2.5.4.3, UID = 0.9.2342.19200300.100.1.1
+#cert-user-oid = 0.9.2342.19200300.100.1.1</p>
+<h1>The object identifier that will be used to read the user group in the client</h1>
+<h1>certificate. The object identifier should be part of the certificate's DN</h1>
+<h1>Useful OIDs are:</h1>
+<p>#  OU (organizational unit) = 2.5.4.11
+#cert-group-oid = 2.5.4.11</p>
+<h1>A revocation list of ca-cert is set</h1>
+<p>#crl = /path/to/crl.pem</p>
+<h1>GnuTLS priority string</h1>
+<p>tls-priorities = &quot;PERFORMANCE:%SERVER_PRECEDENCE:%COMPAT&quot;</p>
+<h1>To enforce perfect forward secrecy (PFS) on the main channel.</h1>
+<p>#tls-priorities = &quot;NORMAL:%SERVER_PRECEDENCE:%COMPAT:-RSA&quot;</p>
+<h1>The time (in seconds) that a client is allowed to stay connected prior</h1>
+<h1>to authentication</h1>
+<p>auth-timeout = 40</p>
+<h1>The time (in seconds) that a client is not allowed to reconnect after</h1>
+<h1>a failed authentication attempt.</h1>
+<p>#min-reauth-time = 2</p>
+<h1>Cookie validity time (in seconds)</h1>
+<h1>Once a client is authenticated he's provided a cookie with</h1>
+<h1>which he can reconnect. This option sets the maximum lifetime</h1>
+<h1>of that cookie.</h1>
+<p>cookie-validity = 172800</p>
+<h1>Script to call when a client connects and obtains an IP</h1>
+<h1>Parameters are passed on the environment.</h1>
+<h1>REASON, USERNAME, GROUPNAME, HOSTNAME (the hostname selected by client),</h1>
+<h1>DEVICE, IP_REAL (the real IP of the client), IP_LOCAL (the local IP</h1>
+<h1>in the P-t-P connection), IP_REMOTE (the VPN IP of the client). REASON</h1>
+<h1>may be &quot;connect&quot; or &quot;disconnect&quot;.</h1>
+<p>#connect-script = /usr/bin/myscript
+#disconnect-script = /usr/bin/myscript</p>
+<h1>UTMP</h1>
+<p>use-utmp = true</p>
+<h1>PID file</h1>
+<p>pid-file = /var/run/ocserv.pid</p>
+<h1>The default server directory. Does not require any devices present.</h1>
+<p>#chroot-dir = /path/to/chroot</p>
+<h1>socket file used for IPC, will be appended with .PID</h1>
+<h1>It must be accessible within the chroot environment (if any)</h1>
+<p>socket-file = /var/run/ocserv-socket</p>
+<h1>The user the worker processes will be run as. It should be</h1>
+<h1>unique (no other services run as this user).</h1>
+<p>run-as-user = nobody
+run-as-group = daemon</p>
+<h1>Network settings</h1>
+<p>device = vpns</p>
+<h1>The default domain to be advertised</h1>
+<p>default-domain = provincia.prato.it</p>
+<p>ipv4-network = 172.21.0.0
+ipv4-netmask = 255.255.0.0</p>
+<h1>Use the keywork local to advertize the local P-t-P address as DNS server</h1>
+<p>ipv4-dns = 172.21.1.29</p>
+<h1>The NBNS server (if any)</h1>
+<p>#ipv4-nbns = 192.168.2.3</p>
+<p>#ipv6-address =
+#ipv6-mask =
+#ipv6-dns =</p>
+<h1>Prior to leasing any IP from the pool ping it to verify that</h1>
+<h1>it is not in use by another (unrelated to this server) host.</h1>
+<p>ping-leases = false</p>
+<h1>Leave empty to assign the default MTU of the device</h1>
+<h1>mtu =</h1>
+<p>#route = 192.168.1.0/255.255.255.0
+#route = 192.168.5.0/255.255.255.0</p>
+<h1></h1>
+<h1>The following options are for (experimental) AnyConnect client</h1>
+<h1>compatibility. They are only available if the server is built</h1>
+<h1>with --enable-anyconnect</h1>
+<h1></h1>
+<h1>Client profile xml. A sample file exists in doc/profile.xml.</h1>
+<h1>This file must be accessible from inside the worker's chroot.</h1>
+<h1>The profile is ignored by the openconnect client.</h1>
+<p>#user-profile = profile.xml</p>
+<h1>Unless set to false it is required for clients to present their</h1>
+<h1>certificate even if they are authenticating via a previously granted</h1>
+<h1>cookie. Legacy CISCO clients do not do that, and thus this option</h1>
+<h1>should be set for them.</h1>
+<p>#always-require-cert = false</p>
+<p>######################################################################################
+</pre></p>
+<h3>Creo file di start del servizio: ocserv.start</h3>
+<pre>
+[root@localhost ocserv]# cat ocserv.start
+#!/bin/bash
+export LD_LIBRARY_PATH=/opt/lib/:/opt/lib64/
+export PATH=$PATH:/opt/bin/:/opt/sbin/
+iptables -t nat -F
+iptables -t nat -A POSTROUTING -j MASQUERADE
+ocserv -c /etc/ocserv/ocserv.conf
+<p>########################################################################################
+</pre></p>
+
+    </main>
+
+</div>
+
+<div class="row">
+.
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://github.com/MaoX17/eleventy-bootstrap">  </a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

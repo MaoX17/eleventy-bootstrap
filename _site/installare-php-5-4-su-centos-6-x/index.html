@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="html" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Installare php 5.4 su CentOs 6.x · </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="author" content=" Maurizio Proietti ">
+
+    
+    <meta property="og:title" content="Installare php 5.4 su CentOs 6.x" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="theme-color" content="#fff" />
+
+
+    <meta name="msapplicati on-TileColor" content="#ffffff">
+
+    <link rel="canonical" href=/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RE3324MGY"></script>
+    <script src="https://kit.fontawesome.com/2845a43a9e.js" crossorigin="anonymous"></script>
+    
+	<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4RE3324MGY');
+    </script>
+
+  </head>
+  
+<body id="app-layout">
+
+	
+	  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">
+	  <img src='/icons/gremapro.svg' alt="GreMaPro" width="70" height="70" alt="GreMaPro">
+      
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">GreM@Pro - IT & Passion <span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+    <ul class="navbar-nav mr-sm-2">
+<li class="nav-item">
+		<a class="nav-link" href="/posts">Appunti</a>
+	</li>
+      <li class="nav-item">
+        
+        <a class="nav-link" href="https://www.maurizio.proietti.name/">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/portfolio">Portfolio</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://link.proietti.net/@maox">About</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+  <H1> Installare php 5.4 su CentOs 6.x </H1>
+    <main>
+      <p>Thanks to<br />
+<a href="http://sharadchhetri.com/2015/04/04/install-php-5-4-on-centos-6-with-yum-command/">http://sharadchhetri.com/2015/04/04/install-php-5-4-on-centos-6-with-yum-command/</a></p>
+<p>Step 1. Install SCL repo only by hitting below given command.</p>
+<pre>yum install centos-release-SCL</pre>
+<p>Step 2. Install php 5.4 version on system now.</p>
+<pre>yum install php54</pre>
+<p>To install specific package, package name should be known. Hence, to get the list of available package list from SCL repo run below given command.</p>
+<pre>yum list|grep php</pre>
+<p>Step 3. Activate the PHP 5.4 on system.<br />
+NOTE: If you run below given command directly from terminal then on next login you will not find PHP 5.4 path.</p>
+<pre>source /opt/rh/php54/enable</pre>
+<p>Basically the above command, make PHP 5.4 executable path and environment available to current login user.</p>
+<p>To make PHP 5.4 available to all user , we have to add line source /opt/rh/php54/enable inside file called /etc/profile. Now activate without logout by running command.</p>
+<pre>source /etc/profile</pre>
+<p>Or in case, if you only want php 5.4 available to specific user then just only edit .bashrc or .bash_profile file from User’s home directory. And add line source /opt/rh/php54/enable .</p>
+<p>Step 4. Now check the php version</p>
+<pre>php -v</pre>
+<p>Below given is reference from our system.</p>
+<p>[root@localhost ~]# php -v<br />
+PHP 5.4.16 (cli) (built: Nov 19 2014 08:05:17)<br />
+Copyright (c) 1997-2013 The PHP Group<br />
+Zend Engine v2.4.0, Copyright (c) 1998-2013 Zend Technologies<br />
+[root@localhost ~]#<br />
+IMPORTANT NOTE : The PHP 5.4 package actually installed in /opt/rh directory.</p>
+<h2>ATTENZIONE!!!! Abilitazione x virtualhost</h2>
+<p>thanks to: <a href="http://www.ilsistemista.net/index.php/linux-a-unix/45-joomla-3-3-centos-6-and-php-version-putting-all-together.html?start=1" target="_blank">http://www.ilsistemista.net/index.php/linux-a-unix/45-joomla-3-3-centos-6-and-php-version-putting-all-together.html?start=1</a></p>
+<p><strong>Step n.1: enable the SCL repo and install PHP 5.4</strong></p>
+<pre>yum install -y centos-release-SCL.x86_64
+yum install -y php54.x86_64 php54-php-mysqlnd
+</pre>
+<p><strong>Step n.2: create a PHP wrapper script in /var/www/cgi-bin/php54-wrapper</strong></p>
+<pre>#!/bin/bash
+source /opt/rh/php54/enable
+exec php-cgi $1
+</pre>
+<p><strong>Then give it the appropriate permissions and restore the selinux context:</strong></p>
+<pre>restorecon -RF /var/www/cgi-bin/php54-wrapper
+chown apache:apache /var/www/cgi-bin/php54-wrapper
+chmod ugo-rwx /var/www/cgi-bin/php54-wrapper
+chmod ug+rx /var/www/cgi-bin/php54-wrapper
+</pre>
+<p><strong>Step n.3: configure the appropiate VirtualHost to use the new PHP version via the CGI interface</strong></p>
+<pre>AddHandler php-cgi .php
+Action php-cgi /cgi-bin/php54-wrapper
+Options +ExecCGI
+</pre>
+<p>This configuration instruct Apache to use the new PHP 5.4 version for this and only this Virtualhost, leaving all others configuration intact: other Virtualhosts will continue to use PHP 5.3 version via mod_php.</p>
+<p>&nbsp;</p>
+<p><strong>Nota:</strong></p>
+<p>se smette di funzionare occorre rinominare il file</p>
+<p>/etc/httpd/conf.d/php54-php.conf</p>
+<p>in</p>
+<p>/etc/httpd/conf.d/php54-php.conf.vhosts</p>
+
+    </main>
+
+</div>
+
+<div class="row">
+.
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://github.com/MaoX17/eleventy-bootstrap">  </a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

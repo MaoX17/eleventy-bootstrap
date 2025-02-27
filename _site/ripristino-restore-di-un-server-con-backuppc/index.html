@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="html" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Ripristino restore di un server con BackupPc · </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="author" content=" Maurizio Proietti ">
+
+    
+    <meta property="og:title" content="Ripristino restore di un server con BackupPc" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="theme-color" content="#fff" />
+
+
+    <meta name="msapplicati on-TileColor" content="#ffffff">
+
+    <link rel="canonical" href=/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RE3324MGY"></script>
+    <script src="https://kit.fontawesome.com/2845a43a9e.js" crossorigin="anonymous"></script>
+    
+	<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4RE3324MGY');
+    </script>
+
+  </head>
+  
+<body id="app-layout">
+
+	
+	  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">
+	  <img src='/icons/gremapro.svg' alt="GreMaPro" width="70" height="70" alt="GreMaPro">
+      
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">GreM@Pro - IT & Passion <span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+    <ul class="navbar-nav mr-sm-2">
+<li class="nav-item">
+		<a class="nav-link" href="/posts">Appunti</a>
+	</li>
+      <li class="nav-item">
+        
+        <a class="nav-link" href="https://www.maurizio.proietti.name/">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/portfolio">Portfolio</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://link.proietti.net/@maox">About</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+  <H1> Ripristino restore di un server con BackupPc </H1>
+    <main>
+      <p><strong>Installazione di una Distro linux &#8220;simile&#8221; a quella da ripristinare</strong><br />
+Nelle mie prove ho installato, sulla macchina su cui eseguire il ripristino, la stessa ver. di distribuaione linux della macchina da ripristinare e tutto è andato a buon fine<br />
+Ho notato che la presenza del kudzu (riconoscimento hardware) è molto utile.<br />
+Conviene, quindi, in questa fase, installare kudzu e farlo partire al boot</p>
+<p><strong>Copia di alcuni file originali</strong><br />
+I seguenti file/cartelle sono necessari per il primo boot successivo al ripristino e quindi ne salvo una copia</p>
+<p>cp -r /boot /boot.ORIG<br />
+cp /etc/grub.conf /etc/grub.conf.ORIG<br />
+cp /etc /fstab /etc /fstab.ORIG<br />
+cp /etc /mtab /etc /mtab.ORIG<br />
+cp /etc/modprobe.conf /etc/modprobe.conf.ORIG<br />
+<strong> Installare e configurare rsyncd</strong><br />
+Sulle CentOS:<br />
+yum install rsync rsyncd xinetd<br />
+vim /etc/rsyncd.conf<br />
+##################################<br />
+[root]<br />
+comment = root area<br />
+path = /<br />
+read only = no<br />
+list = yes<br />
+uid = root<br />
+gid = root<br />
+hosts allow = 127.0.0.0/8 10.100.100.14/32 10.100.100.0/24<br />
+##################################</p>
+<p>/etc/init.d/xinetd restart</p>
+<p>controllare che la porta 873 sia in ascolto</p>
+<p><strong>Eseguo il ripristino da BackupPc</strong><br />
+Configuro la macchina su cui devo eseguire il ripristino come se fosse una macchina da backuppare.<br />
+[Nel nostro backuppc esiste già una macchina che si chiama &#8220;test&#8221; configurata sull&#8217;ip 10.100.100.3 che serve per i ripristini ]<br />
+Mi collego sul profilo della macchina da ripristinare -&gt; naviga nel backup -&gt; seleziona tutto ripristina<br />
+Ripristino dei file sull&#8217;host -&gt; Scegliere la macchina SU CUI ESEGUIRE IL RIPRISTINO (test)<br />
+Ripristino dei file sulla condivisione -&gt; root<br />
+Ripristino dei file al di sotto della directory (relativa alla condivisione)  -&gt; /<br />
+Ed avvio il ripristino (che ci mette una vita!)</p>
+<p><strong> Operazioni Post-Ripristino</strong><br />
+Finito il ripristino mi collego alla macchina appena restorata e ri-copio i file originali:</p>
+<p>cp -r /boot /boot.RECOVERY<br />
+cp /etc/grub.conf /etc/grub.conf.RECOVERY<br />
+cp /etc /fstab /etc /fstab.RECOVERY<br />
+cp /etc /mtab /etc /mtab.RECOVERY<br />
+cp /etc/modprobe.conf /etc/modprobe.conf.RECOVERY</p>
+<p>cp -r /boot.ORIG /boot<br />
+cp /etc/grub.conf.ORIG /etc/grub.conf<br />
+cp /etc/fstab.ORIG /etc/fstab<br />
+cp /etc/mtab.ORIG /etc/mtab<br />
+cp /etc/modprobe.conf.ORIG /etc/modprobe.conf</p>
+<p>a questo punto re-installo il grub:</p>
+<p>grub-install –-recheck /dev/sda</p>
+<p>[Nota:<br />
+in realtà nella prova che ho fatto le operazioni appena descritte le ho fatte da una slax live con la seguente procedura:</p>
+<p>loadkeys it<br />
+mount -o bind /dev /mnt/sda1/dev<br />
+mount -t proc none /mnt/sda1/proc<br />
+chroot /mnt/sda1 /bin/bash<br />
+grub-install /dev/sda</p>
+<p>SE GRUB DA ERRORE<br />
+/dev/sda1 does not have any corresponding BIOS drive.</p>
+<p>allora usa il seguente comando:<br />
+grub-install –recheck /dev/sda<br />
+]</p>
+<p>Riavviare il server e configurarlo correttamente in rete</p>
+
+    </main>
+
+</div>
+
+<div class="row">
+.
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://github.com/MaoX17/eleventy-bootstrap">  </a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
