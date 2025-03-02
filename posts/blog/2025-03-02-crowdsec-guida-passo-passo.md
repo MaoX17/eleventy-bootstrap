@@ -1,3 +1,13 @@
+---
+title: "Crowdsec guida passo passo"
+tags: "post"
+htmlClass: "html"
+bodyClass: "body"
+date: "2025-03-02"
+permalink: "Crowdsec-guida-passo-passo/"
+layout: "template_posts_md"
+---
+
 ## CrowdSec
 
 Sul server srv-security  - 192.168.1.65 ho installato il servizio LAPI crowdsec.
