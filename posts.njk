@@ -29,11 +29,12 @@ bodyClass: body
         </th>
         <td>
           {%- for iconImg in post.data.icon -%}
-            
+          
+            <img src="/icons/{{iconImg}}.svg" class="img-thumbnail" alt="{{ iconImg }}" width="32" height="32">
           {%- endfor -%}
         </td>
         <td>
-          <span class="badge badge-primary badge-pill">{{ post.data.date }}</span>
+          {{ post.data.date }}
         </td>
         </tr>
         {%- endfor -%}
