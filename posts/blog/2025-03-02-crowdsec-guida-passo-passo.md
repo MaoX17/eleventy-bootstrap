@@ -30,7 +30,7 @@ installo la componente "centrale" cioè il LAPI server:
 	
 	
 	vim /etc/crowdsec/config.yaml
-	...
+	
 	db_config:
 	  log_level: info
 	  type: mysql
@@ -39,7 +39,7 @@ installo la componente "centrale" cioè il LAPI server:
 	  password: "password123."
 	  db_name:  "crowdsec"
 	
-	...
+	
 	api:
 	  client:
 	    insecure_skip_verify: false
@@ -56,7 +56,7 @@ installo la componente "centrale" cioè il LAPI server:
 	      - 127.0.0.1
 	      - ::1
 	
-	...
+	
 	prometheus:
 	  enabled: true
 	  level: full
@@ -70,11 +70,12 @@ installo la componente "centrale" cioè il LAPI server:
 ```
 
 Aggiungo se stesso:
+```
 
-	
 	cscli machines add -a –force --machine srv-security
 	
 	systemctl restart crowdsec
+```
 	
 
 
@@ -85,6 +86,7 @@ Passo al server "client"
 Esempio su srv-openvpn
 
 Installo la componente security engine:
+```
 
 	
 	curl -s https:/packagecloud.io/install/repositories/crowdsec/crowdsec/script.deb.sh | sudo bash
@@ -92,20 +94,21 @@ Installo la componente security engine:
 	
 	
 	vim /etc/crowdsec/config.yaml
-	...
+	
 	api:
 	  server:
 	    enable: false
-	...
+
 	
 	sudo apt install crowdsec
 	
 	cscli lapi register -u http://192.168.1.65:8080 --machine srv-openvpn
-	
+```
+
 
 
 vado su srv-security:
-
+```
 	
 	cscli machines validate srv-openvpn
 	systemctl restart crowdsec
@@ -113,23 +116,24 @@ vado su srv-security:
 	cscli bouncers add firewall_srv-openvpn
 	systemctl restart crowdsec
 	
-
+```
 
 torno su srv-openvpn
 
 Installo la/le remediation
 
-	
+```
 	
 	apt install crowdsec-firewall-bouncer-iptables
 	vim /etc/crowdsec/bouncers/crowdsec-firewall-bouncer.yaml
-	...
+	
 	api_url: http://192.168.1.65:8080/
 	api_key: xzxzxxxxxxxxxxxxxxxxxxxxxxxxx
-	...
+	
 	
 	systemctl restart crowdsec-firewall-bouncer
-	
+```
+
 
 
 verifico che nel file
@@ -140,41 +144,42 @@ ci siano tutti i log da analizzare
 
 Installo le collection utili per il server in questione:
 
+```
 
-	
 	cscli collections install crowdsecurity/iptables
-
+```u
 
 verifico che la collection sia ok:
-
+```
 	
 	cat /etc/crowdsec/collections/iptables.yaml
-
+```
 
 verifico le collection caricate:
-
+```
 	
 	cscli collections list
-
+```
 
 Verifico come il parser agisce:
-
+```
 	
 	cscli explain -f /var/log/syslog -t syslog
-
+```
 
 Verifico gli errori del parser:
-
+```
 	
 	cscli explain -f /var/log/syslog -t syslog --failures
-
+```
 
 riavvio
 
+```
 	
 	systemctl restart crowdsec
 
- 
+ ```
 
 Fine delle operazioni sul "client"
 
@@ -188,7 +193,7 @@ Ho scritto un parser e uno scenario per crowdsec: [Pubblicato su GitLab](https//
 Ho installato su srv-security il componente [BlockList Mirror](https///docs.crowdsec.net/u/bouncers/blocklist-mirror/)
 
 Ed ho configurato il tutto come segue:
-
+```
 	
 	
 	/etc/crowdsec/bouncers/crowdsec-blocklist-mirror.yaml
@@ -236,15 +241,17 @@ Ed ho configurato il tutto come segue:
 	compress_logs: true
 	# enable access log of the HTTP server
 	enable_access_logs: true
-	
-	
+
+```
+
 
 
 In questo modo ho una lista di ip malevoli auto-aggiornata da honeypot che viene poi sfruttata anche dal firewall 
 
 
-Debug:
+### Debug:
 
+```
 	
 	Da srv-security:
 	
@@ -259,5 +266,5 @@ Debug:
 	
 	A questo punto occorre riavviare il traefik di srv-docker-cloud e di srv-docker-wan
 	
-
+```
 
