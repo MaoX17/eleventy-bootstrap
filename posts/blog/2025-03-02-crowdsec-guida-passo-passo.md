@@ -13,6 +13,7 @@ layout: "template_posts_md"
 Sul server srv-security  - 192.168.1.65 ho installato il servizio LAPI crowdsec.
 installo la componente "centrale" cioè il LAPI server:
 
+```
 	
 	curl -s https:/packagecloud.io/install/repositories/crowdsec/crowdsec/script.deb.sh | sudo bash
 	sudo apt install crowdsec
@@ -66,7 +67,7 @@ installo la componente "centrale" cioè il LAPI server:
 	
 	systemctl restart crowdsec
 	
-
+```
 
 Aggiungo se stesso:
 
