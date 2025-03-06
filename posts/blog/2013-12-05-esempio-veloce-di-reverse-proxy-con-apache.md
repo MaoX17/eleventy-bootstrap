@@ -8,7 +8,7 @@ permalink: "esempio-veloce-di-reverse-proxy-con-apache.html"
 layout: "template_posts_md"
 icon:
   - linux
-  - apaxhe
+  - apache
   
 ---
 <p><code><br />
