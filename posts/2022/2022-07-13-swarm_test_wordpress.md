@@ -20,7 +20,7 @@ Guide: <https://dockerswarm.rocks/swarmpit/>
 
 Abilito swarm:
 
-```bash
+```
 
 docker swarm init
 
