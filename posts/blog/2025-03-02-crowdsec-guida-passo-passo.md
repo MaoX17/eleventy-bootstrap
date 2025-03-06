@@ -188,7 +188,7 @@ Fine delle operazioni sul "client"
 
 Ho pubblicato su internet la porta ssh di un honeypot (opencanary)
 
-Ho scritto un parser e uno scenario per crowdsec: [Pubblicato su GitLab](https///gitlab.consiagservizicomuni.it/7491/csc_pub/crowdsec)
+Ho scritto un parser e uno scenario per crowdsec: Pubblicato su Github 
 
 Ho installato su srv-security il componente [BlockList Mirror](https///docs.crowdsec.net/u/bouncers/blocklist-mirror/)
 
