@@ -147,7 +147,7 @@ Installo le collection utili per il server in questione:
 ```
 
 	cscli collections install crowdsecurity/iptables
-```u
+```
 
 verifico che la collection sia ok:
 ```
