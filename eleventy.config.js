@@ -11,14 +11,14 @@ export default async function(eleventyConfig) {
 	
 	eleventyConfig.addPlugin(syntaxHighlight);
 
+	const site = {
+  	 	title: 'GreM@Pro',
+ 	  	description: 'GreM@Pro - IT & Passion',
+ 		url: 'https://www.gremapro.it'
+ 	}
+
+ 	module.exports = site;
+
 };
 
-
-const site = {
-  	title: 'GreM@Pro',
-  	description: 'GreM@Pro - IT & Passion',
-	url: 'https://www.gremapro.it'
-}
-
-module.exports = site;
 
