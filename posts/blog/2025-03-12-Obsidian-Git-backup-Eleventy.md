@@ -20,3 +20,8 @@ ho integrato obsidian con github
 E quindi adesso, scrivendo su obsidian e facendo commit posso postare in automatico i contenuti che scrivo
 
 WellDone!
+
+
+Effettuo una modifica
+
+
