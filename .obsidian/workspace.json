@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "bfe01bde55fbee52",
+        "id": "fdd6585556673ab2",
         "type": "tabs",
         "children": [
           {
-            "id": "1f4bbdc3ed258a54",
+            "id": "1dcfef5c873deb79",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -176,10 +176,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1f4bbdc3ed258a54",
+  "active": "1dcfef5c873deb79",
   "lastOpenFiles": [
-    "posts/blog/2025-03-12-home-assistant-alexa-media-player-error.md",
+    "2025-12-03.md",
+    "2025-03-12.md",
     "posts/blog/2025-03-12-Obsidian-Git-backup-Eleventy.md",
-    "2025-12-03.md"
+    "posts/blog/2025-03-12-home-assistant-alexa-media-player-error.md",
+    "posts/blog/2020-12-24-wordpress-con-docker-compose-e-traefik.md",
+    "posts/blog/2025-03-02-crowdsec-guida-passo-passo.md"
   ]
 }
