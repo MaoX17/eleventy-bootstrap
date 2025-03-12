@@ -4,7 +4,7 @@ tags:
   - post
 htmlClass: html
 bodyClass: body
-date: 2025-03-12
+date: 2025-03-13
 layout: template_posts_md
 ---
 # VRA - Errore in fase di unregister di una VM - Deploy
