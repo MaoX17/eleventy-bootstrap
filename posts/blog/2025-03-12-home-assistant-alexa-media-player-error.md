@@ -13,6 +13,7 @@ layout: template_posts_md
 
 Da qualche giorno, su HA, Alexa Media Player continua a richiesdere la riconfigurazione e nonostante la riconfigurazione vada a buon fine, al primo tentativo di uso del dispositivo, si genera nuovamente l'errore.
 
+
 ## Soluzione
 
 Per risolvere ho seguito due guide:
