@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "d1f9ee235ff281f9",
+    "id": "acd7c5670372afaa",
     "type": "split",
     "children": [
       {
-        "id": "07801e2b56e4a810",
+        "id": "e3d538bc62f42f3b",
         "type": "tabs",
         "children": [
           {
-            "id": "b5a1407fc3425c15",
+            "id": "3e0ba84147fcf356",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -23,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "c05446cbe02cbd1f",
+    "id": "e2cd836195cc5e30",
     "type": "split",
     "children": [
       {
-        "id": "34770bf13691a0ca",
+        "id": "067b3bc310f94ecd",
         "type": "tabs",
         "children": [
           {
-            "id": "5e54be97877ab26f",
+            "id": "08e8c24fada705eb",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "b4889aaadce1ca6e",
+            "id": "47863528a80253ef",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +61,7 @@
             }
           },
           {
-            "id": "82370d265b5eb976",
+            "id": "c6c619cf52e25698",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -74,23 +74,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 470.5
+    "width": 300
   },
   "right": {
-    "id": "00ace8ac76ab6c9f",
+    "id": "39e824d7b35b0116",
     "type": "split",
     "children": [
       {
-        "id": "4a469513d3a15622",
+        "id": "5ef149ae283a2a38",
         "type": "tabs",
         "children": [
           {
-            "id": "0a30d4f55f58d28a",
+            "id": "7f32f581e1ece49f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2025-03-12-Obsidian-Git-backup-Eleventy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,25 +99,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-03-12-Obsidian-Git-backup-Eleventy"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "854bad2cfbb95f72",
+            "id": "eebd746c541e1963",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2025-03-12-Obsidian-Git-backup-Eleventy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-03-12-Obsidian-Git-backup-Eleventy"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "feea736b3324dc77",
+            "id": "7d8fb31bd94a5d77",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,36 +131,25 @@
             }
           },
           {
-            "id": "1cb31b5e0243cea1",
+            "id": "e97738aa59e16a7d",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "2025-03-12-Obsidian-Git-backup-Eleventy.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-03-12-Obsidian-Git-backup-Eleventy"
-            }
-          },
-          {
-            "id": "aeb09a07792b92dd",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "Outline"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,16 +158,9 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "b5a1407fc3425c15",
-  "lastOpenFiles": [
-    "2025-03-12-Obsidian-Git-backup-Eleventy.md",
-    "2025-03-12-home-assistant-alexa-media-player-error.md",
-    "Untitled",
-    "2025-03-02-crowdsec-guida-passo-passo.md",
-    "2007-03-13-il-controllo-degli-accessi-ad-una-macchina-windows.md"
-  ]
+  "active": "3e0ba84147fcf356",
+  "lastOpenFiles": []
 }

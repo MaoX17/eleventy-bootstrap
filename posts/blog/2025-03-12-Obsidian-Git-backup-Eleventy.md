@@ -22,6 +22,3 @@ E quindi adesso, scrivendo su obsidian e facendo commit posso postare in automat
 WellDone!
 
 
-Effettuo una modifica
-
-
