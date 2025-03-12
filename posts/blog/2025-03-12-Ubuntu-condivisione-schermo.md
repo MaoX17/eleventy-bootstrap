@@ -1,5 +1,5 @@
 ---
-title: "# Ubuntu - Problema condivisione schermo videoconferenza"
+title: Ubuntu - Problema condivisione schermo videoconferenza
 tags:
   - post
 htmlClass: html

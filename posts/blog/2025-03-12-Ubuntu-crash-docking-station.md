@@ -1,5 +1,5 @@
 ---
-title: "# Ubuntu - Crash docking station"
+title: Ubuntu - Crash docking station
 tags:
   - post
 htmlClass: html
