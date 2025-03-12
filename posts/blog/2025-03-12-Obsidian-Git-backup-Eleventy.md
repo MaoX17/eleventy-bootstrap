@@ -4,7 +4,7 @@ tags:
   - post
 htmlClass: html
 bodyClass: body
-date: 2025-12-03
+date: 2025-03-12
 permalink: Obsidian-Git-backup-Eleventy/
 layout: template_posts_md
 ---
