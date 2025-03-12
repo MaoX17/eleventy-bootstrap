@@ -53,7 +53,7 @@ Poi ho provato a risolvere:
 
 - Da VRA Elimnati i TAG con “Update TAG” → tutto ok    
 - Provato a fare “UNREGISTER” del deployment (da VRA → Deployment → Sulla DX accanto al nome della VM → Actions → Unregister )    
-- Mi è fallito perchè rileva un disco che avevo aggiunto da VRA … v. Altro articolo → [[2025-03-13-VRA-Error-Unregister-VM]] - https://www.gremapro.it/posts/blog/2025-03-13-VRA-Error-Unregister-VM/
+- Mi è fallito perchè rileva un disco che avevo aggiunto da VRA … v. Altro articolo → [[2025-03-13-VRA-Error-Unregister-VM]] = [https://www.gremapro.it/posts/blog/2025-03-13-VRA-Error-Unregister-VM/](https://www.gremapro.it/posts/blog/2025-03-13-VRA-Error-Unregister-VM/)
 - Effettuo un nuovo “UNREGISTER” → FUNZIONA!!
 - Non viene eliminata la VM ma il deploy rimane solo con il disco orfano (missing)
 - A questo punto elimina l'intero deploy
