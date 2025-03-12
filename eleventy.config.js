@@ -17,7 +17,6 @@ export default async function(eleventyConfig) {
 const site = {
   	title: 'GreM@Pro',
   	description: 'GreM@Pro - IT & Passion',
-  	baseUrl,
 	url: 'https://www.gremapro.it'
 }
 
