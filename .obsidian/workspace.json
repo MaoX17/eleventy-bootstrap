@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/blog/2025-03-02-crowdsec-guida-passo-passo.md",
+                "file": "posts/blog/2025-03-12-Ubuntu-crash-docking-station.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-03-02-crowdsec-guida-passo-passo"
+              "title": "2025-03-12-Ubuntu-crash-docking-station"
             }
           }
         ]
@@ -178,11 +178,13 @@
   },
   "active": "1dcfef5c873deb79",
   "lastOpenFiles": [
+    "posts/blog/2025-03-12-Ubuntu-ssh-tunnel.md",
+    "posts/blog/2025-03-12-Ubuntu-crash-docking-station.md",
+    "posts/blog/2025-03-02-crowdsec-guida-passo-passo.md",
     "2025-12-03.md",
     "2025-03-12.md",
     "posts/blog/2025-03-12-Obsidian-Git-backup-Eleventy.md",
     "posts/blog/2025-03-12-home-assistant-alexa-media-player-error.md",
-    "posts/blog/2020-12-24-wordpress-con-docker-compose-e-traefik.md",
-    "posts/blog/2025-03-02-crowdsec-guida-passo-passo.md"
+    "posts/blog/2020-12-24-wordpress-con-docker-compose-e-traefik.md"
   ]
 }
