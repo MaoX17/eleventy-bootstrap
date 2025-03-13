@@ -7,7 +7,7 @@ bodyClass: body
 date: 2025-03-12
 layout: template_posts_md
 ---
-# Ubuntu - Crash della docking station
+## Ubuntu - Crash della docking station
 
 ```bash
 

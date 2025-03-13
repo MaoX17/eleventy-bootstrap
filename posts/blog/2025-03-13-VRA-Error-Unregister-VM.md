@@ -1,5 +1,5 @@
 ---
-title: VRA - Errore unregister VM su Deploy
+title: VRA - Errore unregister VM su Deploy - VMware
 tags:
   - post
 htmlClass: html
@@ -7,7 +7,7 @@ bodyClass: body
 date: 2025-03-13
 layout: template_posts_md
 ---
-# VRA - Errore in fase di unregister di una VM - Deploy
+## VRA - Errore in fase di unregister di una VM - Deploy
 
 Riferimenti:
 

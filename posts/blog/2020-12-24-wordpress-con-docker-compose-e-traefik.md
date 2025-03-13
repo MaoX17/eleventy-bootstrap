@@ -13,7 +13,7 @@ icon:
 faicon: "fab fa-wordpress"
 layout: "template_posts_md"
 ---
-# wordpress-docker-compose
+## wordpress-docker-compose
 Eseguire wordpress su docker o migrare un Wordpress esistente su Docker
 
 Se alcuni link non dovessero funzionare prova qui

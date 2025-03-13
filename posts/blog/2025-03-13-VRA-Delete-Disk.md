@@ -1,5 +1,5 @@
 ---
-title: VRA - Eliminare un disco di una VM da VRA
+title: VRA - Eliminare un disco di una VM da VRA - VMware
 tags:
   - post
 htmlClass: html
@@ -8,7 +8,7 @@ date: 2025-03-13
 layout: template_posts_md
 ---
 
-# Eliminare un disco di una VM da VRA
+## Come fare casino o porcaio
 
 Ho provato ad eliminare un disco direttamente da VCenter e ho fatto un casino
 

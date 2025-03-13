@@ -7,7 +7,7 @@ bodyClass: body
 date: 2025-03-12
 layout: template_posts_md
 ---
-# Ubuntu - Problema condivisione schermo su videoconferenza
+## Ubuntu - Problema condivisione schermo su videoconferenza
 
 Fonte: 
 https://medium.com/@edouard.courty/how-to-fix-screen-sharing-on-ubuntu-22-04-disabling-wayland-e9eac4143c7
