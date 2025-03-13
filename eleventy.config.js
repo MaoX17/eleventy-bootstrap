@@ -12,8 +12,8 @@ export default async function(eleventyConfig) {
 	
 	eleventyConfig.addPlugin(syntaxHighlight);
 
-	eleventyConfig.addShortcode("urla", function(url) {
-	    	return `https://www.gremapro.it/${url}`;
+	eleventyConfig.addNunjucksFilter("urla", function(pippo) {
+		return "https://www.gremapro.it/${pippo}";
 	});
 
 
