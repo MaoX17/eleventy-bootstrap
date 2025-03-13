@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html class="{{ htmlClass }}" lang="{{ site.lang }}">
+<html class="{{ htmlClass }}" lang="it">
   <head>
     <meta charset="utf-8">
     <title>{% if title %}{{ title }} · {{ site.title }}{% else %}{{ site.title or site.name}}{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="{{ description or site.description }}">
+    <meta name="description" content="Sito di Maurizio Proietti - Problemi e soluzioni di un sistemista">
     <meta name="referrer" content="no-referrer-when-downgrade">
     <meta name="author" content=" Maurizio Proietti ">
 
     {# Open graph related #}
     <meta property="og:title" content="{{ title or site.title or site.name }}" />
     <meta property="og:type" content="{{ type or site.type }}" />
-    <meta property="og:url" content="{{ url or site.url }}" />
-    <meta property="og:image" content="{{ image or site.image }}" />
-    <meta property="og:site_name" content="{{ name or site.name }}" />
-    <meta property="og:description" content="{{ description or site.description }}" />
+    <meta property="og:url" content="https://www.gremapro.it/" />
+    <meta property="og:image" content="/icons/gremapro.svg" />
+    <meta property="og:site_name" content="GreM@Pro - IT & Passion" />
+    <meta property="og:description" content="Sito di Maurizio Proietti - Problemi e soluzioni di un sistemista" />
 
     <link rel="manifest" href="/manifest.json">
 
