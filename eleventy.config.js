@@ -13,7 +13,7 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addPlugin(syntaxHighlight);
 
 	eleventyConfig.addNunjucksFilter("urla", function(pippo) {
-		return `https://www.gremapro.it/${pippo}`;
+		return `https://www.gremapro.it${pippo}`;
 	});
 
 
