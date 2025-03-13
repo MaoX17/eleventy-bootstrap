@@ -12,6 +12,10 @@ export default async function(eleventyConfig) {
 	
 	eleventyConfig.addPlugin(syntaxHighlight);
 
+	eleventyConfig.addShortcode("urla", function(url) {
+	    	return `https://www.gremapro.it/${url}`;
+	});
+
 
 };
 
