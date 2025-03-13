@@ -13,6 +13,7 @@ Fonte:
 https://medium.com/@edouard.courty/how-to-fix-screen-sharing-on-ubuntu-22-04-disabling-wayland-e9eac4143c7
 
 ```bash
+
 echo $XDG_SESSION_TYPE
 If the output is wayland, you are running Wayland as your display server.
 
@@ -25,3 +26,4 @@ WaylandEnable=false
 reboot
 
 ```
+
