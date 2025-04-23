@@ -22,7 +22,7 @@ services:
     volumes:
       - ./data/nextcloud_data/db:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=toortoor
+      - MYSQL_ROOT_PASSWORD=ChangeIT
     env_file:
       - db.env
     networks:
@@ -32,14 +32,14 @@ services:
   redis:
     image: redis:alpine
     restart: always
-    command: redis-server --requirepass 123
+    command: redis-server --requirepass ChangeIT
     networks:
       - nextcloud-net
 
 #  redis:
 #    image: redis
 #    restart: always
-#    command: redis-server --requirepass 123
+#    command: redis-server --requirepass ChangeIT
 #    networks:
 #      - nextcloud-net
 
@@ -56,7 +56,7 @@ services:
 ##      - 9980:9980
 #    environment:
 #      - domain=dropbox\.provincia\.prato\.it
-#      - VIRTUAL_HOST=collabora.provincia.prato.it
+#      - VIRTUAL_HOST=collabora.proietti.net
 #      - VIRTUAL_PORT=9980
 #      - DONT_GEN_SSL_CERT=true
 #      - extra_params=--o:ssl.enable=false --o:ssl.termination=true --o:net.proto=IPv4
@@ -82,24 +82,13 @@ services:
       - ./data/nextcloud_data/nextcloud:/var/www/html
       - ./data/nextcloud-apache.conf:/etc/apache2/conf-enabled/nextcloud-apache.conf:ro
     environment:
-#      - VIRTUAL_HOST=nc.proietti.net
-#      - VIRTUAL_PORT=80
-#      - LETSENCRYPT_HOST=nc.proietti.net
-#      - LETSENCRYPT_EMAIL=maurizio.proietti@gmail.com
       - MYSQL_HOST=db
       - REDIS_HOST=redis
-      - REDIS_HOST_PASSWORD=123
+      - REDIS_HOST_PASSWORD=ChangeIT
       - OVERWRITEPROTOCOL=https
       - TRUSTED_PROXIES=172.19.0.7 127.0.0.1 172.19.0.1
 
 
-#    labels:
-#      - traefik.http.routers.${TRAEFIK_ROUTE_NAME}.rule=Host(`${LETSENCRYPT_HOST}`)
-#      - traefik.http.routers.${TRAEFIK_ROUTE_NAME}.tls=true
-#      - traefik.http.routers.${TRAEFIK_ROUTE_NAME}.tls.certresolver=lets-encrypt
-#      - traefik.http.routers.${TRAEFIK_ROUTE_NAME}.middlewares=nextcloud-middlewares-secure-headers@file
-#      - traefik.http.services.traefik-https.loadbalancer.server.port=${VIRTUAL_PORT}
-##      - traefik.port=${VIRTUAL_PORT}
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.nc_proietti_net-http.entrypoints=web"
@@ -109,12 +98,7 @@ services:
 
       - "traefik.http.routers.nc_proietti_net-https.entrypoints=websecure"
       - "traefik.http.routers.nc_proietti_net-https.rule=Host(`nc.proietti.net`)"
-        #- "traefik.http.routers.nc_proietti_net-https.middlewares=basic-auth@file"
-
-        #      - "traefik.http.routers.nc_proietti_net-https.tls=true"
       - "traefik.http.routers.nc_proietti_net-https.tls.certresolver=lets-encr"
-#      - "traefik.http.routers.nc_proietti_net-https.middlewares=nextcloud-middlewares-secure-headers@file"
-
 
       - "traefik.http.services.nc_proietti_net.loadbalancer.server.port=80"
       - "traefik.docker.network=proxy"
@@ -130,16 +114,6 @@ services:
       - nextcloud-net
 
   cron:
-#    image: nextcloud:apache
-#    image: nextcloud:22.1-apache
-#    image: nextcloud:22-apache
-#    image: nextcloud:23.0-apache
-#    image: nextcloud:23-apache
-#    image: nextcloud:24.0-apache
-#    image: nextcloud:apache
-#    image: nextcloud:29.0-apache
-#    image: nextcloud:29-apache
-#    image: nextcloud:30.0-apache
     image: nextcloud:31-apache
     restart: always
     environment:
@@ -162,6 +136,17 @@ networks:
   nextcloud-net:
     external: false
 
+
+```
+
+
+db.env
+
+```
+
+MYSQL_PASSWORD=ChangeIT
+MYSQL_DATABASE=nextcloud
+MYSQL_USER=nextcloud
 
 ```
 
