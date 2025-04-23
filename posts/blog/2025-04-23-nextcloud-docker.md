@@ -36,13 +36,6 @@ services:
     networks:
       - nextcloud-net
 
-#  redis:
-#    image: redis
-#    restart: always
-#    command: redis-server --requirepass ChangeIT
-#    networks:
-#      - nextcloud-net
-
 #  collabora:
 #    image: collabora/code
 #    container_name: nextcloud-collab
@@ -55,7 +48,7 @@ services:
 ##    ports:
 ##      - 9980:9980
 #    environment:
-#      - domain=dropbox\.provincia\.prato\.it
+#      - domain=nc\.roietti\.net
 #      - VIRTUAL_HOST=collabora.proietti.net
 #      - VIRTUAL_PORT=9980
 #      - DONT_GEN_SSL_CERT=true
@@ -71,9 +64,6 @@ services:
 
 
   app:
-#    image: nextcloud:23-apache
-#    image: nextcloud:29.0-apache
-#    image: nextcloud:29-apache
 #    image: nextcloud:30.0-apache
     image: nextcloud:31-apache
     restart: always
@@ -147,6 +137,14 @@ db.env
 MYSQL_PASSWORD=ChangeIT
 MYSQL_DATABASE=nextcloud
 MYSQL_USER=nextcloud
+
+```
+
+data/nextcloud-apache.conf
+
+```
+
+LimitRequestBody 0
 
 ```
 
