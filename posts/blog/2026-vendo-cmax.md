@@ -56,12 +56,25 @@ Disponibile per qualsiasi prova, anche con il vostro meccanico di fiducia.
 
 ## Foto
 
-!(foto/01-frontale.jpg)
-
-!(foto/02-posteriore.jpg)
-
-!(foto/03-interni.jpg)
-
-!(foto/04-plancia.jpg)
-
-!(foto/05-bagagliaio.jpg)
+<table>
+<tr>
+<td><img src="/images/car/IMG_20260729_182836.jpg" width="50%"></td>
+<td><img src="/images/car/IMG_20260729_182842.jpg" width="50%"></td>
+</tr>
+<tr>
+<td><img src="/images/car/IMG_20260729_182850.jpg" width="50%"></td>
+<td><img src="/images/car/IMG_20260729_182857.jpg" width="50%"></td>
+</tr>
+<tr>
+<td><img src="/images/car/IMG_20260729_182914.jpg" width="50%"></td>
+<td><img src="/images/car/IMG_20260729_182938.jpg" width="50%"></td>
+</tr>
+<tr>
+<td><img src="/images/car/IMG_20260729_182958.jpg" width="50%"></td>
+<td><img src="/images/car/IMG_20260729_183000.jpg" width="50%"></td>
+</tr>
+<tr>
+<td><img src="/images/car/IMG_20260729_183007.jpg" width="50%"></td>
+<td><img src="/images/car/IMG_20260729_183016.jpg" width="50%"></td>
+</tr>
+</table>
