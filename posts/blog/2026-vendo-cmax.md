@@ -54,6 +54,8 @@ Disponibile per qualsiasi prova, anche con il vostro meccanico di fiducia.
 
 **No perditempo e no offerte irragionevoli. Contattatemi solo se realmente interessati.**
 
+### Primo contatto via mail: maurizio.proietti@gmail.com
+
 ## Foto
 
 <a href="https://photos.app.goo.gl/7b3NmtUSYDjduj147" target="_blank">Vedi tutte le foto</a>
