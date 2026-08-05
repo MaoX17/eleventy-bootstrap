@@ -11,18 +11,20 @@ layout: template_posts_md
 
 ## Prezzo: € 9.000 trattabili
 
-Vendo **a malincuore** la mia **Ford C-Max Titanium** 1.6 TDCi 115 CV immatricolata nel 2015 con soli **90.000 km**.
+Vendo **a malincuore** la mia **Ford C-Max Titanium** 1.6 TDCi 115 CV immatricolata nel 2015 con soli **86.000 km**.
 
 L'auto è **sempre stata regolarmente tagliandata**, mantenuta con la massima cura ed è in ottime condizioni sia meccaniche che estetiche. È pronta all'uso e non necessita di alcun intervento.
 
 Affidabile, spaziosa e confortevole, è la vettura ideale per famiglie e per chi cerca un'auto versatile con consumi contenuti.
 
+Motore 1.6 Turbo Diesel - Cambio manuale 6 rapporti
+
 ## Manutenzione eseguita recentemente
 
-- ✅ Distribuzione già sostituita
-- ✅ Valvola EGR nuova
-- ✅ Pompa freni nuova
-- ✅ Tagliandi eseguiti regolarmente
+- ✅ Distribuzione già sostituita (Aprile 2025)
+- ✅ Valvola EGR nuova (Aprile 2025)
+- ✅ Pompa freni nuova (Febbaio 2026)
+- ✅ Tagliandi eseguiti regolarmente ogni anno o circa 10.000km
 
 ## Dotazioni principali
 
