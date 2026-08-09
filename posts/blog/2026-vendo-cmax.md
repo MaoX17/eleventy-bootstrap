@@ -62,3 +62,7 @@ Disponibile per qualsiasi prova, anche con il vostro meccanico di fiducia.
 
 <a href="https://photos.app.goo.gl/7b3NmtUSYDjduj147" target="_blank">Vedi tutte le foto</a>
 
+## Report carfax
+<a href="https://www.carfax.eu/it/vhr?reportId=1da6edc0-584f-42dd-a44c-2a62ebad932a" target="_blank">Carfax report</a>
+
+
