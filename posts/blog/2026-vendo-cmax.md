@@ -1,5 +1,5 @@
 ---
-title: Ford C-Max Titanium 1.6 TDCi 115 CV – 2015 – 90.000 km
+title: Ford C-Max Titanium 1.6 TDCi 115 CV – 2015 – 86.000 km
 tags:
   - post
 htmlClass: html
@@ -9,7 +9,7 @@ layout: template_posts_md
 ---
 
 
-## Prezzo: € 9.000 trattabili
+## Prezzo: € 8.000 trattabili
 
 Vendo **a malincuore** la mia **Ford C-Max Titanium** 1.6 TDCi 115 CV immatricolata nel 2015 con soli **86.000 km**.
 
@@ -49,8 +49,6 @@ Uno dei punti di forza della Ford C-Max è la straordinaria modularità degli in
 Ideale per famiglie, viaggi, attività sportive e trasporto di oggetti ingombranti.
 
 L'auto viene venduta esclusivamente per cambio esigenze.
-
-**Prezzo: € 9.000 trattabili.**
 
 Disponibile per qualsiasi prova, anche con il vostro meccanico di fiducia.
 
